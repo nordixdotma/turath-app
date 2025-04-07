@@ -11,7 +11,7 @@ import { Autoplay } from "swiper/modules"
 import "swiper/css"
 
 export default function PartnersSection() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const [mounted, setMounted] = useState(false)
 
   // Partner logos provided by the user (with duplicates)
@@ -72,6 +72,7 @@ export default function PartnersSection() {
               modules={[Autoplay]}
               spaceBetween={30}
               slidesPerView={1}
+              dir={language === "ar" ? "rtl" : "ltr"}
               loop={true}
               autoplay={{
                 delay: 2500,
@@ -88,7 +89,7 @@ export default function PartnersSection() {
                   slidesPerView: 4,
                 },
               }}
-              className="partners-swiper"
+              className={`partners-swiper ${language === "ar" ? "rtl-swiper" : ""}`}
             >
               {partners.map((partner, index) => (
                 <SwiperSlide key={index}>
