@@ -52,6 +52,15 @@ export default function PartnersSection() {
     setMounted(true)
   }, [])
 
+  // Add a new useEffect to handle language changes
+  useEffect(() => {
+    // Force remount of Swiper when language changes
+    setMounted(false)
+    setTimeout(() => {
+      setMounted(true)
+    }, 50)
+  }, [language])
+
   return (
     <section className="py-24 bg-transparent">
       <Container className="max-w-6xl mx-auto">
@@ -72,12 +81,12 @@ export default function PartnersSection() {
               modules={[Autoplay]}
               spaceBetween={30}
               slidesPerView={1}
-              dir={language === "ar" ? "rtl" : "ltr"}
               loop={true}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
+              dir={language === "ar" ? "rtl" : "ltr"}
               breakpoints={{
                 640: {
                   slidesPerView: 2,
@@ -89,7 +98,7 @@ export default function PartnersSection() {
                   slidesPerView: 4,
                 },
               }}
-              className={`partners-swiper ${language === "ar" ? "rtl-swiper" : ""}`}
+              className="partners-swiper"
             >
               {partners.map((partner, index) => (
                 <SwiperSlide key={index}>

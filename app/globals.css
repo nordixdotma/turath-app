@@ -202,37 +202,3 @@ body {
   opacity: 1;
 }
 
-/* Add RTL support for Swiper */
-.rtl-swiper .swiper-wrapper {
-  flex-direction: row-reverse;
-}
-
-/* RTL text alignment helpers */
-[dir="rtl"] .text-left {
-  text-align: right;
-}
-
-[dir="rtl"] .text-right {
-  text-align: left;
-}
-
-/* Fix RTL button icons */
-[dir="rtl"] .ml-2 {
-  margin-left: 0;
-  margin-right: 0.5rem;
-}
-
-[dir="rtl"] .mr-2 {
-  margin-right: 0;
-  margin-left: 0.5rem;
-}
-
-/* Fix RTL transforms */
-[dir="rtl"] .group-hover\:translate-x-1 {
-  --tw-translate-x: -0.25rem;
-}
-
-[dir="rtl"] .group-hover\:-translate-x-1 {
-  --tw-translate-x: 0.25rem;
-}
-

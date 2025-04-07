@@ -3,9 +3,9 @@
 import { useLanguage } from "@/hooks/use-language"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
-import { useTypewriter, Cursor } from "../components/typewriter-effect"
+import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Container } from "@/components/ui/container"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -35,7 +35,7 @@ export default function HeroSection() {
     "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Moroccan architecture
   ]
 
-  // Adjust for mobile browser chrome and handle RTL
+  // Adjust for mobile browser chrome
   useEffect(() => {
     const setHeight = () => {
       const vh = window.innerHeight * 0.01
@@ -58,6 +58,15 @@ export default function HeroSection() {
     }
   }, [])
 
+  // Add a new useEffect to handle language changes
+  useEffect(() => {
+    // Force remount of Swiper when language changes
+    setMounted(false)
+    setTimeout(() => {
+      setMounted(true)
+    }, 50)
+  }, [language])
+
   return (
     <section
       className="relative bg-transparent"
@@ -79,7 +88,6 @@ export default function HeroSection() {
               className={cn(
                 "md:col-span-6 transition-all duration-1000 transform",
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8",
-                language === "ar" ? "text-right" : "",
               )}
             >
               <div className="inline-block mb-4 px-3 py-1 bg-primary/20 backdrop-blur-sm rounded-none">
@@ -96,12 +104,10 @@ export default function HeroSection() {
                 <Button
                   size="default"
                   variant="outline"
-                  className="border-white text-primary hover:bg-white/10 hover:text-white group transition-all duration-300 rounded-none"
+                  className="border-white text-primary bg-white hover:bg-white/10 hover:text-white group transition-all duration-300 rounded-none"
                 >
                   {t("discover_more")}
-                  <ArrowRight
-                    className={`${language === "ar" ? "mr-2 rotate-180" : "ml-2"} h-4 w-4 transition-transform duration-300 ${language === "ar" ? "group-hover:-translate-x-1" : "group-hover:translate-x-1"}`}
-                  />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </div>
             </div>
@@ -117,14 +123,13 @@ export default function HeroSection() {
                   <Swiper
                     modules={[Autoplay, EffectCreative]}
                     effect="creative"
-                    dir={language === "ar" ? "rtl" : "ltr"}
                     creativeEffect={{
                       prev: {
                         shadow: true,
-                        translate: ["-20%", 0, -1],
+                        translate: [language === "ar" ? "20%" : "-20%", 0, -1],
                       },
                       next: {
-                        translate: ["100%", 0, 0],
+                        translate: [language === "ar" ? "-100%" : "100%", 0, 0],
                       },
                     }}
                     speed={1000}
@@ -133,6 +138,7 @@ export default function HeroSection() {
                       disableOnInteraction: false,
                     }}
                     loop={true}
+                    dir={language === "ar" ? "rtl" : "ltr"}
                     className="h-full w-full"
                   >
                     {heroImages.map((image, index) => (
