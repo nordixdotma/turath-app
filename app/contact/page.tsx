@@ -72,14 +72,12 @@ export default function ContactPage() {
               )}
             >
               <div className="inline-block mb-4 px-3 py-1 bg-primary/20 backdrop-blur-sm rounded-none">
-                <span className="text-xs font-medium text-white">Get in Touch</span>
+                <span className="text-xs font-medium text-white">{t("get_in_touch")}</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
-                Contact Us
+                {t("contact_us")}
               </h1>
-              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">
-                Have questions about our work or want to get involved? We'd love to hear from you.
-              </p>
+              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("contact_description")}</p>
             </div>
           </Container>
         </div>
@@ -96,14 +94,14 @@ export default function ContactPage() {
             >
               {/* Contact Form */}
               <div className="bg-black/50 backdrop-blur-sm p-8 rounded-md">
-                <h2 className="font-tomato text-3xl font-bold text-white mb-6">Send Us a Message</h2>
+                <h2 className="font-tomato text-3xl font-bold text-white mb-6">{t("send_message")}</h2>
                 <div className="h-1 w-16 bg-primary mb-8"></div>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label htmlFor="firstName" className="text-sm font-medium text-white font-tomato">
-                        First Name
+                        {t("first_name")}
                       </label>
                       <Input
                         id="firstName"
@@ -114,7 +112,7 @@ export default function ContactPage() {
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="lastName" className="text-sm font-medium text-white font-tomato">
-                        Last Name
+                        {t("last_name")}
                       </label>
                       <Input
                         id="lastName"
@@ -127,7 +125,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-white font-tomato">
-                      Email
+                      {t("email_label")}
                     </label>
                     <Input
                       id="email"
@@ -140,7 +138,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <label htmlFor="subject" className="text-sm font-medium text-white font-tomato">
-                      Subject
+                      {t("subject")}
                     </label>
                     <Input
                       id="subject"
@@ -152,7 +150,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium text-white font-tomato">
-                      Message
+                      {t("message")}
                     </label>
                     <Textarea
                       id="message"
@@ -165,12 +163,12 @@ export default function ContactPage() {
 
                   <Button type="submit" className="bg-primary hover:bg-primary/90 text-white rounded-none font-tomato">
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    {t("send_message_button")}
                   </Button>
 
                   {formSubmitted && (
                     <div className="bg-green-900/50 border border-green-500 text-green-100 px-4 py-3 rounded-md font-tomato">
-                      Thank you for your message! We'll get back to you soon.
+                      {t("message_sent")}
                     </div>
                   )}
                 </form>
@@ -178,7 +176,7 @@ export default function ContactPage() {
 
               {/* Contact Information */}
               <div className="bg-black/50 backdrop-blur-sm p-8 rounded-md">
-                <h2 className="font-tomato text-3xl font-bold text-white mb-6">Contact Information</h2>
+                <h2 className="font-tomato text-3xl font-bold text-white mb-6">{t("contact_information")}</h2>
                 <div className="h-1 w-16 bg-primary mb-8"></div>
 
                 <div className="space-y-8">
@@ -187,7 +185,7 @@ export default function ContactPage() {
                       <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium text-white font-tomato">Address</p>
+                      <p className="font-medium text-white font-tomato">{t("address")}</p>
                       <p className="mt-1 text-white/90 font-tomato">
                         Musée Mouassine, Derb El Hammam, Mouassine, Marrakech
                       </p>
@@ -199,7 +197,7 @@ export default function ContactPage() {
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium text-white font-tomato">Phone</p>
+                      <p className="font-medium text-white font-tomato">{t("phone")}</p>
                       <p className="mt-1 text-white/90 font-tomato">
                         <a href="tel:+212662388758" className="hover:text-primary transition-colors">
                           (+212) 662 388 758
@@ -213,7 +211,7 @@ export default function ContactPage() {
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-medium text-white font-tomato">Email</p>
+                      <p className="font-medium text-white font-tomato">{t("email")}</p>
                       <p className="mt-1 text-white/90 font-tomato">
                         <a href="mailto:turath.marrakech@gmail.com" className="hover:text-primary transition-colors">
                           turath.marrakech@gmail.com
@@ -224,11 +222,11 @@ export default function ContactPage() {
                 </div>
 
                 <div className="mt-12">
-                  <h3 className="font-tomato text-xl font-bold text-white mb-4">Office Hours</h3>
+                  <h3 className="font-tomato text-xl font-bold text-white mb-4">{t("office_hours")}</h3>
                   <div className="space-y-2 text-white/90 font-tomato">
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p>Saturday: 10:00 AM - 2:00 PM</p>
-                    <p>Sunday: Closed</p>
+                    <p>{t("monday_friday")}</p>
+                    <p>{t("saturday")}</p>
+                    <p>{t("sunday")}</p>
                   </div>
                 </div>
               </div>
@@ -260,7 +258,7 @@ export default function ContactPage() {
                 mapInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
               )}
             >
-              <h2 className="font-tomato text-3xl font-bold text-white mb-6 text-center">Find Us</h2>
+              <h2 className="font-tomato text-3xl font-bold text-white mb-6 text-center">{t("find_us")}</h2>
               <div className="h-1 w-16 bg-primary mx-auto mb-8"></div>
 
               <div className="h-[450px] w-full rounded-md overflow-hidden shadow-lg">

@@ -3,6 +3,7 @@
 import { useLanguage } from "@/hooks/use-language"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
+import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Container } from "@/components/ui/container"
 import { ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -17,6 +18,15 @@ export default function HeroSection() {
   const [viewportHeight, setViewportHeight] = useState("100vh")
   const [isVisible, setIsVisible] = useState(false)
   const [mounted, setMounted] = useState(false)
+
+  // Typing effect
+  const [text] = useTypewriter({
+    words: [t("hero_title"), t("typewriter_text1"), t("typewriter_text2"), t("typewriter_text3")],
+    loop: true,
+    delaySpeed: 2000,
+    typeSpeed: 70,
+    deleteSpeed: 50,
+  })
 
   // Hero images - Marrakech heritage specific
   const heroImages = [
@@ -75,16 +85,17 @@ export default function HeroSection() {
                 <span className="text-xs font-medium text-white">{t("established")} 2021</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
-                {t("hero_title")}
+                <span>{text}</span>
+                <span className="text-primary">
+                  <Cursor cursorStyle="_" />
+                </span>
               </h1>
-              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">
-                {t("hero_description")}
-              </p>
+              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("hero_description")}</p>
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="default"
                   variant="outline"
-                  className="border-white text-primary hover:bg-white/10 hover:text-white group transition-all duration-300 rounded-none"
+                  className="border-white text-primary bg-white hover:bg-white/10 hover:text-white group transition-all duration-300 rounded-none"
                 >
                   {t("discover_more")}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

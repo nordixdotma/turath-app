@@ -15,7 +15,7 @@ export default function BoardSection() {
   const president = {
     name: t("president_name"),
     position: "president",
-    image: "https://associationturath.org/wp-content/uploads/2023/07/SOAD-BELKZIZ-269x300.jpeg",
+    image: "/SOAD-BELKZIZ.jpeg",
     bio: t("president_bio"),
   }
 
@@ -76,9 +76,7 @@ export default function BoardSection() {
                     </Button>
                   </Link>
 
-                  <p className="text-white/80 text-sm italic font-tomato">
-                    {t("visit_about_page")}
-                  </p>
+                  <p className="text-white/80 text-sm italic font-tomato">{t("visit_about_page")}</p>
                 </div>
               </div>
             </div>

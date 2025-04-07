@@ -82,15 +82,15 @@ export default function Header() {
       )}
     >
       <Container className="max-w-6xl mx-auto">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 md:h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center z-20">
-            <div className="relative h-14 w-28">
+            <div className="relative h-14 w-28 md:h-16 md:w-32">
               <Image
                 src={
                   scrolled
-                    ? "https://associationturath.org/wp-content/uploads/2023/07/turath.png"
-                    : "https://associationturath.org/wp-content/uploads/2023/07/turath-white-.png"
+                    ? "/turath.png"
+                    : "/favicon.png"
                 }
                 alt={t("logo_alt")}
                 fill
@@ -105,7 +105,7 @@ export default function Header() {
             {/* Home link */}
             <Link
               href="/"
-              className={`text-sm font-medium transition-all duration-300 hover:scale-105 relative group font-tomato ${
+              className={`text-sm md:text-base font-medium transition-all duration-300 hover:scale-105 relative group font-tomato ${
                 scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-white/80"
               } ${pathname === "/" ? "text-primary" : ""}`}
             >
@@ -117,7 +117,7 @@ export default function Header() {
             <div className="relative group">
               <Link
                 href="/projects"
-                className={`flex items-center text-sm font-medium transition-all duration-300 hover:scale-105 relative group font-tomato ${
+                className={`flex items-center text-sm md:text-base font-medium transition-all duration-300 hover:scale-105 relative group font-tomato ${
                   scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-white/80"
                 } ${pathname.includes("/projects") ? "text-primary" : ""}`}
                 onMouseEnter={() => setProjectsDropdownOpen(true)}
@@ -130,7 +130,7 @@ export default function Header() {
 
               {/* Projects dropdown menu */}
               <div
-                className={`absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 ${
+                className={`absolute left-0 mt-2 w-64 md:w-72 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 ${
                   projectsDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
                 }`}
                 onMouseEnter={() => setProjectsDropdownOpen(true)}
@@ -141,7 +141,7 @@ export default function Header() {
                     <Link
                       key={index}
                       href={link.href}
-                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 hover:text-primary font-tomato"
+                      className="block px-4 py-2 text-sm md:text-base text-gray-800 hover:bg-gray-100 hover:text-primary font-tomato"
                     >
                       {link.label}
                     </Link>
@@ -174,13 +174,13 @@ export default function Header() {
                   <Button
                     variant="secondary"
                     size="sm"
-                    className={`transition-all duration-300 min-w-[60px] rounded-md font-tomato ${
+                    className={`transition-all duration-300 min-w-[60px] md:min-w-[70px] md:h-9 rounded-md font-tomato ${
                       scrolled
                         ? "bg-gray-100 text-gray-800 border-gray-200 hover:bg-gray-200"
                         : "bg-white/20 text-white border-white/30 hover:bg-white/30"
                     }`}
                   >
-                    <Globe className="h-4 w-4 mr-2" />
+                    <Globe className="h-4 w-4 md:h-5 md:w-5 mr-2" />
                     {language.toUpperCase()}
                   </Button>
                 </DropdownMenuTrigger>
@@ -240,7 +240,7 @@ export default function Header() {
                   <Link href="/" className="inline-block" onClick={toggleMenu}>
                     <div className="relative h-10 w-28">
                       <Image
-                        src="https://associationturath.org/wp-content/uploads/2023/07/turath-white-.png"
+                        src="/favicon.png"
                         alt="Turâth Logo"
                         fill
                         className="object-contain"

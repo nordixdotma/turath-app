@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/container"
 import { MapPin } from "lucide-react"
 
 export default function HistoricalPlacesSection() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const [activeIndex, setActiveIndex] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
 
@@ -27,49 +27,52 @@ export default function HistoricalPlacesSection() {
   // Historical places in Marrakech with enhanced data
   const historicalPlaces = [
     {
-      title: "Jemaa el-Fnaa",
+      titleKey: "jemaa_el_fnaa_title",
       image:
         "https://images.unsplash.com/photo-1585004607620-fb4c44331e73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "11th century",
-      fact: "Jemaa el-Fnaa transforms from a marketplace during the day to an entertainment hub at night with storytellers, musicians, and food vendors.",
+      yearKey: "jemaa_el_fnaa_year",
+      factKey: "jemaa_el_fnaa_fact",
     },
     {
-      title: "Koutoubia Mosque",
+      titleKey: "koutoubia_mosque_title",
       image:
         "https://images.unsplash.com/photo-1569370088252-c26ef022594c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      year: "12th century",
-      fact: "The Koutoubia minaret served as the model for the Giralda of Seville and the Hassan Tower of Rabat.",
+      yearKey: "koutoubia_mosque_year",
+      factKey: "koutoubia_mosque_fact",
     },
     {
-      title: "Bahia Palace",
+      titleKey: "bahia_palace_title",
       image:
         "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
-      year: "1860s",
-      fact: "The name 'Bahia' means 'brilliance' in Arabic, and the palace was built to be the greatest palace of its time.",
+      yearKey: "bahia_palace_year",
+      factKey: "bahia_palace_fact",
     },
     {
-      title: "Majorelle Garden",
+      titleKey: "majorelle_garden_title",
       image:
         "https://images.unsplash.com/photo-1729456229097-e60798212180?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
-      year: "1923",
-      fact: "The distinctive shade of blue used throughout the garden is known as 'Majorelle Blue' and was patented by Jacques Majorelle.",
+      yearKey: "majorelle_garden_year",
+      factKey: "majorelle_garden_fact",
     },
     {
-      title: "El Badi Palace",
+      titleKey: "el_badi_palace_title",
       image:
         "https://images.unsplash.com/photo-1592343361402-d4509fb85b36?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
-      year: "16th century",
-      fact: "El Badi means 'The Incomparable' in Arabic. Much of its original materials were stripped to build the Alawite palaces in Meknes.",
+      yearKey: "el_badi_palace_year",
+      factKey: "el_badi_palace_fact",
     },
   ]
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.05,
+    rootMargin: "50px 0px",
   })
 
   return (
     <section className="py-20 bg-transparent overflow-hidden">
+      <Container className="mb-12">{/* Section content starts directly with the accordion/cards */}</Container>
+
       {/* Desktop Accordion View - Full Width */}
       <div
         ref={ref}
@@ -92,7 +95,7 @@ export default function HistoricalPlacesSection() {
               <div className="absolute inset-0 w-full h-full">
                 <Image
                   src={place.image || "/placeholder.svg"}
-                  alt={place.title}
+                  alt={t(place.titleKey)}
                   fill
                   className={cn(
                     "object-cover transition-transform duration-700",
@@ -124,13 +127,13 @@ export default function HistoricalPlacesSection() {
                       activeIndex === index ? "text-3xl" : "text-xl whitespace-nowrap",
                     )}
                   >
-                    {place.title}
+                    {t(place.titleKey)}
                   </h3>
 
                   {activeIndex === index && (
                     <div className="flex items-center mt-2 text-primary">
                       <MapPin className="h-4 w-4 mr-1" />
-                      <span className="text-sm font-medium font-tomato">{place.year}</span>
+                      <span className="text-sm font-medium font-tomato">{t(place.yearKey)}</span>
                     </div>
                   )}
                 </div>
@@ -140,7 +143,7 @@ export default function HistoricalPlacesSection() {
                   <div className="mt-auto animate-fadeIn max-w-lg">
                     <div className="bg-primary/30 backdrop-blur-sm p-3 rounded-md border border-primary/40">
                       <p className="text-white/90 text-sm italic font-tomato">
-                        <span className="font-bold text-primary">Did you know?</span> {place.fact}
+                        <span className="font-bold text-primary">{t("did_you_know")}</span> {t(place.factKey)}
                       </p>
                     </div>
                   </div>
@@ -153,7 +156,7 @@ export default function HistoricalPlacesSection() {
 
       {/* Mobile Card View - In Container */}
       <Container className="max-w-6xl mx-auto md:hidden">
-        <div className={cn("transition-opacity duration-1000", inView ? "opacity-100" : "opacity-0")}>
+        <div className="opacity-100">
           <div className="space-y-6">
             {historicalPlaces.map((place, index) => (
               <div
@@ -165,14 +168,19 @@ export default function HistoricalPlacesSection() {
                 onClick={() => setActiveIndex(index)}
               >
                 <div className="relative h-40 w-full">
-                  <Image src={place.image || "/placeholder.svg"} alt={place.title} fill className="object-cover" />
+                  <Image
+                    src={place.image || "/placeholder.svg"}
+                    alt={t(place.titleKey)}
+                    fill
+                    className="object-cover"
+                  />
                   {/* Reduced contrast overlay for mobile */}
                   <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent"></div>
                   <div className="absolute top-4 left-4">
-                    <h3 className="font-tomato text-xl text-white">{place.title}</h3>
+                    <h3 className="font-tomato text-xl text-white">{t(place.titleKey)}</h3>
                     <div className="flex items-center mt-1 text-primary">
                       <MapPin className="h-3 w-3 mr-1" />
-                      <span className="text-xs font-medium font-tomato">{place.year}</span>
+                      <span className="text-xs font-medium font-tomato">{t(place.yearKey)}</span>
                     </div>
                   </div>
                 </div>
@@ -181,7 +189,7 @@ export default function HistoricalPlacesSection() {
                   <div className="p-4 animate-fadeIn">
                     <div className="bg-primary/30 p-3 rounded-md border border-primary/40">
                       <p className="text-white/90 text-xs italic font-tomato">
-                        <span className="font-bold text-primary">Did you know?</span> {place.fact}
+                        <span className="font-bold text-primary">{t("did_you_know")}</span> {t(place.factKey)}
                       </p>
                     </div>
                   </div>

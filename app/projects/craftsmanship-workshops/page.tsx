@@ -41,12 +41,11 @@ export default function CraftsmanshipProjectPage() {
     location: "Artisan Center, Marrakech Medina",
     participants: 120,
     mainImage:
-      "https://images.unsplash.com/photo-1590422749897-47c47673ba0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     gallery: [
-      "https://images.unsplash.com/photo-1590422749897-47c47673ba0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1551907234-fb773fb08a2a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1621846251783-3f001c6f6c69?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1681686587176-d0e1a37edd47?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1518112390430-f4ab02e9c2c8?q=80&w=2081&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1677702162842-b4a4b3c47a27?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
     workshops: [
       "Pottery and Ceramics",
@@ -111,13 +110,13 @@ export default function CraftsmanshipProjectPage() {
           >
             {/* Main Content */}
             <div className="md:col-span-2">
-              <h2 className="font-tomato text-3xl font-bold text-gray-900 mb-6">About the Project</h2>
+              <h2 className="font-tomato text-3xl font-bold text-gray-900 mb-6">{t("about_project")}</h2>
               <div className="h-1 w-16 bg-primary mb-8"></div>
 
               <div className="prose max-w-none text-gray-700 font-tomato">
                 <p className="mb-6">{project.fullDescription}</p>
 
-                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">Workshop Types</h3>
+                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("workshop_types")}</h3>
                 <ul className="space-y-2 mb-8">
                   {project.workshops.map((workshop, index) => (
                     <li key={index} className="flex items-start">
@@ -127,7 +126,7 @@ export default function CraftsmanshipProjectPage() {
                   ))}
                 </ul>
 
-                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">Impact</h3>
+                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("impact")}</h3>
                 <p>
                   These workshops have a significant impact on both cultural preservation and the local economy. By
                   teaching traditional crafts to new generations, we ensure that these skills are not lost to time.
@@ -141,13 +140,13 @@ export default function CraftsmanshipProjectPage() {
             {/* Sidebar */}
             <div>
               <div className="bg-gray-50 p-6 rounded-md border border-gray-200">
-                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">Workshop Details</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("workshop_details")}</h3>
 
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900 font-tomato">Schedule</p>
+                      <p className="font-medium text-gray-900 font-tomato">{t("schedule")}</p>
                       <p className="text-gray-700 font-tomato">{project.date}</p>
                     </div>
                   </div>
@@ -155,7 +154,7 @@ export default function CraftsmanshipProjectPage() {
                   <div className="flex items-start">
                     <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900 font-tomato">Location</p>
+                      <p className="font-medium text-gray-900 font-tomato">{t("location")}</p>
                       <p className="text-gray-700 font-tomato">{project.location}</p>
                     </div>
                   </div>
@@ -163,7 +162,7 @@ export default function CraftsmanshipProjectPage() {
                   <div className="flex items-start">
                     <Users className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900 font-tomato">Participants to Date</p>
+                      <p className="font-medium text-gray-900 font-tomato">{t("participants_to_date")}</p>
                       <p className="text-gray-700 font-tomato">{project.participants} people</p>
                     </div>
                   </div>
@@ -171,7 +170,7 @@ export default function CraftsmanshipProjectPage() {
 
                 <div className="mt-8">
                   <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-none font-tomato">
-                    Register for a Workshop
+                    {t("register_workshop")}
                   </Button>
                 </div>
               </div>
@@ -190,10 +189,10 @@ export default function CraftsmanshipProjectPage() {
               galleryInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            <h2 className="font-tomato text-3xl font-bold text-gray-900 mb-6 text-center">Gallery</h2>
+            <h2 className="font-tomato text-3xl font-bold text-gray-900 mb-6 text-center">{t("gallery")}</h2>
             <div className="h-1 w-16 bg-primary mx-auto mb-12"></div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {project.gallery.map((image, index) => (
                 <div
                   key={index}

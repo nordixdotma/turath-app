@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       description:
         "A week-long celebration featuring guided tours of historical sites, workshops on traditional crafts, and cultural performances that showcase the rich heritage of Marrakech.",
       image:
-        "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1724762511996-8daf138c0a30?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "event",
       participants: 250,
     },
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
       description:
         "Hands-on workshops led by master artisans, teaching traditional Moroccan crafts such as pottery, weaving, and woodworking to preserve these ancient skills for future generations.",
       image:
-        "https://images.unsplash.com/photo-1590422749897-47c47673ba0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "workshop",
       participants: 120,
     },
@@ -46,7 +46,7 @@ export default function ProjectsPage() {
       description:
         "Collaborative projects focused on documenting, restoring, and preserving the unique architectural elements of Marrakech's historical buildings and neighborhoods.",
       image:
-        "https://images.unsplash.com/photo-1548759806-821cafe0fa7a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "restoration",
       participants: 85,
     },
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
         style={{
           height: "60vh",
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1548759806-821cafe0fa7a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -79,14 +79,12 @@ export default function ProjectsPage() {
               )}
             >
               <div className="inline-block mb-4 px-3 py-1 bg-primary/20 backdrop-blur-sm rounded-none">
-                <span className="text-xs font-medium text-white">Our Initiatives</span>
+                <span className="text-xs font-medium text-white">{t("our_initiatives")}</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
                 Heritage Horizons: Unveiling Marrakech's Hidden Treasures
               </h1>
-              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">
-                Explore our projects dedicated to preserving and promoting the rich cultural heritage of Marrakech
-              </p>
+              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("projects_hero_description")}</p>
             </div>
           </Container>
         </div>
@@ -96,12 +94,9 @@ export default function ProjectsPage() {
       <section className="py-20 bg-white">
         <Container className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-tomato text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Projects</h2>
+            <h2 className="font-tomato text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("our_projects")}</h2>
             <div className="h-1 w-24 bg-primary mx-auto mb-6"></div>
-            <p className="text-gray-700 max-w-2xl mx-auto font-tomato">
-              Discover our initiatives aimed at preserving and promoting the rich cultural heritage of Marrakech and its
-              region
-            </p>
+            <p className="text-gray-700 max-w-2xl mx-auto font-tomato">{t("our_projects_description")}</p>
           </div>
 
           <div className="space-y-16">

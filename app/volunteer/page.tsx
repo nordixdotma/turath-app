@@ -40,91 +40,79 @@ export default function VolunteerPage() {
     {
       name: "Soad Belkeziz",
       position: "president",
-      image: "https://associationturath.org/wp-content/uploads/2023/07/SOAD-BELKZIZ.jpeg",
+      image: "/SOAD-BELKZIZ.jpeg",
     },
     {
       name: "Faten Safieddine",
       position: "vice_president",
-      image: "https://associationturath.org/wp-content/uploads/2023/07/ksfdjhsdf-768x768.png",
+      image: "/ksfdjhsdf-768x768.png",
     },
     {
       name: "Mounia Benrhanem",
       position: "treasurer",
-      image: "https://associationturath.org/wp-content/uploads/2023/07/tre-768x768.png",
+      image: "/tre-768x768.png",
     },
     {
       name: "Siham El Mellas",
       position: "deputy_treasurer",
-      image: "https://associationturath.org/wp-content/uploads/2023/07/vice--768x768.png",
+      image: "/vice--768x768.png",
     },
     {
       name: "Mehdi Belkaziz",
       position: "secretary_general",
-      image: "https://associationturath.org/wp-content/uploads/2023/07/mehdi--768x768.png",
+      image: "/mehdi--768x768.png",
     },
   ]
 
-  // FAQ items
+  // FAQ items using translation keys
   const faqItems = [
     {
-      question: "How to be a volunteer?",
-      answer:
-        "To become a volunteer with Turâth, you can fill out our online application form, attend one of our information sessions, or contact us directly. We welcome individuals of all backgrounds who are passionate about preserving Marrakech's cultural heritage.",
+      question: t("faq_question_1"),
+      answer: t("faq_answer_1"),
     },
     {
-      question: "What should you know before apply",
-      answer:
-        "Before applying, it's helpful to understand our mission and values, the time commitment required, and the types of volunteer opportunities available. We recommend reviewing our website and social media to get a better sense of our work and the impact we're making.",
+      question: t("faq_question_2"),
+      answer: t("faq_answer_2"),
     },
     {
-      question: "Information about application process",
-      answer:
-        "Our application process includes filling out a form, an interview with our volunteer coordinator, and an orientation session. The entire process typically takes 2-3 weeks, and we have regular intake periods throughout the year.",
+      question: t("faq_question_3"),
+      answer: t("faq_answer_3"),
     },
     {
-      question: "Volunteer Appreciation Events",
-      answer:
-        "We regularly host appreciation events to recognize the invaluable contributions of our volunteers. These include annual galas, certificates of recognition, and special access to cultural events and sites in Marrakech.",
+      question: t("faq_question_4"),
+      answer: t("faq_answer_4"),
     },
     {
-      question: "Career and Personal Development",
-      answer:
-        "Volunteering with Turâth offers numerous opportunities for personal and professional growth. You'll develop new skills, expand your network, and gain valuable experience in heritage preservation, event management, research, and more.",
+      question: t("faq_question_5"),
+      answer: t("faq_answer_5"),
     },
     {
-      question: "Making a Lasting Impact",
-      answer:
-        "Our volunteers play a crucial role in preserving Marrakech's rich cultural heritage for future generations. Your contributions will help document, restore, and promote the unique architectural, artistic, and cultural elements that make this city special.",
+      question: t("faq_question_6"),
+      answer: t("faq_answer_6"),
     },
     {
-      question: "Spread awareness about volunteering",
-      answer:
-        "Help us grow our volunteer community by sharing your experience with friends and family. You can also follow and share our social media posts, participate in our public events, and become an ambassador for heritage preservation in your community.",
+      question: t("faq_question_7"),
+      answer: t("faq_answer_7"),
     },
     {
-      question: "How you could become an external partner",
-      answer:
-        "Organizations interested in partnering with Turâth can reach out to our partnership team. We collaborate with educational institutions, businesses, government agencies, and other NGOs on various projects and initiatives.",
+      question: t("faq_question_8"),
+      answer: t("faq_answer_8"),
     },
     {
-      question: "What Volunteer Benefits Does Turâth Offer?",
-      answer:
-        "Our volunteers receive training, networking opportunities, invitations to exclusive events, recognition for their contributions, and the satisfaction of making a meaningful impact on cultural heritage preservation.",
+      question: t("faq_question_9"),
+      answer: t("faq_answer_9"),
     },
     {
-      question: "Volunteer Training and Support",
-      answer:
-        "We provide comprehensive training and ongoing support to all our volunteers. This includes orientation sessions, skill-specific workshops, mentoring from experienced team members, and regular check-ins to ensure you have everything you need to succeed.",
+      question: t("faq_question_10"),
+      answer: t("faq_answer_10"),
     },
     {
-      question: "Flexible Volunteering Opportunities",
-      answer:
-        "We understand that our volunteers have various commitments, so we offer flexible scheduling options. You can volunteer on a regular basis, for specific events or projects, or remotely, depending on your availability and interests.",
+      question: t("faq_question_11"),
+      answer: t("faq_answer_11"),
     },
     {
-      question: "Diverse Volunteer Roles",
-      answer:
-        "Turâth offers a wide range of volunteer roles to match different skills and interests. These include tour guides, researchers, event coordinators, social media managers, photographers, translators, administrative support, and more.",
+      question: t("faq_question_12"),
+      answer: t("faq_answer_12"),
     },
   ]
 
@@ -159,14 +147,12 @@ export default function VolunteerPage() {
               )}
             >
               <div className="inline-block mb-4 px-3 py-1 bg-primary/20 backdrop-blur-sm rounded-none">
-                <span className="text-xs font-medium text-white">Join Our Team</span>
+                <span className="text-xs font-medium text-white">{t("join_team")}</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
-                Volunteer With Turâth
+                {t("volunteer_title")}
               </h1>
-              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">
-                Be part of our mission to preserve and promote the rich cultural heritage of Marrakech
-              </p>
+              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("volunteer_subtitle")}</p>
             </div>
           </Container>
         </div>
@@ -182,11 +168,9 @@ export default function VolunteerPage() {
               )}
             >
               <div className="text-center mb-16">
-                <h2 className="font-tomato text-3xl md:text-4xl font-bold text-white mb-4">Our Board</h2>
+                <h2 className="font-tomato text-3xl md:text-4xl font-bold text-white mb-4">{t("board_title")}</h2>
                 <div className="h-1 w-24 bg-primary mx-auto mb-6"></div>
-                <p className="text-white/90 max-w-2xl mx-auto font-tomato">
-                  Meet the people behind this amazing initiative
-                </p>
+                <p className="text-white/90 max-w-2xl mx-auto font-tomato">{t("board_subtitle")}</p>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -245,13 +229,9 @@ export default function VolunteerPage() {
               )}
             >
               <div className="text-center mb-16">
-                <h2 className="font-tomato text-3xl md:text-4xl font-bold text-white mb-4">
-                  Frequently Asked Questions
-                </h2>
+                <h2 className="font-tomato text-3xl md:text-4xl font-bold text-white mb-4">{t("faq_title")}</h2>
                 <div className="h-1 w-24 bg-primary mx-auto mb-6"></div>
-                <p className="text-white/90 max-w-2xl mx-auto font-tomato">
-                  Everything you need to know about volunteering with Turâth
-                </p>
+                <p className="text-white/90 max-w-2xl mx-auto font-tomato">{t("faq_subtitle")}</p>
               </div>
 
               {/* Two-column layout for desktop */}
@@ -316,16 +296,10 @@ export default function VolunteerPage() {
             >
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="p-8 md:p-12">
-                  <h2 className="font-tomato text-3xl font-bold text-white mb-6">
-                    Join Us in Preserving Marrakech's Rich Heritage!
-                  </h2>
-                  <p className="text-white/90 font-tomato mb-8">
-                    Be a part of Turâth's passionate team and make a difference in preserving the cultural legacy of
-                    Marrakech. Join us as a volunteer and embark on an enriching journey filled with learning,
-                    networking, and community engagement.
-                  </p>
+                  <h2 className="font-tomato text-3xl font-bold text-white mb-6">{t("volunteer_cta_title")}</h2>
+                  <p className="text-white/90 font-tomato mb-8">{t("volunteer_cta_description")}</p>
                   <Button size="lg" className="bg-white text-primary hover:bg-white/90 rounded-none font-tomato">
-                    Apply Now
+                    {t("apply_now")}
                   </Button>
                 </div>
                 <div className="relative hidden md:block">
