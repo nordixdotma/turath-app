@@ -14,7 +14,9 @@ import { useState } from "react"
 
 export default function ContactPage() {
   const { t } = useLanguage()
+  const [isLoading, setIsLoading] = useState(false)
   const [formSubmitted, setFormSubmitted] = useState(false)
+  const [error, setError] = useState("")
 
   // Hero section animation
   const { ref: heroRef, inView: heroInView } = useInView({
@@ -34,15 +36,42 @@ export default function ContactPage() {
     threshold: 0.1,
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would normally handle the form submission to a backend
-    setFormSubmitted(true)
-    // Reset form after submission
+    setIsLoading(true)
+    setError("")
+
     const form = e.target as HTMLFormElement
-    form.reset()
-    // Reset submission status after 5 seconds
-    setTimeout(() => setFormSubmitted(false), 5000)
+    const formData = new FormData(form)
+    
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify({
+          firstName: formData.get("firstName"),
+          lastName: formData.get("lastName"),
+          email: formData.get("email"),
+          subject: formData.get("subject"),
+          message: formData.get("message"),
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send message")
+      }
+
+      setFormSubmitted(true)
+      form.reset()
+      setTimeout(() => setFormSubmitted(false), 5000)
+    } catch (err) {
+      setError(t("error"))
+      console.error("Error sending message:", err)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -161,10 +190,30 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <Button type="submit" className="bg-primary hover:bg-primary/90 text-white rounded-none font-tomato">
-                    <Send className="mr-2 h-4 w-4" />
-                    {t("send_message_button")}
+                  {/* Update the form button to show loading state */}
+                  <Button 
+                    type="submit" 
+                    className="bg-primary hover:bg-primary/90 text-white rounded-none font-tomato"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? (
+                      <>
+                        <span className="animate-spin mr-2">⏳</span>
+                        {t("loading")}
+                      </>
+                    ) : (
+                      <>
+                        <Send className="mr-2 h-4 w-4" />
+                        {t("send_message_button")}
+                      </>
+                    )}
                   </Button>
+
+                  {error && (
+                    <div className="bg-red-900/50 border border-red-500 text-red-100 px-4 py-3 rounded-md font-tomato">
+                      {error}
+                    </div>
+                  )}
 
                   {formSubmitted && (
                     <div className="bg-green-900/50 border border-green-500 text-green-100 px-4 py-3 rounded-md font-tomato">
