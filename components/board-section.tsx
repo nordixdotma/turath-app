@@ -66,7 +66,7 @@ export default function BoardSection() {
                 </div>
 
                 <div className="mt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <Link href="/about">
+                  <Link href="/volunteer">
                     <Button
                       variant="outline"
                       className="border-white text-primary bg-white hover:bg-transparent hover:text-white transition-colors rounded-none font-tomato"

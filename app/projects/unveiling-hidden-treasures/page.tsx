@@ -9,7 +9,7 @@ import Image from "next/image"
 import { useInView } from "react-intersection-observer"
 import { cn } from "@/lib/utils"
 
-export default function HeritageProjectPage() {
+export default function UnveilingTreasuresProjectPage() {
   const { t } = useLanguage()
 
   // Animation refs
@@ -29,8 +29,8 @@ export default function HeritageProjectPage() {
       <section className="relative bg-gray-900 h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1724762511996-8daf138c0a30?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Journées du Patrimoine de Marrakech"
+            src="https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Unveiling Marrakech's Hidden Treasures"
             fill
             className="object-cover opacity-50"
           />
@@ -50,8 +50,10 @@ export default function HeritageProjectPage() {
               <ArrowLeft className="mr-2 h-4 w-4" />
               {t("back_to_projects")}
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-tomato">{t("heritage_days_title")}</h1>
-            <p className="text-lg text-white/90 max-w-2xl">{t("heritage_days_description")}</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-tomato">
+              {t("hidden_treasures_title")}
+            </h1>
+            <p className="text-lg text-white/90 max-w-2xl">{t("hidden_treasures_description")}</p>
           </div>
         </Container>
       </section>
@@ -70,48 +72,61 @@ export default function HeritageProjectPage() {
             <div className="bg-white p-8 shadow-md mb-8">
               <h2 className="text-2xl font-bold mb-6 font-tomato">{t("about_project")}</h2>
               <div className="prose max-w-none">
-                <p>{t("heritage_days_about")}</p>
-                <p>{t("heritage_days_about_2")}</p>
-                <p>{t("heritage_days_about_3")}</p>
-                <h3 className="text-xl font-bold mt-8 mb-4">{t("heritage_days_activities")}</h3>
+                <p>{t("hidden_treasures_about")}</p>
+                <p>{t("hidden_treasures_about_2")}</p>
+                <p>{t("hidden_treasures_about_3")}</p>
+                <h3 className="text-xl font-bold mt-8 mb-4">{t("program_components")}</h3>
                 <ul>
                   <li>
-                    <strong>Guided Tours:</strong> Expert-led explorations of historical sites, revealing hidden stories
-                    and architectural details.
+                    <strong>Hidden Heritage Tours:</strong> Guided explorations of lesser-known historical sites, hidden
+                    riads, forgotten fountains, and architectural gems tucked away in the medina's labyrinthine streets.
                   </li>
                   <li>
-                    <strong>Cooking Classes:</strong> Hands-on experiences learning traditional Moroccan culinary
-                    techniques and recipes.
+                    <strong>Craft Documentation:</strong> Recording and preserving knowledge about endangered
+                    traditional crafts and techniques through interviews with master artisans and practical
+                    demonstrations.
                   </li>
                   <li>
-                    <strong>Exhibitions:</strong> Showcasing artifacts, photographs, and artworks related to Marrakech's
-                    heritage.
+                    <strong>Oral History Collection:</strong> Gathering stories, memories, and traditions from elder
+                    community members to preserve intangible cultural heritage.
                   </li>
                   <li>
-                    <strong>Sensory Tours:</strong> Unique experiences engaging all senses to appreciate the cultural
-                    heritage of Marrakech.
+                    <strong>Educational Workshops:</strong> Hands-on learning experiences focused on traditional skills,
+                    from architectural techniques to artistic practices.
                   </li>
                   <li>
-                    <strong>Cultural Performances:</strong> Traditional music, dance, and storytelling that bring the
-                    city's heritage to life.
+                    <strong>Digital Documentation:</strong> Creating accessible digital archives of Marrakech's hidden
+                    heritage through photography, video, and interactive media.
                   </li>
                 </ul>
-                <h3 className="text-xl font-bold mt-8 mb-4">{t("heritage_days_impact")}</h3>
-                <p>
-                  The Journées du Patrimoine de Marrakech has become a significant cultural event in the city's
-                  calendar, attracting hundreds of participants each year. By making heritage accessible and engaging,
-                  the event helps to:
-                </p>
+                <h3 className="text-xl font-bold mt-8 mb-4">{t("focus_areas")}</h3>
+                <p>The initiative explores several key dimensions of Marrakech's hidden heritage:</p>
                 <ul>
-                  <li>Raise awareness about the importance of preserving cultural heritage</li>
-                  <li>Educate younger generations about their cultural roots</li>
-                  <li>Promote sustainable cultural tourism</li>
-                  <li>Support local artisans and cultural practitioners</li>
-                  <li>Foster community pride and identity</li>
+                  <li>
+                    <strong>Architectural Heritage:</strong> Lesser-known historical buildings, traditional construction
+                    techniques, and unique architectural elements.
+                  </li>
+                  <li>
+                    <strong>Craft Traditions:</strong> Endangered crafts, specialized techniques, and the stories of
+                    artisans who maintain these traditions.
+                  </li>
+                  <li>
+                    <strong>Cultural Practices:</strong> Seasonal celebrations, community traditions, culinary heritage,
+                    and other intangible cultural elements.
+                  </li>
+                  <li>
+                    <strong>Historical Narratives:</strong> Untold stories from Marrakech's past, highlighting diverse
+                    perspectives and experiences throughout the city's history.
+                  </li>
+                  <li>
+                    <strong>Natural Heritage:</strong> Traditional gardens, water systems, and the relationship between
+                    the built environment and natural elements.
+                  </li>
                 </ul>
                 <p>
-                  The third edition is already being planned for 2025, indicating the event's ongoing significance and
-                  success in promoting Marrakech's cultural heritage.
+                  Through this multifaceted approach, "Unveiling Marrakech's Hidden Treasures" contributes to a more
+                  comprehensive understanding and appreciation of the city's cultural landscape, ensuring that even its
+                  less visible heritage elements are recognized, celebrated, and preserved for future generations.
                 </p>
               </div>
             </div>
@@ -122,24 +137,32 @@ export default function HeritageProjectPage() {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="relative h-40 rounded overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1539020140153-e8c237112e31?q=80&w=1974&auto=format&fit=crop"
-                    alt="Heritage Days event"
+                    src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1974&auto=format&fit=crop"
+                    alt="Hidden courtyard"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative h-40 rounded overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1539037897686-32d6b95d6f6e?q=80&w=1974&auto=format&fit=crop"
-                    alt="Guided tour"
+                    src="https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1974&auto=format&fit=crop"
+                    alt="Traditional craft demonstration"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative h-40 rounded overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?q=80&w=1974&auto=format&fit=crop"
-                    alt="Traditional crafts workshop"
+                    src="https://images.unsplash.com/photo-1585670210693-e7fdd16b142e?q=80&w=1974&auto=format&fit=crop"
+                    alt="Architectural detail"
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative h-40 rounded overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1560930950-5cc20e80e392?q=80&w=1974&auto=format&fit=crop"
+                    alt="Hidden garden"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -154,16 +177,8 @@ export default function HeritageProjectPage() {
                 </div>
                 <div className="relative h-40 rounded overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1531761535209-180857e963b9?q=80&w=1974&auto=format&fit=crop"
-                    alt="Exhibition display"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="relative h-40 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1565689478170-7c200beb5d17?q=80&w=1974&auto=format&fit=crop"
-                    alt="Cooking class"
+                    src="https://images.unsplash.com/photo-1551184451-76b762941ad6?q=80&w=1974&auto=format&fit=crop"
+                    alt="Oral history interview"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -180,44 +195,44 @@ export default function HeritageProjectPage() {
                 <li className="flex items-start">
                   <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
-                    <p className="font-medium">{t("date")}</p>
-                    <p className="text-gray-600">May 23-26, 2024 (2nd Edition)</p>
-                    <p className="text-gray-600">2025 (Upcoming 3rd Edition)</p>
+                    <p className="font-medium">{t("schedule")}</p>
+                    <p className="text-gray-600">Ongoing program with various activities throughout the year</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
                     <p className="font-medium">{t("location")}</p>
-                    <p className="text-gray-600">Various locations across Marrakech</p>
+                    <p className="text-gray-600">Various locations across Marrakech, focusing on lesser-known sites</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <Users className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
                     <p className="font-medium">{t("participants_to_date")}</p>
-                    <p className="text-gray-600">250+ participants per edition</p>
+                    <p className="text-gray-600">120+ participants across various program activities</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <Target className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
-                    <p className="font-medium">{t("goals")}</p>
+                    <p className="font-medium">{t("key_initiatives")}</p>
                     <ul className="text-gray-600 list-disc ml-4">
-                      <li>Highlight Marrakech's rich heritage</li>
-                      <li>Make cultural sites accessible to all</li>
-                      <li>Educate through interactive experiences</li>
-                      <li>Preserve traditional knowledge</li>
+                      <li>Hidden Heritage Tours</li>
+                      <li>Craft Documentation</li>
+                      <li>Oral History Collection</li>
+                      <li>Educational Workshops</li>
+                      <li>Digital Documentation</li>
                     </ul>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <Award className="h-5 w-5 text-primary mr-3 mt-0.5" />
                   <div>
-                    <p className="font-medium">{t("significance")}</p>
+                    <p className="font-medium">{t("impact")}</p>
                     <p className="text-gray-600">
-                      A flagship event in Marrakech's cultural calendar, recognized in tourism guides and local media
-                      for its contribution to heritage awareness.
+                      Creating awareness of lesser-known heritage sites, documenting endangered crafts and traditions,
+                      and building a comprehensive digital archive of Marrakech's cultural heritage.
                     </p>
                   </div>
                 </li>
@@ -227,8 +242,8 @@ export default function HeritageProjectPage() {
             <div className="bg-primary/10 p-6 shadow-md">
               <h3 className="text-xl font-bold mb-4 font-tomato">{t("register_event")}</h3>
               <p className="text-gray-700 mb-6">
-                Join us for the upcoming 3rd edition of the Journées du Patrimoine de Marrakech in 2025. Registration
-                will open closer to the event date.
+                Join our upcoming events and activities to discover Marrakech's hidden treasures. Contact us to learn
+                about our schedule and register for upcoming tours and workshops.
               </p>
               <Link href="/contact">
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white">{t("contact_us")}</Button>

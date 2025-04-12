@@ -52,7 +52,7 @@ export const translations = {
     projects_title: "Heritage Horizons: Unveiling Marrakech's Hidden Treasures",
     projects_description:
       "Unveiling Marrakech's Hidden Treasures is an immersive and enlightening series of events organized by Turâth, dedicated to exploring the rich heritage of Marrakech and bringing attention to its often overlooked gems. Join us on an exciting journey of discovery as we delve into the depths of the city's history, architecture, craftsmanship, and cultural traditions.",
-    project1_title: "MARRAKECH HERITAGE DAYS",
+    project1_title: "JOURNÉES DU PATRIMOINE DE MARRAKECH",
     project1_description:
       "A week-long celebration featuring guided tours of historical sites, workshops on traditional crafts, and cultural performances that showcase the rich heritage of Marrakech.",
     project2_title: "TRADITIONAL CRAFTSMANSHIP WORKSHOPS",
@@ -61,6 +61,12 @@ export const translations = {
     project3_title: "ARCHITECTURAL PRESERVATION INITIATIVES",
     project3_description:
       "Collaborative projects focused on documenting, restoring, and preserving the unique architectural elements of Marrakech's historical buildings and neighborhoods.",
+    project4_title: "POST-EARTHQUAKE RECONSTRUCTION AND HERITAGE PRESERVATION",
+    project4_description:
+      "Following the devastating earthquake in Al Haouz on September 8, 2023, Turath mobilized architects, engineers, and specialists to support reconstruction efforts. Their focus was on assessing damages and securing heritage sites, particularly the Tinmel mosque, which was completely destroyed.",
+    project5_title: "UNVEILING MARRAKECH'S HIDDEN TREASURES",
+    project5_description:
+      "An immersive and enlightening series of events dedicated to exploring Marrakech's often overlooked heritage gems. This initiative focuses on the city's rich history, unique architecture, traditional craftsmanship, and diverse cultural traditions through various ongoing activities and educational programs.",
     view_all_projects: "View All Projects",
     learn_more: "Learn More",
     participants: "Participants",
@@ -82,7 +88,7 @@ export const translations = {
       "Soad Belkeziz is the founding president of Turâth. With a passion for Moroccan heritage and over 15 years of experience in cultural preservation, she leads the organization's mission to safeguard the rich cultural legacy of Marrakech.",
     about_president: "About the President",
     meet_full_board: "Meet the full board",
-    visit_about_page: "Visit our About page to learn more about each member.",
+    visit_about_page: "Visit our Volunteer page to learn more about each member.",
 
     // Stats Section
     volunteers: "Volunteers",
@@ -415,6 +421,31 @@ export const translations = {
     become_partner_description:
       "Join us in our mission to preserve and promote the rich cultural heritage of Marrakech for future generations.",
     contact_partnerships: "Contact our Partnerships Team",
+
+    heritage_days_title: "Journées du Patrimoine de Marrakech",
+    heritage_days_description:
+      "An annual celebration showcasing the rich cultural heritage of Marrakech through guided tours, workshops, exhibitions, and cultural performances.",
+    heritage_days_about:
+      "The Journées du Patrimoine de Marrakech (Heritage Days of Marrakech) is an annual event aimed at highlighting Marrakech's rich patrimonial heritage. The second edition occurred from May 23 to 26, 2024, featuring a diverse program of cultural activities.",
+    heritage_days_activities: "Activities",
+    heritage_days_impact: "Impact",
+
+    earthquake_reconstruction_title: "Post-Earthquake Reconstruction and Heritage Preservation",
+    earthquake_reconstruction_description:
+      "Mobilizing expertise to assess, secure, and restore heritage sites damaged by the devastating Al Haouz earthquake of September 2023.",
+    earthquake_reconstruction_about:
+      "Following the devastating earthquake in Al Haouz on September 8, 2023, Turath played a crucial role in mobilizing architects, engineers, and heritage specialists to support reconstruction efforts. This emergency response initiative focused on assessing damages and securing heritage sites that were severely impacted by the natural disaster.",
+    earthquake_activities: "Key Activities",
+    tinmel_mosque: "Tinmel Mosque Restoration",
+    collaborative_approach: "Collaborative Approach",
+
+    hidden_treasures_title: "Unveiling Marrakech's Hidden Treasures",
+    hidden_treasures_description:
+      "An immersive and enlightening series of events dedicated to exploring Marrakech's often overlooked heritage gems.",
+    hidden_treasures_about:
+      "\"Unveiling Marrakech's Hidden Treasures\" is an immersive and enlightening series of events dedicated to exploring Marrakech's often overlooked heritage gems. This initiative focuses on the city's rich history, unique architecture, traditional craftsmanship, and diverse cultural traditions.",
+    program_components: "Program Components",
+    focus_areas: "Focus Areas",
   },
   fr: {
     // Header
@@ -478,6 +509,12 @@ export const translations = {
     project3_title: "INITIATIVES DE PRÉSERVATION ARCHITECTURALE",
     project3_description:
       "Des projets collaboratifs axés sur la documentation, la restauration et la préservation des éléments architecturaux uniques des bâtiments et quartiers historiques de Marrakech.",
+    project4_title: "RECONSTRUCTION POST-SÉISME ET PRÉSERVATION DU PATRIMOINE",
+    project4_description:
+      "Suite au séisme dévastateur d'Al Haouz le 8 septembre 2023, Turâth a mobilisé architectes, ingénieurs et spécialistes pour soutenir les efforts de reconstruction. Leur objectif était d'évaluer les dommages et de sécuriser les sites patrimoniaux, notamment la mosquée de Tinmel, qui a été complètement détruite.",
+    project5_title: "DÉVOILER LES TRÉSORS CACHÉS DE MARRAKECH",
+    project5_description:
+      "Une série d'événements immersifs et éclairants dédiés à l'exploration des joyaux patrimoniaux souvent négligés de Marrakech. Cette initiative se concentre sur la riche histoire de la ville, son architecture unique, son artisanat traditionnel et ses diverses traditions culturelles à travers diverses activités continues et programmes éducatifs.",
     view_all_projects: "Voir Tous les Projets",
     learn_more: "En Savoir Plus",
     participants: "Participants",
@@ -842,7 +879,30 @@ export const translations = {
       "Rejoignez-nous dans notre mission de préservation et de promotion du riche patrimoine culturel de Marrakech pour les générations futures.",
     contact_partnerships: "Contactez notre Équipe de Partenariats",
 
-    // Add these translations to the Arabic section
+    heritage_days_title: "Journées du Patrimoine de Marrakech",
+    heritage_days_description:
+      "Une célébration annuelle mettant en valeur le riche patrimoine culturel de Marrakech à travers des visites guidées, des ateliers, des expositions et des performances culturelles.",
+    heritage_days_about:
+      "Les Journées du Patrimoine de Marrakech sont un événement annuel visant à mettre en lumière le riche patrimoine de Marrakech. La deuxième édition s'est déroulée du 23 au 26 mai 2024, proposant un programme diversifié d'activités culturelles.",
+    heritage_days_activities: "Activités",
+    heritage_days_impact: "Impact",
+
+    earthquake_reconstruction_title: "Reconstruction Post-Séisme et Préservation du Patrimoine",
+    earthquake_reconstruction_description:
+      "Mobilisation d'expertise pour évaluer, sécuriser et restaurer les sites patrimoniaux endommagés par le séisme dévastateur d'Al Haouz de septembre 2023.",
+    earthquake_reconstruction_about:
+      "Suite au séisme dévastateur d'Al Haouz le 8 septembre 2023, Turâth a joué un rôle crucial en mobilisant architectes, ingénieurs et spécialistes du patrimoine pour soutenir les efforts de reconstruction. Cette initiative d'urgence s'est concentrée sur l'évaluation des dommages et la sécurisation des sites patrimoniaux gravement touchés par la catastrophe naturelle.",
+    earthquake_activities: "Activités Principales",
+    tinmel_mosque: "Restauration de la Mosquée de Tinmel",
+    collaborative_approach: "Approche Collaborative",
+
+    hidden_treasures_title: "Dévoiler les Trésors Cachés de Marrakech",
+    hidden_treasures_description:
+      "Une série d'événements immersifs et éclairants dédiés à l'exploration des joyaux patrimoniaux souvent négligés de Marrakech.",
+    hidden_treasures_about:
+      "\"Dévoiler les Trésors Cachés de Marrakech\" est une série d'événements immersifs et éclairants dédiés à l'exploration des joyaux patrimoniaux souvent négligés de Marrakech. Cette initiative se concentre sur la riche histoire de la ville, son architecture unique, son artisanat traditionnel et ses diverses traditions culturelles.",
+    program_components: "Composantes du Programme",
+    focus_areas: "Domaines d'Intérêt",
   },
   ar: {
     // Header
@@ -904,6 +964,12 @@ export const translations = {
     project3_title: "مبادرات الحفاظ على العمارة",
     project3_description:
       "مشاريع تعاونية تركز على توثيق وترميم والحفاظ على العناصر المعمارية الفريدة للمباني والأحياء التاريخية في مراكش.",
+    project4_title: "إعادة الإعمار بعد الزلزال والحفاظ على التراث",
+    project4_description:
+      "بعد الزلزال المدمر في الحوز في 8 سبتمبر 2023، قامت تراث بتعبئة المهندسين المعماريين والمهندسين والمتخصصين لدعم جهود إعادة الإعمار. كان تركيزهم على تقييم الأضرار وتأمين المواقع التراثية، وخاصة مسجد تينمل، الذي دمر بالكامل.",
+    project5_title: "الكشف عن كنوز مراكش الخفية",
+    project5_description:
+      "سلسلة من الفعاليات الغامرة والمنيرة المخصصة لاستكشاف جواهر التراث التي غالبًا ما يتم تجاهلها في مراكش. تركز هذه المبادرة على التاريخ الغني للمدينة، وهندستها المعمارية الفريدة، وحرفها التقليدية، وتقاليدها الثقافية المتنوعة من خلال أنشطة مستمرة مختلفة وبرامج تعليمية.",
     view_all_projects: "عرض جميع المشاريع",
     learn_more: "اعرف المزيد",
     participants: "مشاركون",
@@ -936,7 +1002,7 @@ export const translations = {
     // Footer
     our_vision: "رؤيتنا",
     vision_text:
-      "نتطلع إلى مستقبل يكون فيه كل مواطن على دراية بثراء تراثه الثقافي. نهدف إلى إنشا�� مجتمع منخرط بعمق في الحفاظ على القيم الثقافية لماضينا وضمان استمراريتها في المستقبل.",
+      "نتطلع إلى مستقبل يكون فيه كل مواطن على دراية بثراء تراثه الثقافي. نهدف إلى إنشاء مجتمع منخرط بعمق في الحفاظ على القيم الثقافية لماضينا وضمان استمراريتها في المستقبل.",
     social_icons: "تابعنا",
     useful_links: "روابط مفيدة",
     introduction: "مقدمة",
@@ -1235,5 +1301,30 @@ export const translations = {
     become_partner_cta: "كن شريكًا اليوم",
     become_partner_description: "انضم إلينا في مهمتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه للأجيال القادمة.",
     contact_partnerships: "اتصل بفريق الشراكات لدينا",
+
+    heritage_days_title: "أيام التراث بمراكش",
+    heritage_days_description:
+      "احتفال سنوي يعرض التراث الثقافي الغني لمراكش من خلال جولات مرشدة وورش عمل ومعارض وعروض ثقافية.",
+    heritage_days_about:
+      "أيام التراث بمراكش هي فعالية سنوية تهدف إلى إبراز التراث الغني لمراكش. أقيمت النسخة الثانية من 23 إلى 26 مايو 2024، وتضمنت برنامجًا متنوعًا من الأنشطة الثقافية.",
+    heritage_days_activities: "الأنشطة",
+    heritage_days_impact: "التأثير",
+
+    earthquake_reconstruction_title: "إعادة الإعمار بعد الزلزال والحفاظ على التراث",
+    earthquake_reconstruction_description:
+      "تعبئة الخبرات لتقييم وتأمين وترميم المواقع التراثية المتضررة من زلزال الحوز المدمر في سبتمبر 2023.",
+    earthquake_reconstruction_about:
+      "بعد الزلزال المدمر في الحوز في 8 سبتمبر 2023، لعبت تراث دورًا حاسمًا في تعبئة المهندسين المعماريين والمهندسين ومتخصصي التراث لدعم جهود إعادة الإعمار. ركزت هذه المبادرة الطارئة على تقييم الأضرار وتأمين المواقع التراثية التي تأثرت بشدة بالكارثة الطبيعية.",
+    earthquake_activities: "الأنشطة الرئيسية",
+    tinmel_mosque: "ترميم مسجد تينمل",
+    collaborative_approach: "نهج تعاوني",
+
+    hidden_treasures_title: "الكشف عن كنوز مراكش الخفية",
+    hidden_treasures_description:
+      "سلسلة من الفعاليات الغامرة والمنيرة المخصصة لاستكشاف جواهر التراث التي غالبًا ما يتم تجاهلها في مراكش.",
+    hidden_treasures_about:
+      '"الكشف عن كنوز مراكش الخفية" هي سلسلة من الفعاليات الغامرة والمنيرة المخصصة لاستكشاف جواهر التراث التي غالبًا ما يتم تجاهلها في مراكش. تركز هذه المبادرة على التاريخ الغني للمدينة، وهندستها المعمارية الفريدة، وحرفها التقليدية، وتقاليدها الثقافية المتنوعة.',
+    program_components: "مكونات البرنامج",
+    focus_areas: "مجالات التركيز",
   },
 }

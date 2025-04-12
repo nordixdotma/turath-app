@@ -22,33 +22,55 @@ export default function ProjectsPage() {
   const projects = [
     {
       id: "heritage-days",
-      title: "MARRAKECH HERITAGE DAYS",
-      description:
-        "A week-long celebration featuring guided tours of historical sites, workshops on traditional crafts, and cultural performances that showcase the rich heritage of Marrakech.",
+      title: t("project1_title"),
+      description: t("project1_description"),
       image:
         "https://images.unsplash.com/photo-1724762511996-8daf138c0a30?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "event",
       participants: 250,
+      date: "May 23-26, 2024 (2nd Edition)",
+      nextEdition: "2025 (3rd Edition)",
     },
     {
       id: "craftsmanship-workshops",
-      title: "TRADITIONAL CRAFTSMANSHIP WORKSHOPS",
-      description:
-        "Hands-on workshops led by master artisans, teaching traditional Moroccan crafts such as pottery, weaving, and woodworking to preserve these ancient skills for future generations.",
+      title: t("project2_title"),
+      description: t("project2_description"),
       image:
         "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "workshop",
-      participants: 120,
+      participants: 150,
+      date: "Ongoing",
     },
     {
       id: "architectural-preservation",
-      title: "ARCHITECTURAL PRESERVATION INITIATIVES",
-      description:
-        "Collaborative projects focused on documenting, restoring, and preserving the unique architectural elements of Marrakech's historical buildings and neighborhoods.",
+      title: t("project3_title"),
+      description: t("project3_description"),
       image:
         "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      type: "preservation",
+      participants: 200,
+      date: "Ongoing",
+    },
+    {
+      id: "post-earthquake-reconstruction",
+      title: t("project4_title"),
+      description: t("project4_description"),
+      image:
+        "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "restoration",
       participants: 85,
+      date: "September 2023 - Ongoing",
+      focus: "Tinmel Mosque Restoration",
+    },
+    {
+      id: "unveiling-hidden-treasures",
+      title: t("project5_title"),
+      description: t("project5_description"),
+      image:
+        "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      type: "ongoing",
+      participants: 120,
+      format: "Periodic Events & Programs",
     },
   ]
 
@@ -82,7 +104,7 @@ export default function ProjectsPage() {
                 <span className="text-xs font-medium text-white">{t("our_initiatives")}</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
-                Heritage Horizons: Unveiling Marrakech's Hidden Treasures
+                {t("projects_title")}
               </h1>
               <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("projects_hero_description")}</p>
             </div>
@@ -126,12 +148,40 @@ export default function ProjectsPage() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 font-tomato">{project.title}</h3>
                   <p className="text-gray-700 mb-6 font-tomato">{project.description}</p>
 
-                  <div className="flex items-center mb-6">
-                    <div className="bg-primary/10 px-3 py-1 rounded-full">
-                      <span className="text-sm font-medium text-primary font-tomato">
-                        {project.participants} Participants
-                      </span>
-                    </div>
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    {project.participants && (
+                      <div className="bg-primary/10 px-3 py-1 rounded-full">
+                        <span className="text-sm font-medium text-primary font-tomato">
+                          {project.participants} Participants
+                        </span>
+                      </div>
+                    )}
+
+                    {project.date && (
+                      <div className="bg-primary/10 px-3 py-1 rounded-full">
+                        <span className="text-sm font-medium text-primary font-tomato">{project.date}</span>
+                      </div>
+                    )}
+
+                    {project.nextEdition && (
+                      <div className="bg-primary/10 px-3 py-1 rounded-full">
+                        <span className="text-sm font-medium text-primary font-tomato">
+                          Next: {project.nextEdition}
+                        </span>
+                      </div>
+                    )}
+
+                    {project.focus && (
+                      <div className="bg-primary/10 px-3 py-1 rounded-full">
+                        <span className="text-sm font-medium text-primary font-tomato">{project.focus}</span>
+                      </div>
+                    )}
+
+                    {project.format && (
+                      <div className="bg-primary/10 px-3 py-1 rounded-full">
+                        <span className="text-sm font-medium text-primary font-tomato">{project.format}</span>
+                      </div>
+                    )}
                   </div>
 
                   <Link href={`/projects/${project.id}`}>
@@ -152,4 +202,3 @@ export default function ProjectsPage() {
     </div>
   )
 }
-
