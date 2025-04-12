@@ -115,7 +115,7 @@ export const translations = {
     // Location Section
     location_title: "Our Presence",
     location_description:
-      "Based in the heart of Marrakech, Turâth focuses its efforts on preserving and promoting the cultural heritage of this historic city. Our initiatives and projects are centered in Marrakech, working closely with local communities to safeguard their rich cultural legacy.",
+      "Turâth is dedicated to preserving and promoting the cultural heritage of Morocco. Our initiatives and projects span across the country, working closely with local communities to safeguard their rich cultural legacy.",
 
     // Image Alt Texts
     logo_alt: "Turâth Logo",
@@ -280,6 +280,141 @@ export const translations = {
     key_initiatives: "Key Initiatives",
     timeline: "Timeline",
     contributors: "Contributors",
+
+    // New volunteer dropdown menu items
+    notre_bureau: "Our Board",
+    devenir_membre: "Become a Member",
+    devenir_volontaire: "Become a Volunteer",
+
+    // Add new translation keys for the Devenir Membre and Devenir Volontaire pages
+    become_member_description:
+      "Join our community of heritage enthusiasts and contribute to preserving Marrakech's rich cultural legacy.",
+    membership_benefits: "Membership Benefits",
+    membership_benefits_description:
+      "Becoming a member of Turâth Association offers numerous advantages and opportunities to engage with Marrakech's cultural heritage.",
+    benefit_events_title: "Exclusive Events",
+    benefit_events_description:
+      "Access to members-only events, exhibitions, and cultural activities throughout the year.",
+    benefit_networking_title: "Networking Opportunities",
+    benefit_networking_description:
+      "Connect with like-minded individuals passionate about preserving Marrakech's cultural heritage.",
+    benefit_updates_title: "Regular Updates",
+    benefit_updates_description:
+      "Receive newsletters and updates about our projects, achievements, and upcoming initiatives.",
+    benefit_voting_title: "Voting Rights",
+    benefit_voting_description: "Participate in the association's general assemblies and have a say in key decisions.",
+    membership_fee: 'Annual membership fee: <span class="font-bold">300 MAD</span> (Reduced fee for students: 150 MAD)',
+    apply_membership: "Apply for Membership",
+    apply_membership_description:
+      "Fill out the form below to apply for membership. Our team will review your application and contact you shortly.",
+    profession: "Profession",
+    why_join_turath: "Why do you want to join Turâth?",
+    membership_type: "Membership Type",
+    regular_membership: "Regular (300 MAD)",
+    student_membership: "Student (150 MAD)",
+    processing: "Processing...",
+    submit_application: "Submit Application",
+    form_error: "An error occurred. Please try again later.",
+    membership_form_success: "Thank you for your application! We will contact you shortly.",
+
+    become_volunteer_description:
+      "Share your skills and passion to help preserve and promote the rich cultural heritage of Marrakech.",
+    volunteer_opportunities: "Volunteer Opportunities",
+    volunteer_opportunities_description:
+      "Discover the various ways you can contribute to Turâth's mission and make a meaningful impact on preserving Marrakech's cultural heritage.",
+    opportunity_event_title: "Event Support",
+    opportunity_event_description:
+      "Help organize and run cultural events, exhibitions, and workshops throughout the year.",
+    opportunity_event_commitment: "Flexible, event-based",
+    opportunity_research_title: "Research & Documentation",
+    opportunity_research_description:
+      "Assist in documenting historical sites, traditional crafts, and cultural practices.",
+    opportunity_research_commitment: "5-10 hours per week",
+    opportunity_outreach_title: "Community Outreach",
+    opportunity_outreach_description: "Engage with local communities to raise awareness about heritage preservation.",
+    opportunity_outreach_commitment: "3-5 hours per week",
+    opportunity_admin_title: "Administrative Support",
+    opportunity_admin_description: "Help with day-to-day operations, communications, and project management.",
+    opportunity_admin_commitment: "Flexible, 2-8 hours per week",
+    time_commitment: "Time commitment",
+    volunteer_benefits_note:
+      "All volunteers receive training, support, and recognition for their valuable contributions.",
+    apply_volunteer: "Apply to Volunteer",
+    apply_volunteer_description:
+      "Fill out the form below to express your interest in volunteering with Turâth. Our team will review your application and contact you to discuss opportunities that match your skills and interests.",
+    skills_experience: "Skills & Experience",
+    areas_of_interest: "Areas of Interest",
+    availability: "Availability",
+    why_volunteer_turath: "Why do you want to volunteer with Turâth?",
+    volunteer_form_success: "Thank you for your interest in volunteering! We will contact you shortly.",
+
+    partners: "Partners",
+    partners_title: "Partner With Turâth",
+    partners_subtitle: "Support our mission to preserve and promote Marrakech's cultural heritage",
+    partnership_types: "Partnership Types",
+    partnership_types_description: "Discover the different ways you can partner with Turâth and make a lasting impact",
+    monthly_partner: "Monthly Partner",
+    monthly_partner_description:
+      "Provide ongoing support through monthly contributions that help fund our regular activities and operations.",
+    annual_partner: "Annual Partner",
+    annual_partner_description:
+      "Make a significant impact with an annual partnership that supports our long-term preservation projects.",
+    event_sponsor: "Event Sponsor",
+    event_sponsor_description:
+      "Sponsor specific events, workshops, or exhibitions to help us share Marrakech's cultural heritage with wider audiences.",
+    project_sponsor: "Project Sponsor",
+    project_sponsor_description:
+      "Fund specific preservation or documentation projects that align with your organization's values and interests.",
+    in_kind_partner: "In-Kind Partner",
+    in_kind_partner_description: "Provide goods, services, or expertise that support our mission and operations.",
+    partnership_benefits: "Partnership Benefits",
+    partnership_benefits_description:
+      "Our partners receive recognition, visibility, and the satisfaction of making a meaningful contribution to cultural preservation",
+    benefit_visibility_title: "Brand Visibility",
+    benefit_visibility_description: "Your logo and name featured on our website, publications, and at relevant events.",
+    benefit_impact_title: "Measurable Impact",
+    benefit_impact_description:
+      "Regular updates on how your support is making a difference in preserving Marrakech's heritage.",
+    benefit_network_title: "Networking Opportunities",
+    benefit_network_description: "Connect with other organizations and individuals passionate about cultural heritage.",
+    benefit_events_access_title: "VIP Access",
+    benefit_events_access_description:
+      "Special access to events, exhibitions, and exclusive behind-the-scenes experiences.",
+    support_events: "Support Our Events",
+    support_events_description:
+      "Help us organize impactful cultural events that raise awareness about Marrakech's rich heritage",
+    upcoming_events: "Upcoming Events",
+    event_heritage_days: "Marrakech Heritage Days 2024",
+    event_heritage_days_date: "October 15-22, 2024",
+    event_heritage_days_description:
+      "A week-long celebration featuring guided tours, workshops, and performances showcasing Marrakech's cultural heritage.",
+    event_crafts_exhibition: "Traditional Crafts Exhibition",
+    event_crafts_exhibition_date: "December 5-10, 2024",
+    event_crafts_exhibition_description:
+      "An exhibition highlighting the work of master artisans and the importance of preserving traditional craftsmanship.",
+    event_architectural_symposium: "Architectural Heritage Symposium",
+    event_architectural_symposium_date: "February 18-20, 2025",
+    event_architectural_symposium_description:
+      "A gathering of experts to discuss challenges and solutions in architectural preservation.",
+    make_donation: "Make a Donation",
+    make_donation_description:
+      "Your contribution, no matter the size, helps us continue our work in preserving Marrakech's cultural heritage",
+    donation_options: "Donation Options",
+    one_time_donation: "One-time Donation",
+    recurring_donation: "Recurring Donation",
+    donation_amount: "Donation Amount",
+    custom_amount: "Custom Amount",
+    donor_information: "Donor Information",
+    payment_information: "Payment Information",
+    card_number: "Card Number",
+    expiration_date: "Expiration Date",
+    cvv: "CVV",
+    donate_button: "Donate Now",
+    donation_success: "Thank you for your donation! Your support helps us preserve Marrakech's cultural heritage.",
+    become_partner_cta: "Become a Partner Today",
+    become_partner_description:
+      "Join us in our mission to preserve and promote the rich cultural heritage of Marrakech for future generations.",
+    contact_partnerships: "Contact our Partnerships Team",
   },
   fr: {
     // Header
@@ -397,7 +532,7 @@ export const translations = {
     // Location Section
     location_title: "Notre Présence",
     location_description:
-      "Basée au cœur de Marrakech, Turâth concentre ses efforts sur la préservation et la promotion du patrimoine culturel de cette ville historique. Nos initiatives et projets sont centrés à Marrakech, travaillant en étroite collaboration avec les communautés locales pour préserver leur riche héritage culturel.",
+      "Turâth est dédié à la préservation et à la promotion du patrimoine culturel du Maroc. Nos initiatives et projets s'étendent à travers tout le pays, travaillant en étroite collaboration avec les communautés locales pour préserver leur riche héritage culturel.",
 
     // Image Alt Texts
     logo_alt: "Logo Turâth",
@@ -446,7 +581,7 @@ export const translations = {
       "Initier et encourager des actions de préservation, de valorisation, de restauration ou de réhabilitation sur des sites spécifiques.",
     objective_3_title: "Recherche / Diffusion",
     objective_3_description:
-      "Mener ou participer à des recherches et analyses pour construire et renforcer les connaissances sur le patrimoine. Agir pour promouvoir la diffusion et la vulgarisation des sujets liés au patrimoine et à sa valorisation (études, rapports, publications...).",
+      "Mener ou participer à des recherches et analyses pour construire et renforcer les connaissances sur le patrimoine. Agir pour promouvoir la diffusion et la vulgarisation des sujets liés au patrimoine et à sa valorisation (études, rapports, publications…).",
     objective_4_title: "Promotion du Patrimoine",
     objective_4_description:
       "Toute autre action qui contribue à la valorisation du patrimoine matériel et immatériel de Marrakech et de sa région.",
@@ -564,6 +699,150 @@ export const translations = {
     key_initiatives: "Initiatives Clés",
     timeline: "Chronologie",
     contributors: "Contributeurs",
+
+    // New volunteer dropdown menu items
+    notre_bureau: "Notre Bureau",
+    devenir_membre: "Devenir Membre",
+    devenir_volontaire: "Devenir Volontaire",
+
+    // Add new translation keys for the Devenir Membre and Devenir Volontaire pages
+    become_member_description:
+      "Rejoignez notre communauté de passionnés du patrimoine et contribuez à préserver le riche héritage culturel de Marrakech.",
+    membership_benefits: "Avantages de l'Adhésion",
+    membership_benefits_description:
+      "Devenir membre de l'Association Turâth offre de nombreux avantages et opportunités pour s'engager avec le patrimoine culturel de Marrakech.",
+    benefit_events_title: "Événements Exclusifs",
+    benefit_events_description:
+      "Accès à des événements, expositions et activités culturelles réservés aux membres tout au long de l'année.",
+    benefit_networking_title: "Opportunités de Réseautage",
+    benefit_networking_description:
+      "Connectez-vous avec des personnes partageant les mêmes idées et passionnées par la préservation du patrimoine culturel de Marrakech.",
+    benefit_updates_title: "Mises à Jour Régulières",
+    benefit_updates_description:
+      "Recevez des newsletters et des mises à jour sur nos projets, réalisations et initiatives à venir.",
+    benefit_voting_title: "Droits de Vote",
+    benefit_voting_description:
+      "Participez aux assemblées générales de l'association et ayez votre mot à dire dans les décisions clés.",
+    membership_fee:
+      'Cotisation annuelle : <span class="font-bold">300 MAD</span> (Tarif réduit pour les étudiants : 150 MAD)',
+    apply_membership: "Demande d'Adhésion",
+    apply_membership_description:
+      "Remplissez le formulaire ci-dessous pour demander votre adhésion. Notre équipe examinera votre candidature et vous contactera prochainement.",
+    profession: "Profession",
+    why_join_turath: "Pourquoi souhaitez-vous rejoindre Turâth ?",
+    membership_type: "Type d'Adhésion",
+    regular_membership: "Régulière (300 MAD)",
+    student_membership: "Étudiant (150 MAD)",
+    processing: "Traitement en cours...",
+    submit_application: "Soumettre la Demande",
+    form_error: "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    membership_form_success: "Merci pour votre candidature ! Nous vous contacterons prochainement.",
+
+    become_volunteer_description:
+      "Partagez vos compétences et votre passion pour aider à préserver et promouvoir le riche patrimoine culturel de Marrakech.",
+    volunteer_opportunities: "Opportunités de Bénévolat",
+    volunteer_opportunities_description:
+      "Découvrez les différentes façons dont vous pouvez contribuer à la mission de Turâth et avoir un impact significatif sur la préservation du patrimoine culturel de Marrakech.",
+    opportunity_event_title: "Soutien aux Événements",
+    opportunity_event_description:
+      "Aidez à organiser et à gérer des événements culturels, des expositions et des ateliers tout au long de l'année.",
+    opportunity_event_commitment: "Flexible, selon les événements",
+    opportunity_research_title: "Recherche et Documentation",
+    opportunity_research_description:
+      "Aidez à documenter les sites historiques, les artisanats traditionnels et les pratiques culturelles.",
+    opportunity_research_commitment: "5-10 heures par semaine",
+    opportunity_outreach_title: "Sensibilisation Communautaire",
+    opportunity_outreach_description:
+      "Engagez-vous auprès des communautés locales pour sensibiliser à la préservation du patrimoine.",
+    opportunity_outreach_commitment: "3-5 heures par semaine",
+    opportunity_admin_title: "Soutien Administratif",
+    opportunity_admin_description: "Aidez aux opérations quotidiennes, aux communications et à la gestion de projets.",
+    opportunity_admin_commitment: "Flexible, 2-8 heures par semaine",
+    time_commitment: "Engagement de temps",
+    volunteer_benefits_note:
+      "Tous les bénévoles reçoivent une formation, un soutien et une reconnaissance pour leurs précieuses contributions.",
+    apply_volunteer: "Postuler comme Bénévole",
+    apply_volunteer_description:
+      "Remplissez le formulaire ci-dessous pour exprimer votre intérêt à faire du bénévolat avec Turâth. Notre équipe examinera votre candidature et vous contactera pour discuter des opportunités qui correspondent à vos compétences et intérêts.",
+    skills_experience: "Compétences et Expérience",
+    areas_of_interest: "Domaines d'Intérêt",
+    availability: "Disponibilité",
+    why_volunteer_turath: "Pourquoi souhaitez-vous faire du bénévolat avec Turâth ?",
+    volunteer_form_success: "Merci pour votre intérêt à devenir bénévole ! Nous vous contacterons prochainement.",
+
+    partners: "Partenaires",
+    partners_title: "Devenez Partenaire de Turâth",
+    partners_subtitle: "Soutenez notre mission de préservation et de promotion du patrimoine culturel de Marrakech",
+    partnership_types: "Types de Partenariat",
+    partnership_types_description:
+      "Découvrez les différentes façons de devenir partenaire de Turâth et d'avoir un impact durable",
+    monthly_partner: "Partenaire Mensuel",
+    monthly_partner_description:
+      "Fournissez un soutien continu grâce à des contributions mensuelles qui aident à financer nos activités et opérations régulières.",
+    annual_partner: "Partenaire Annuel",
+    annual_partner_description:
+      "Ayez un impact significatif avec un partenariat annuel qui soutient nos projets de préservation à long terme.",
+    event_sponsor: "Sponsor d'Événement",
+    event_sponsor_description:
+      "Sponsorisez des événements, ateliers ou expositions spécifiques pour nous aider à partager le patrimoine culturel de Marrakech avec un public plus large.",
+    project_sponsor: "Sponsor de Projet",
+    project_sponsor_description:
+      "Financez des projets spécifiques de préservation ou de documentation qui correspondent aux valeurs et intérêts de votre organisation.",
+    in_kind_partner: "Partenaire en Nature",
+    in_kind_partner_description:
+      "Fournissez des biens, services ou expertise qui soutiennent notre mission et nos opérations.",
+    partnership_benefits: "Avantages du Partenariat",
+    partnership_benefits_description:
+      "Nos partenaires bénéficient de reconnaissance, de visibilité et de la satisfaction de contribuer de manière significative à la préservation culturelle",
+    benefit_visibility_title: "Visibilité de la Marque",
+    benefit_visibility_description:
+      "Votre logo et nom présentés sur notre site web, publications et lors d'événements pertinents.",
+    benefit_impact_title: "Impact Mesurable",
+    benefit_impact_description:
+      "Mises à jour régulières sur la façon dont votre soutien fait une différence dans la préservation du patrimoine de Marrakech.",
+    benefit_network_title: "Opportunités de Réseautage",
+    benefit_network_description:
+      "Connectez-vous avec d'autres organisations et individus passionnés par le patrimoine culturel.",
+    benefit_events_access_title: "Accès VIP",
+    benefit_events_access_description:
+      "Accès spécial aux événements, expositions et expériences exclusives en coulisses.",
+    support_events: "Soutenez Nos Événements",
+    support_events_description:
+      "Aidez-nous à organiser des événements culturels impactants qui sensibilisent au riche patrimoine de Marrakech",
+    upcoming_events: "Événements à Venir",
+    event_heritage_days: "Journées du Patrimoine de Marrakech 2024",
+    event_heritage_days_date: "15-22 octobre 2024",
+    event_heritage_days_description:
+      "Une célébration d'une semaine comprenant des visites guidées, des ateliers et des performances mettant en valeur le patrimoine culturel de Marrakech.",
+    event_crafts_exhibition: "Exposition des Métiers Traditionnels",
+    event_crafts_exhibition_date: "5-10 décembre 2024",
+    event_crafts_exhibition_description:
+      "Une exposition mettant en lumière le travail des maîtres artisans et l'importance de préserver l'artisanat traditionnel.",
+    event_architectural_symposium: "Symposium sur le Patrimoine Architectural",
+    event_architectural_symposium_date: "18-20 février 2025",
+    event_architectural_symposium_description:
+      "Un rassemblement d'experts pour discuter des défis et des solutions en matière de préservation architecturale.",
+    make_donation: "Faire un Don",
+    make_donation_description:
+      "Votre contribution, quelle que soit sa taille, nous aide à poursuivre notre travail de préservation du patrimoine culturel de Marrakech",
+    donation_options: "Options de Don",
+    one_time_donation: "Don Unique",
+    recurring_donation: "Don Récurrent",
+    donation_amount: "Montant du Don",
+    custom_amount: "Montant Personnalisé",
+    donor_information: "Informations du Donateur",
+    payment_information: "Informations de Paiement",
+    card_number: "Numéro de Carte",
+    expiration_date: "Date d'Expiration",
+    cvv: "CVV",
+    donate_button: "Faire un Don Maintenant",
+    donation_success: "Merci pour votre don ! Votre soutien nous aide à préserver le patrimoine culturel de Marrakech.",
+    become_partner_cta: "Devenez Partenaire Aujourd'hui",
+    become_partner_description:
+      "Rejoignez-nous dans notre mission de préservation et de promotion du riche patrimoine culturel de Marrakech pour les générations futures.",
+    contact_partnerships: "Contactez notre Équipe de Partenariats",
+
+    // Add these translations to the Arabic section
   },
   ar: {
     // Header
@@ -602,7 +881,7 @@ export const translations = {
     koutoubia_mosque_fact: "كانت صومعة الكتبية بمثابة نموذج لخيرالدا إشبيلية وبرج حسان في الرباط.",
     bahia_palace_title: "قصر الباهية",
     bahia_palace_year: "ستينيات القرن التاسع عشر",
-    bahia_palace_fact: "اسم 'الباهية' يعني 'البريق' باللغة العربية، وقد بُ��ي القصر ليكون أعظم قصر في عصره.",
+    bahia_palace_fact: "اسم 'الباهية' يعني 'البريق' باللغة العربية، وقد بُي القصر ليكون أعظم قصر في عصره.",
     majorelle_garden_title: "حديقة ماجوريل",
     majorelle_garden_year: "1923",
     majorelle_garden_fact:
@@ -657,7 +936,7 @@ export const translations = {
     // Footer
     our_vision: "رؤيتنا",
     vision_text:
-      "نتطلع إلى مستقبل يكون فيه كل مواطن على دراية بثراء تراثه الثقافي. نهدف إلى إنشاء مجتمع منخرط بعمق في الحفاظ على القيم الثقافية لماضينا وضمان استمراريتها في المستقبل.",
+      "نتطلع إلى مستقبل يكون فيه كل مواطن على دراية بثراء تراثه الثقافي. نهدف إلى إنشا�� مجتمع منخرط بعمق في الحفاظ على القيم الثقافية لماضينا وضمان استمراريتها في المستقبل.",
     social_icons: "تابعنا",
     useful_links: "روابط مفيدة",
     introduction: "مقدمة",
@@ -679,7 +958,7 @@ export const translations = {
     // Location Section
     location_title: "تواجدنا",
     location_description:
-      "تتمركز جمعية تراث في قلب مراكش، حيث تركز جهودها على الحفاظ على التراث الثقافي لهذه المدينة التاريخية وتعزيزه. وتتركز مبادراتنا ومشاريعنا في مراكش، حيث نعمل عن كثب مع المجتمعات المحلية للحفاظ على تراثها الثقافي الغني.",
+      "تُراث مكرسة للحفاظ على التراث الثقافي للمغرب وتعزيزه. تمتد مبادراتنا ومشاريعنا في جميع أنحاء البلاد، ونعمل عن كثب مع المجتمعات المحلية للحفاظ على إرثها الثقافي الغني.",
 
     // Image Alt Texts
     logo_alt: "شعار تراث",
@@ -805,7 +1084,7 @@ export const translations = {
 
     faq_question_11: "فرص تطوع مرنة",
     faq_answer_11:
-      "نحن نتفهم أن متطوعينا لديهم ا��تزامات متنوعة، لذلك نقدم خيارات جداول زمنية مرنة. يمكنك التطوع بشكل منتظم، أو لفعاليات أو مشاريع محددة، أو عن بُعد، اعتمادًا على توفرك واهتماماتك.",
+      "نحن نتفهم أن متطوعينا لديهم التزامات متنوعة، لذلك نقدم خيارات جداول زمنية مرنة. يمكنك التطوع بشكل منتظم، أو لفعاليات أو مشاريع محددة، أو عن بُعد، اعتمادًا على توفرك واهتماماتك.",
 
     faq_question_12: "أدوار تطوع متنوعة",
     faq_answer_12:
@@ -839,6 +1118,122 @@ export const translations = {
     key_initiatives: "المبادرات الرئيسية",
     timeline: "الإطار الزمني",
     contributors: "المساهمون",
+
+    // New volunteer dropdown menu items
+    notre_bureau: "مجلسنا",
+    devenir_membre: "كن عضوًا",
+    devenir_volontaire: "كن متطوعًا",
+
+    // Add new translation keys for the Devenir Membre and Devenir Volontaire pages
+    become_member_description: "انضم إلى مجتمعنا من المهتمين بالتراث وساهم في الحفاظ على الإرث الثقافي الغني لمراكش.",
+    membership_benefits: "فوائد العضوية",
+    membership_benefits_description:
+      "يوفر الانضمام إلى جمعية تراث العديد من المزايا والفرص للمشاركة في التراث الثقافي لمراكش.",
+    benefit_events_title: "فعاليات حصرية",
+    benefit_events_description: "الوصول إلى فعاليات ومعارض وأنشطة ثقافية خاصة بالأعضاء على مدار العام.",
+    benefit_networking_title: "فرص التواصل",
+    benefit_networking_description: "تواصل مع أشخاص يشاركونك نفس الاهتمامات والشغف بالحفاظ على التراث الثقافي لمراكش.",
+    benefit_updates_title: "تحديثات منتظمة",
+    benefit_updates_description: "استلام رسائل إخبارية وتحديثات حول مشاريعنا وإنجازاتنا والمبادرات القادمة.",
+    benefit_voting_title: "حقوق التصويت",
+    benefit_voting_description: "المشاركة في الجمعيات العمومية للجمعية والمساهمة في القرارات الرئيسية.",
+    membership_fee: 'رسوم العضوية السنوية: <span class="font-bold">300 درهم</span> (رسوم مخفضة للطلاب: 150 درهم)',
+    apply_membership: "التقدم للعضوية",
+    apply_membership_description:
+      "املأ النموذج أدناه للتقدم بطلب العضوية. سيقوم فريقنا بمراجعة طلبك والاتصال بك قريبًا.",
+    profession: "المهنة",
+    why_join_turath: "لماذا ترغب في الانضمام إلى تراث؟",
+    membership_type: "نوع العضوية",
+    regular_membership: "عادية (300 درهم)",
+    student_membership: "طالب (150 درهم)",
+    processing: "جاري المعالجة...",
+    submit_application: "تقديم الطلب",
+    form_error: "حدث خطأ. يرجى المحاولة مرة أخرى لاحقًا.",
+    membership_form_success: "شكرًا لتقديمك! سنتواصل معك قريبًا.",
+
+    become_volunteer_description: "شارك مهاراتك وشغفك للمساعدة في الحفاظ على التراث الثقافي الغني لمراكش وتعزيزه.",
+    volunteer_opportunities: "فرص التطوع",
+    volunteer_opportunities_description:
+      "اكتشف الطرق المختلفة التي يمكنك من خلالها المساهمة في مهمة تراث وإحداث تأثير هادف في الحفاظ على التراث الثقافي لمراكش.",
+    opportunity_event_title: "دعم الفعاليات",
+    opportunity_event_description: "المساعدة في تنظيم وإدارة الفعاليات الثقافية والمعارض وورش العمل على مدار العام.",
+    opportunity_event_commitment: "مرن، حسب الفعاليات",
+    opportunity_research_title: "البحث والتوثيق",
+    opportunity_research_description: "المساعدة في توثيق المواقع التاريخية والحرف التقليدية والممارسات الثقافية.",
+    opportunity_research_commitment: "5-10 ساعات أسبوعيًا",
+    opportunity_outreach_title: "التواصل المجتمعي",
+    opportunity_outreach_description: "التفاعل مع المجتمعات المحلية لزيادة الوعي حول الحفاظ على التراث.",
+    opportunity_outreach_commitment: "3-5 ساعات أسبوعيًا",
+    opportunity_admin_title: "الدعم الإداري",
+    opportunity_admin_description: "المساعدة في العمليات اليومية والاتصالات وإدارة المشاريع.",
+    opportunity_admin_commitment: "مرن، 2-8 ساعات أسبوعيًا",
+    time_commitment: "الالتزام الزمني",
+    volunteer_benefits_note: "يحصل جميع المتطوعين على تدريب ودعم وتقدير لمساهماتهم القيمة.",
+    apply_volunteer: "التقدم للتطوع",
+    apply_volunteer_description:
+      "املأ النموذج أدناه للتعبير عن اهتمامك بالتطوع مع تراث. سيقوم فريقنا بمراجعة طلبك والاتصال بك لمناقشة الفرص التي تتناسب مع مهاراتك واهتماماتك.",
+    skills_experience: "المهارات والخبرات",
+    areas_of_interest: "مجالات الاهتمام",
+    availability: "التوفر",
+    why_volunteer_turath: "لماذا ترغب في التطوع مع تراث؟",
+    volunteer_form_success: "شكرًا لاهتمامك بالتطوع! سنتواصل معك قريبًا.",
+
+    partners: "الشركاء",
+    partners_title: "كن شريكًا مع تراث",
+    partners_subtitle: "ادعم مهمتنا في الحفاظ على التراث الثقافي لمراكش وتعزيزه",
+    partnership_types: "أنواع الشراكة",
+    partnership_types_description: "اكتشف الطرق المختلفة التي يمكنك من خلالها الشراكة مع تراث وإحداث تأثير دائم",
+    monthly_partner: "شريك شهري",
+    monthly_partner_description: "قدم دعمًا مستمرًا من خلال مساهمات شهرية تساعد في تمويل أنشطتنا وعملياتنا المنتظمة.",
+    annual_partner: "شريك سنوي",
+    annual_partner_description: "أحدث تأثيرًا كبيرًا من خلال شراكة سنوية تدعم مشاريع الحفاظ على المدى الطويل.",
+    event_sponsor: "راعي الفعاليات",
+    event_sponsor_description:
+      "رعاية فعاليات أو ورش عمل أو معارض محددة لمساعدتنا في مشاركة التراث الثقافي لمراكش مع جمهور أوسع.",
+    project_sponsor: "راعي المشروع",
+    project_sponsor_description: "تمويل مشاريع محددة للحفظ أو التوثيق تتماشى مع قيم واهتمامات مؤسستك.",
+    in_kind_partner: "شريك عيني",
+    in_kind_partner_description: "توفير السلع أو الخدمات أو الخبرات التي تدعم مهمتنا وعملياتنا.",
+    partnership_benefits: "فوائد الشراكة",
+    partnership_benefits_description:
+      "يحصل شركاؤنا على الاعتراف والرؤية والرضا عن تقديم مساهمة هادفة في الحفاظ على التراث الثقافي",
+    benefit_visibility_title: "رؤية العلامة التجارية",
+    benefit_visibility_description: "عرض شعارك واسمك على موقعنا الإلكتروني والمنشورات وفي الفعاليات ذات الصلة.",
+    benefit_impact_title: "تأثير قابل للقياس",
+    benefit_impact_description: "تحديثات منتظمة حول كيفية مساهمة دعمك في إحداث فرق في الحفاظ على تراث مراكش.",
+    benefit_network_title: "فرص التواصل",
+    benefit_network_description: "تواصل مع منظمات وأفراد آخرين متحمسين للتراث الثقافي.",
+    benefit_events_access_title: "وصول VIP",
+    benefit_events_access_description: "وصول خاص إلى الفعاليات والمعارض وتجارب حصرية خلف الكواليس.",
+    support_events: "دعم فعالياتنا",
+    support_events_description: "ساعدنا في تنظيم فعاليات ثقافية مؤثرة تزيد الوعي حول التراث الغني لمراكش",
+    upcoming_events: "الفعاليات القادمة",
+    event_heritage_days: "أيام التراث بمراكش 2024",
+    event_heritage_days_date: "15-22 أكتوبر 2024",
+    event_heritage_days_description:
+      "احتفال يستمر لمدة أسبوع يتضمن جولات مرشدة وورش عمل وعروض تسلط الضوء على التراث الثقافي لمراكش.",
+    event_crafts_exhibition: "معرض الحرف التقليدية",
+    event_crafts_exhibition_date: "5-10 ديسمبر 2024",
+    event_crafts_exhibition_description: "معرض يسلط الضوء على عمل الحرفيين المهرة وأهمية الحفاظ على الحرف التقليدية.",
+    event_architectural_symposium: "ندوة التراث المعماري",
+    event_architectural_symposium_date: "18-20 فبراير 2025",
+    event_architectural_symposium_description: "تجمع للخبراء لمناقشة التحديات والحلول في مجال الحفاظ المعماري.",
+    make_donation: "قدم تبرعًا",
+    make_donation_description: "مساهمتك، مهما كان حجمها، تساعدنا على مواصلة عملنا في الحفاظ على التراث الثقافي لمراكش",
+    donation_options: "خيارات التبرع",
+    one_time_donation: "تبرع لمرة واحدة",
+    recurring_donation: "تبرع متكرر",
+    donation_amount: "مبلغ التبرع",
+    custom_amount: "مبلغ مخصص",
+    donor_information: "معلومات المتبرع",
+    payment_information: "معلومات الدفع",
+    card_number: "رقم البطاقة",
+    expiration_date: "تاريخ انتهاء الصلاحية",
+    cvv: "رمز التحقق",
+    donate_button: "تبرع الآن",
+    donation_success: "شكرًا على تبرعك! دعمك يساعدنا في الحفاظ على التراث الثقافي لمراكش.",
+    become_partner_cta: "كن شريكًا اليوم",
+    become_partner_description: "انضم إلينا في مهمتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه للأجيال القادمة.",
+    contact_partnerships: "اتصل بفريق الشراكات لدينا",
   },
 }
-

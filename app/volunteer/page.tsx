@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import Link from "next/link"
 
 export default function VolunteerPage() {
   const { t } = useLanguage()
@@ -298,9 +299,11 @@ export default function VolunteerPage() {
                 <div className="p-8 md:p-12">
                   <h2 className="font-tomato text-3xl font-bold text-white mb-6">{t("volunteer_cta_title")}</h2>
                   <p className="text-white/90 font-tomato mb-8">{t("volunteer_cta_description")}</p>
-                  <Button size="lg" className="bg-white text-primary hover:bg-white/90 rounded-none font-tomato">
-                    {t("apply_now")}
-                  </Button>
+                  <Link href="/volunteer/devenir-volontaire">
+                    <Button size="lg" className="bg-white text-primary hover:bg-white/90 rounded-none font-tomato">
+                      {t("apply_now")}
+                    </Button>
+                  </Link>
                 </div>
                 <div className="relative hidden md:block">
                   <Image
@@ -319,4 +322,3 @@ export default function VolunteerPage() {
     </div>
   )
 }
-

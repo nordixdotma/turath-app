@@ -14,7 +14,6 @@ export default function PartnersSection() {
   const { t, language } = useLanguage()
   const [mounted, setMounted] = useState(false)
 
-  // Partner logos provided by the user (with duplicates)
   const partners = [
     {
       name: "Ministerio de Asuntos Exteriores",
@@ -32,14 +31,21 @@ export default function PartnersSection() {
       name: "Casa Memoire",
       logo: "https://www.casamemoire.org/css/images/logo.png",
     },
-    // Duplicated logos
     {
-      name: "Ministerio de Asuntos Exteriores",
-      logo: "https://www.exteriores.gob.es/PublishingImages/Banners/logoMinisterio.svg",
+      name: "Ministère de la Jeunesse",
+      logo: "https://mjcc.gov.ma/wp-content/uploads/2021/12/mjcc_black.svg",
     },
     {
-      name: "Fondation Jardin Majorelle",
-      logo: "https://th.bing.com/th/id/OIP.JJETPCjpQJDZr_fHwe32nAHaCw?rs=1&pid=ImgDetMain",
+      name: "ICESCO",
+      logo: "https://icesco.org/wp-content/uploads/2023/05/logo-New.png",
+    },
+    {
+      name: "Ville de Marrakech",
+      logo: "https://www.ville-marrakech.ma/images/config/logo11.webp",
+    },
+    {
+      name: "Fondation Mohammed V",
+      logo: "https://www.fm5.ma/themes/custom/fm5/logo-en.svg",
     },
   ]
 
@@ -61,11 +67,27 @@ export default function PartnersSection() {
     }, 50)
   }, [language])
 
+  // Remove the opacity effect from partners
+  useEffect(() => {
+    // Add a style tag to override the opacity effect
+    const styleTag = document.createElement("style")
+    styleTag.innerHTML = `
+     .partners-swiper .swiper-slide {
+       opacity: 1 !important;
+     }
+   `
+    document.head.appendChild(styleTag)
+
+    return () => {
+      document.head.removeChild(styleTag)
+    }
+  }, [])
+
   return (
-    <section className="py-24 bg-transparent">
+    <section className="py-24 bg-white">
       <Container className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <h2 className="font-tomato text-3xl md:text-4xl font-bold text-white mb-4">{t("our_partners")}</h2>
+          <h2 className="font-tomato text-3xl md:text-4xl font-bold text-primary mb-4">{t("our_partners")}</h2>
           <div className="h-1 w-24 bg-primary mb-6"></div>
         </div>
 
@@ -98,14 +120,14 @@ export default function PartnersSection() {
                   slidesPerView: 4,
                 },
               }}
-              className="partners-swiper"
+              className="partners-swiper no-opacity"
             >
               {partners.map((partner, index) => (
                 <SwiperSlide key={index}>
                   <div className="p-6 h-32 flex items-center justify-center">
                     <div className="relative h-full w-full">
                       <div className="relative h-full w-full flex items-center justify-center">
-                        <div className="relative h-20 w-full bg-white rounded-md p-3">
+                        <div className="relative h-20 w-full bg-white rounded-md p-3 border border-gray-100 shadow-sm">
                           <Image
                             src={partner.logo || "/placeholder.svg"}
                             alt={partner.name}
@@ -125,4 +147,3 @@ export default function PartnersSection() {
     </section>
   )
 }
-

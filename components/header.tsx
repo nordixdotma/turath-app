@@ -17,6 +17,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [projectsDropdownOpen, setProjectsDropdownOpen] = useState(false)
+  const [volunteerDropdownOpen, setVolunteerDropdownOpen] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -66,11 +67,19 @@ export default function Header() {
     { href: "/projects/architectural-preservation", label: t("project3_title") },
   ]
 
+  // Add volunteer dropdown links
+  const volunteerLinks = [
+    { href: "/volunteer", label: t("notre_bureau") },
+    { href: "/volunteer/devenir-membre", label: t("devenir_membre") },
+    { href: "/volunteer/devenir-volontaire", label: t("devenir_volontaire") },
+  ]
+
   const navLinks = [
     { href: "/", label: "home", icon: Home },
     // Projects link is handled separately
+    { href: "/partners", label: "partners", icon: Briefcase },
     { href: "/about", label: "about", icon: Info },
-    { href: "/volunteer", label: "volunteer", icon: Heart },
+    // Volunteer link is now handled separately
     { href: "/contact", label: "contact", icon: Phone },
   ]
 
@@ -87,11 +96,7 @@ export default function Header() {
           <Link href="/" className="flex items-center z-20">
             <div className="relative h-14 w-28 md:h-16 md:w-32">
               <Image
-                src={
-                  scrolled
-                    ? "/turath.png"
-                    : "/favicon.png"
-                }
+                src={scrolled ? "/turath.png" : "/favicon.png"}
                 alt={t("logo_alt")}
                 fill
                 className="object-contain transition-opacity duration-300"
@@ -138,6 +143,43 @@ export default function Header() {
               >
                 <div className="py-1">
                   {projectLinks.map((link, index) => (
+                    <Link
+                      key={index}
+                      href={link.href}
+                      className="block px-4 py-2 text-sm md:text-base text-gray-800 hover:bg-gray-100 hover:text-primary font-tomato"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Volunteer dropdown */}
+            <div className="relative group">
+              <Link
+                href="/volunteer"
+                className={`flex items-center text-sm md:text-base font-medium transition-all duration-300 hover:scale-105 relative group font-tomato ${
+                  scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-white/80"
+                } ${pathname.includes("/volunteer") ? "text-primary" : ""}`}
+                onMouseEnter={() => setVolunteerDropdownOpen(true)}
+                onMouseLeave={() => setVolunteerDropdownOpen(false)}
+              >
+                {t("volunteer")}
+                <ChevronDown className="ml-1 h-4 w-4" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+
+              {/* Volunteer dropdown menu */}
+              <div
+                className={`absolute left-0 mt-2 w-64 md:w-72 bg-white shadow-lg rounded-md overflow-hidden transition-all duration-300 ${
+                  volunteerDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
+                onMouseEnter={() => setVolunteerDropdownOpen(true)}
+                onMouseLeave={() => setVolunteerDropdownOpen(false)}
+              >
+                <div className="py-1">
+                  {volunteerLinks.map((link, index) => (
                     <Link
                       key={index}
                       href={link.href}
@@ -239,13 +281,7 @@ export default function Header() {
                 <div className="flex items-center justify-between p-6 border-b border-white/10">
                   <Link href="/" className="inline-block" onClick={toggleMenu}>
                     <div className="relative h-10 w-28">
-                      <Image
-                        src="/favicon.png"
-                        alt="Turâth Logo"
-                        fill
-                        className="object-contain"
-                        priority
-                      />
+                      <Image src="/favicon.png" alt="Turâth Logo" fill className="object-contain" priority />
                     </div>
                   </Link>
                   <Button
@@ -309,6 +345,48 @@ export default function Header() {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 + index * 0.05 }}
+                          >
+                            <Link
+                              href={link.href}
+                              className="flex items-center py-2 px-4 rounded-xl text-white/80 hover:bg-white/10 hover:text-white transition-colors"
+                              onClick={toggleMenu}
+                            >
+                              <span className="font-medium text-sm font-tomato">{link.label}</span>
+                              <ChevronRight className="h-3 w-3 ml-auto" />
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Volunteer link with nested links */}
+                    <div>
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.25 }}
+                      >
+                        <Link
+                          href="/volunteer"
+                          className="flex items-center py-3 px-4 rounded-xl text-white hover:bg-white/10 transition-colors"
+                          onClick={toggleMenu}
+                        >
+                          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mr-4">
+                            <Heart className="h-5 w-5" />
+                          </div>
+                          <span className="font-medium text-lg font-tomato">{t("volunteer")}</span>
+                          <ChevronRight className="h-4 w-4 ml-auto" />
+                        </Link>
+                      </motion.div>
+
+                      {/* Volunteer sub-links */}
+                      <div className="ml-14 mt-2 space-y-1">
+                        {volunteerLinks.map((link, index) => (
+                          <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3 + index * 0.05 }}
                           >
                             <Link
                               href={link.href}
@@ -387,4 +465,3 @@ export default function Header() {
     </header>
   )
 }
-
