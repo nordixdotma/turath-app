@@ -1,6 +1,5 @@
 "use client"
 
-import { useLanguage } from "@/hooks/use-language"
 import { Container } from "@/components/ui/container"
 import { useInView } from "react-intersection-observer"
 import { cn } from "@/lib/utils"
@@ -8,8 +7,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Calendar, MapPin, Users } from "lucide-react"
+import { useLanguage } from "@/hooks/use-language"
 
-export default function UnveilingTreasuresProjectPage() {
+export default function UnveilingHiddenTreasuresPage() {
   const { t } = useLanguage()
 
   // Hero section animation
@@ -30,47 +30,6 @@ export default function UnveilingTreasuresProjectPage() {
     threshold: 0.1,
   })
 
-  // Project details
-  const project = {
-    title: t("hidden_treasures_title"),
-    description: t("hidden_treasures_description"),
-    fullDescription: t("hidden_treasures_about"),
-    date: "Ongoing program with various activities throughout the year",
-    location: "Various locations across Marrakech, focusing on lesser-known sites",
-    participants: 120,
-    mainImage:
-      "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    gallery: [
-      "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1585670210693-e7fdd16b142e?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1560930950-5cc20e80e392?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512236077335-f1cda9239c11?q=80&w=1974&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1551184451-76b762941ad6?q=80&w=1974&auto=format&fit=crop",
-    ],
-    components: [
-      t("program_components_list.tours"),
-      t("program_components_list.craft"),
-      t("program_components_list.oral"),
-      t("program_components_list.workshops"),
-      t("program_components_list.digital"),
-    ],
-    focusAreas: [
-      t("focus_areas_list.architecture"),
-      t("focus_areas_list.craft"),
-      t("focus_areas_list.cultural"),
-      t("focus_areas_list.historical"),
-      t("focus_areas_list.natural"),
-    ],
-    initiatives: [
-      t("hidden_treasures_key_initiatives.tours"),
-      t("hidden_treasures_key_initiatives.craft"),
-      t("hidden_treasures_key_initiatives.oral"),
-      t("hidden_treasures_key_initiatives.workshops"),
-      t("hidden_treasures_key_initiatives.digital"),
-    ],
-  }
-
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
@@ -78,7 +37,7 @@ export default function UnveilingTreasuresProjectPage() {
         className="relative bg-transparent"
         style={{
           height: "60vh",
-          backgroundImage: `url('${project.mainImage}')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -104,9 +63,9 @@ export default function UnveilingTreasuresProjectPage() {
                 <span className="text-xs font-medium text-white">{t("ongoing")}</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
-                {project.title}
+                {t("treasures_project_title")}
               </h1>
-              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{project.description}</p>
+              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("treasures_project_short_desc")}</p>
             </div>
           </Container>
         </div>
@@ -124,35 +83,64 @@ export default function UnveilingTreasuresProjectPage() {
           >
             {/* Main Content */}
             <div className="md:col-span-2">
-              <h2 className="font-tomato text-3xl font-bold text-gray-900 mb-6">{t("about_project")}</h2>
+              <h2 className="font-tomato text-3xl font-bold text-gray-900 mb-6">{t("about_the_project")}</h2>
               <div className="h-1 w-16 bg-primary mb-8"></div>
 
               <div className="prose max-w-none text-gray-700 font-tomato">
-                <p className="mb-6">{project.fullDescription}</p>
-                <p className="mb-6">{t("hidden_treasures_about_2")}</p>
-                <p className="mb-6">{t("hidden_treasures_about_3")}</p>
+                <p className="mb-6">{t("treasures_project_desc_p1")}</p>
+                <p className="mb-6">{t("treasures_project_desc_p2")}</p>
+                <p className="mb-6">{t("treasures_project_desc_p3")}</p>
 
                 <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("program_components")}</h3>
                 <ul className="space-y-2 mb-8">
-                  {project.components.map((component, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                      <span>{component}</span>
-                    </li>
-                  ))}
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_component_1")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_component_2")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_component_3")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_component_4")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_component_5")}</span>
+                  </li>
                 </ul>
 
                 <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("focus_areas")}</h3>
-                <p>{t("focus_areas_intro")}</p>
+                <p>{t("treasures_focus_intro")}</p>
                 <ul className="space-y-2 mb-8">
-                  {project.focusAreas.map((area, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                      <span>{area}</span>
-                    </li>
-                  ))}
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_focus_1")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_focus_2")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_focus_3")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_focus_4")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_focus_5")}</span>
+                  </li>
                 </ul>
-                <p>{t("hidden_treasures_conclusion")}</p>
+
+                <p className="mt-6">{t("treasures_conclusion")}</p>
               </div>
             </div>
 
@@ -165,8 +153,8 @@ export default function UnveilingTreasuresProjectPage() {
                   <div className="flex items-start">
                     <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900 font-tomato">{t("schedule")}</p>
-                      <p className="text-gray-700 font-tomato">{project.date}</p>
+                      <p className="font-medium text-gray-900 font-tomato">{t("date")}</p>
+                      <p className="text-gray-700 font-tomato">{t("treasures_project_date")}</p>
                     </div>
                   </div>
 
@@ -174,7 +162,7 @@ export default function UnveilingTreasuresProjectPage() {
                     <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900 font-tomato">{t("location")}</p>
-                      <p className="text-gray-700 font-tomato">{project.location}</p>
+                      <p className="text-gray-700 font-tomato">{t("treasures_project_location")}</p>
                     </div>
                   </div>
 
@@ -182,16 +170,14 @@ export default function UnveilingTreasuresProjectPage() {
                     <Users className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900 font-tomato">{t("participants_to_date")}</p>
-                      <p className="text-gray-700 font-tomato">
-                        {project.participants}+ participants across various program activities
-                      </p>
+                      <p className="text-gray-700 font-tomato">120+ {t("participants_across_activities")}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-none font-tomato">
-                    {t("register_event")}
+                    {t("register_for_next_event")}
                   </Button>
                 </div>
               </div>
@@ -199,18 +185,32 @@ export default function UnveilingTreasuresProjectPage() {
               <div className="bg-gray-50 p-6 rounded-md border border-gray-200 mt-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("key_initiatives")}</h3>
                 <ul className="space-y-2">
-                  {project.initiatives.map((initiative, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                      <span className="text-gray-700 font-tomato">{initiative}</span>
-                    </li>
-                  ))}
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_1")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_2")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_3")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_4")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_5")}</span>
+                  </li>
                 </ul>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-md border border-gray-200 mt-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("impact")}</h3>
-                <p className="text-gray-700 font-tomato">{t("hidden_treasures_impact_text")}</p>
+                <p className="text-gray-700 font-tomato">{t("treasures_impact")}</p>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ export default function UnveilingTreasuresProjectPage() {
             <div className="h-1 w-16 bg-primary mx-auto mb-12"></div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {project.gallery.map((image, index) => (
+              {[1, 2, 3, 4, 5, 6].map((index) => (
                 <div
                   key={index}
                   className={cn(
@@ -241,8 +241,8 @@ export default function UnveilingTreasuresProjectPage() {
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
                   <Image
-                    src={image || "/placeholder.svg"}
-                    alt={`Gallery image ${index + 1}`}
+                    src={`https://images.unsplash.com/photo-${1600000000000 + index * 10000}?q=80&w=1974&auto=format&fit=crop`}
+                    alt={`${t("gallery_image")} ${index}`}
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"
                   />

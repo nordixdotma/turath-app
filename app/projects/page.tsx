@@ -33,8 +33,8 @@ export default function ProjectsPage() {
     },
     {
       id: "post_earthquake_reconstruction",
-      title: t("earthquake_reconstruction_title"),
-      description: t("earthquake_reconstruction_description"),
+      title: t("earthquake_project_title"),
+      description: t("earthquake_project_short_desc"),
       image:
         "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "restoration",
@@ -44,8 +44,8 @@ export default function ProjectsPage() {
     },
     {
       id: "unveiling_hidden_treasures",
-      title: t("hidden_treasures_title"),
-      description: t("hidden_treasures_description"),
+      title: t("treasures_project_title"),
+      description: t("treasures_project_short_desc"),
       image:
         "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "ongoing",

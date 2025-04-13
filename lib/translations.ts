@@ -118,7 +118,7 @@ export const translations = {
       'The non-profit, non-religious, and apolitical association "TURÂTH" was established with the aim of achieving the following objectives:',
     heritage_importance_title: "The Importance of Cultural Heritage Awareness",
     heritage_importance_quote:
-      '"Raising awareness about cultural heritage is essential for the development of a nation that seeks to build its future while safeguarding the cultural values of its past."',
+      "Raising awareness about cultural heritage is essential for the development of a nation that seeks to build its future while safeguarding the cultural values of its past.",
     join_mission: "Join Our Mission",
 
     // About Page - Mission Section
@@ -240,8 +240,6 @@ export const translations = {
     membership_benefits_description:
       "Becoming a member of Turâth Association offers numerous advantages and opportunities to engage with Marrakech's cultural heritage.",
     benefit_events_title: "Exclusive Events",
-    benefit_events_description:
-      "Access to members-only events, exhibitions, and cultural activities throughout the year.",
     benefit_networking_title: "Networking Opportunities",
     benefit_networking_description:
       "Connect with like-minded individuals passionate about preserving Marrakech's cultural heritage.",
@@ -386,8 +384,6 @@ export const translations = {
     our_projects_description:
       "Explore our major initiatives aimed at preserving and celebrating Marrakech's cultural heritage",
     event: "Event",
-    restoration: "Restoration",
-    ongoing: "Ongoing",
     participants: "Participants",
     next: "Next",
     learn_more: "Learn More",
@@ -407,156 +403,14 @@ export const translations = {
       "The second edition took place from May 23 to 26, 2024, featuring a diverse program of activities including guided tours, cooking classes, exhibitions, and sensory tours, all offered free of charge to participants.",
     heritage_days_about_3:
       "These events are designed to showcase monuments under new perspectives with the support of historians, architects, and heritage specialists, creating meaningful connections between the public and Marrakech's cultural legacy.",
-    heritage_days_date: "May 23-26, 2024 (2nd Edition)",
-    heritage_days_next_edition: "2025 (3rd Edition)",
-    heritage_days_location: "Various historical sites across Marrakech",
-    heritage_days_activities: "Activities",
-    heritage_days_impact: "Impact",
-    heritage_days_impact_text:
-      "The Heritage Days of Marrakech has a significant impact on cultural awareness and heritage preservation:",
-    heritage_days_future:
-      "Looking ahead to the third edition in 2025, we aim to expand the program further, reaching more communities and highlighting additional aspects of Marrakech's rich cultural heritage.",
-
-    heritage_days_activities_list: {
-      guided_tours: "Guided tours of historical monuments and hidden architectural gems",
-      cooking_classes: "Traditional Moroccan cooking classes showcasing culinary heritage",
-      exhibitions: "Art and historical exhibitions highlighting local craftsmanship",
-      sensory_tours: "Sensory tours designed to experience heritage through all five senses",
-      cultural_performances: "Cultural performances featuring traditional music and dance",
-    },
-
-    heritage_days_impact_list: {
-      awareness: "Raising public awareness about the importance of cultural heritage preservation",
-      educate: "Educating younger generations about their cultural roots and identity",
-      promote: "Promoting sustainable tourism that respects and values local heritage",
-      support: "Supporting local artisans and cultural practitioners",
-      foster: "Fostering community pride and engagement in heritage conservation",
-    },
-
-    heritage_days_goals: {
-      highlight: "Highlight the rich and diverse cultural heritage of Marrakech",
-      access: "Provide free access to cultural sites and activities for all",
-      educate: "Educate the public about the importance of heritage preservation",
-      preserve: "Contribute to the preservation of tangible and intangible heritage",
-    },
-
-    // Earthquake Reconstruction Project
-    earthquake_reconstruction_title: "Post-earthquake Reconstruction",
-    earthquake_reconstruction_description:
-      "A crucial initiative to support reconstruction efforts following the devastating Al Haouz earthquake of September 2023.",
-    earthquake_reconstruction_about:
-      "Following the devastating Al Haouz earthquake on September 8, 2023, which measured 6.8 on the Richter scale and affected numerous historical sites in the Atlas Mountains region, Turâth Association immediately mobilized to support reconstruction efforts. Our team of architects, engineers, and heritage specialists has been working closely with local communities and authorities to assess damage, document affected structures, and develop sustainable reconstruction plans that respect traditional building techniques while improving structural resilience.",
-    earthquake_reconstruction_about_2:
-      "This project focuses particularly on the preservation of architectural heritage in the affected villages of the High Atlas, where centuries-old earthen architecture and traditional building knowledge are at risk of being lost in the reconstruction process. We've established a platform connecting international experts with local master builders to ensure that reconstruction efforts honor traditional methods while incorporating appropriate seismic reinforcement techniques.",
-    earthquake_activities: "Key Activities",
-    earthquake_activities_list: {
-      assessment:
-        "Comprehensive damage assessment of historical structures in over 20 villages across the Al Haouz region",
-      stabilization:
-        "Emergency stabilization of damaged heritage buildings using reversible techniques that don't compromise future restoration",
-      documentation:
-        "Detailed 3D documentation and architectural surveys of damaged structures to guide accurate reconstruction",
-      coordination: "Coordination with government agencies, UNESCO, and international conservation organizations",
-      engagement:
-        "Community workshops to incorporate local knowledge and ensure cultural appropriateness of reconstruction plans",
-    },
-
-    tinmel_mosque: "Tinmel Mosque Restoration",
-    tinmel_mosque_text:
-      "The historic Tinmel Mosque, a masterpiece of Almohad architecture dating back to 1156 and one of only two mosques in Morocco open to non-Muslims, suffered severe damage during the earthquake. Our specific restoration efforts for this UNESCO World Heritage candidate site include:",
-    tinmel_mosque_goals: {
-      recover: "Recover and catalog original architectural elements, including carved stucco and wooden elements",
-      develop: "Develop a comprehensive restoration plan based on historical documentation and archaeological evidence",
-      train:
-        "Train local craftspeople in traditional lime mortar preparation, earthen construction, and decorative techniques",
-      create:
-        "Create a visitor interpretation center explaining the mosque's historical significance and restoration process",
-    },
-
-    collaborative_approach: "Collaborative Approach",
-    collaborative_approach_text:
-      "Our reconstruction efforts are based on a collaborative approach that brings together various stakeholders, including Morocco's Ministry of Culture, UNESCO, ICOMOS, local authorities, academic institutions, and most importantly, the affected communities themselves.",
-    collaborative_approach_text_2:
-      "This inclusive strategy ensures that reconstruction not only preserves the physical structures but also respects the cultural significance and community values attached to these heritage sites. We're documenting traditional building techniques, training local craftspeople, and creating educational resources to ensure this knowledge continues to be passed down to future generations.",
-
-    earthquake_goals: {
-      document: "Document and preserve the unique earthen building techniques of the High Atlas region",
-      implement: "Implement seismically-resistant reconstruction methods that respect local architectural traditions",
-      develop: "Develop capacity among local craftspeople through hands-on training workshops",
-      restore: "Restore key heritage sites while improving their resilience to future earthquakes",
-      create: "Create a digital archive of traditional building knowledge for future generations",
-    },
-
-    earthquake_timeline: {
-      phase1: "Phase 1: Emergency assessment and documentation (Completed - October 2023)",
-      phase2: "Phase 2: Stabilization of at-risk structures (Completed - December 2023)",
-      phase3: "Phase 3: Community engagement and planning (Ongoing - January-June 2024)",
-      phase4: "Phase 4: Restoration of priority heritage sites (Ongoing - April 2024-December 2025)",
-      phase5: "Phase 5: Knowledge transfer and capacity building (2024-2026)",
-    },
-
-    // Hidden Treasures Project
-    hidden_treasures_title: "Unveiling Marrakech's Hidden Treasures",
-    hidden_treasures_description:
-      "An immersive series of events exploring Marrakech's overlooked heritage gems, including history, architecture, craftsmanship, and cultural traditions.",
-    hidden_treasures_about:
-      "Unveiling Marrakech's Hidden Treasures is an immersive and enlightening series of events dedicated to exploring the city's often overlooked heritage gems. This initiative goes beyond the well-known tourist attractions to reveal the authentic soul of Marrakech through its lesser-known historical sites, architectural marvels, traditional craftsmanship, and rich cultural traditions.",
-    hidden_treasures_about_2:
-      "Through carefully curated experiences, we invite both locals and visitors to discover the hidden corners of the medina, meet master artisans in their workshops, and learn about the stories and traditions that have shaped Marrakech's unique cultural identity.",
-    hidden_treasures_about_3:
-      "This ongoing program features periodic events throughout the year, each focusing on different aspects of Marrakech's heritage, ensuring a comprehensive exploration of the city's cultural wealth.",
-
-    program_components: "Program Components",
-    program_components_list: {
-      tours: "Specialized tours of lesser-known historical sites and architectural gems",
-      craft: "Craft workshops with master artisans preserving traditional techniques",
-      oral: "Oral history collection and storytelling sessions with community elders",
-      workshops: "Educational workshops on various aspects of tangible and intangible heritage",
-      digital: "Digital documentation of endangered heritage elements",
-    },
-
-    focus_areas: "Focus Areas",
-    focus_areas_intro: "Our Hidden Treasures initiative explores various dimensions of Marrakech's heritage:",
-    focus_areas_list: {
-      architecture: "Vernacular architecture and traditional building techniques",
-      craft: "Endangered crafts and artisanal knowledge",
-      cultural: "Cultural practices, rituals, and celebrations",
-      historical: "Historical narratives and collective memory",
-      natural: "Natural heritage and traditional ecological knowledge",
-    },
-
-    hidden_treasures_conclusion:
-      "By unveiling these hidden treasures, we aim to foster a deeper appreciation for Marrakech's cultural complexity and encourage more meaningful engagement with its heritage, ultimately contributing to its preservation for future generations.",
-
-    hidden_treasures_key_initiatives: {
-      tours: "Hidden Heritage Tours: Guided explorations of lesser-known historical sites",
-      craft: "Artisan Encounters: Direct interactions with master craftspeople in their workshops",
-      oral: "Heritage Storytelling Sessions: Collecting and sharing oral histories and traditions",
-      workshops: "Heritage Skills Workshops: Hands-on learning of traditional techniques",
-      digital: "Digital Heritage Archive: Creating a digital repository of endangered heritage elements",
-    },
-
-    hidden_treasures_impact_text:
-      "This initiative has significantly increased awareness about Marrakech's lesser-known heritage assets, created economic opportunities for traditional craftspeople, and contributed valuable documentation of endangered cultural practices and sites.",
 
     // Common project page elements
     about_project: "About the Project",
-    project_details: "Project Details",
-    date: "Date",
-    location: "Location",
-    contributors: "Contributors",
-    participants_to_date: "Participants to Date",
     participants_per_edition: "participants per edition",
-    schedule: "Schedule",
     workshop_details: "Workshop Details",
     register_event: "Register for Next Event",
     register_workshop: "Register for Workshop",
     support_project: "Support This Project",
-    goals: "Goals",
-    gallery: "Gallery",
-    impact: "Impact",
-    key_initiatives: "Key Initiatives",
-    back_to_projects: "Back to Projects",
     workshop_types: "Workshop Types",
     craftsmanship_impact_text:
       "These workshops have a significant impact on preserving traditional crafts by creating economic opportunities for artisans, documenting endangered techniques, and fostering a new generation of craftspeople committed to maintaining these cultural practices.",
@@ -567,9 +421,6 @@ export const translations = {
     // Project page specific translations
     heritage_days_date: "May 23-26, 2024 (2nd Edition)",
     heritage_days_next_edition: "2025 (3rd Edition)",
-    earthquake_reconstruction_date: "September 2023 - Ongoing",
-    earthquake_reconstruction_focus: "Tinmel Mosque Restoration",
-    hidden_treasures_format: "Periodic Events & Programs",
 
     // Heritage Days Project Editions
     project_editions: "Project Editions",
@@ -600,6 +451,140 @@ export const translations = {
     heritage_days_third_edition_date: "May 2025",
 
     heritage_days_location: "Various historical sites across Marrakech",
+
+    earthquake_reconstruction_title: "Post-earthquake Reconstruction",
+    earthquake_reconstruction_description:
+      "A crucial initiative to support reconstruction efforts following the devastating Al Haouz earthquake of September 2023.",
+    earthquake_reconstruction_date: "September 2023 - Ongoing",
+    earthquake_reconstruction_focus: "Architectural preservation and traditional building techniques",
+    earthquake_about:
+      "Following the devastating Al Haouz earthquake on September 8, 2023, which measured 6.8 on the Richter scale and affected numerous historical sites in the Atlas Mountains region, Turâth Association immediately mobilized to support reconstruction efforts.",
+    earthquake_key_activities_title: "Key Activities",
+    earthquake_key_activities_1:
+      "Comprehensive damage assessment of historical structures in over 20 villages across the Al Haouz region",
+    earthquake_key_activities_2: "Emergency stabilization of damaged heritage buildings using reversible techniques",
+    earthquake_key_activities_3: "Detailed 3D documentation and architectural surveys of damaged structures",
+    earthquake_key_activities_4:
+      "Coordination with government agencies, UNESCO, and international conservation organizations",
+    earthquake_key_activities_5: "Community workshops to incorporate local knowledge in reconstruction plans",
+    earthquake_tinmel_title: "Tinmel Mosque Restoration",
+    earthquake_tinmel_description:
+      "The historic Tinmel Mosque, a masterpiece of Almohad architecture dating back to 1156 and one of only two mosques in Morocco open to non-Muslims, suffered severe damage during the earthquake.",
+    earthquake_tinmel_efforts_1:
+      "Recover and catalog original architectural elements, including carved stucco and wooden elements",
+    earthquake_tinmel_efforts_2: "Develop a comprehensive restoration plan based on historical documentation",
+    earthquake_tinmel_efforts_3:
+      "Train local craftspeople in traditional lime mortar preparation and earthen construction",
+    earthquake_tinmel_efforts_4:
+      "Create a visitor interpretation center explaining the mosque's historical significance",
+    earthquake_collaborative_title: "Collaborative Approach",
+    earthquake_collaborative_description:
+      "Our reconstruction efforts are based on a collaborative approach that brings together various stakeholders, including Morocco's Ministry of Culture, UNESCO, ICOMOS, local authorities, academic institutions, and most importantly, the affected communities themselves.",
+    earthquake_timeline_title: "Timeline",
+    earthquake_project_title: "Post-earthquake Reconstruction",
+    earthquake_project_short_desc:
+      "A crucial initiative to support reconstruction efforts following the devastating Al Haouz earthquake of September 2023.",
+    earthquake_project_desc_p1:
+      "Following the devastating Al Haouz earthquake on September 8, 2023, which measured 6.8 on the Richter scale and affected numerous historical sites in the Atlas Mountains region, Turâth Association immediately mobilized to support reconstruction efforts. Our team of architects, engineers, and heritage specialists has been working closely with local communities and authorities to assess damage, document affected structures, and develop sustainable reconstruction plans that respect traditional building techniques while improving structural resilience.",
+    earthquake_project_desc_p2:
+      "This project focuses particularly on the preservation of architectural heritage in the affected villages of the High Atlas, where centuries-old earthen architecture and traditional building knowledge are at risk of being lost in the reconstruction process. We've established a platform connecting international experts with local master builders to ensure that reconstruction efforts honor traditional methods while incorporating appropriate seismic reinforcement techniques.",
+    key_activities: "Key Activities",
+    earthquake_activity_1:
+      "Comprehensive damage assessment of historical structures in over 20 villages across the Al Haouz region",
+    earthquake_activity_2:
+      "Emergency stabilization of damaged heritage buildings using reversible techniques that don't compromise future restoration",
+    earthquake_activity_3:
+      "Detailed 3D documentation and architectural surveys of damaged structures to guide accurate reconstruction",
+    earthquake_activity_4:
+      "Coordination with government agencies, UNESCO, and international conservation organizations",
+    earthquake_activity_5:
+      "Community workshops to incorporate local knowledge and ensure cultural appropriateness of reconstruction plans",
+    tinmel_mosque_restoration: "Tinmel Mosque Restoration",
+    tinmel_mosque_desc:
+      "The historic Tinmel Mosque, a masterpiece of Almohad architecture dating back to 1156 and one of only two mosques in Morocco open to non-Muslims, suffered severe damage during the earthquake. Our specific restoration efforts for this UNESCO World Heritage candidate site include:",
+    tinmel_activity_1:
+      "Recover and catalog original architectural elements, including carved stucco and wooden elements",
+    tinmel_activity_2:
+      "Develop a comprehensive restoration plan based on historical documentation and archaeological evidence",
+    tinmel_activity_3:
+      "Train local craftspeople in traditional lime mortar preparation, earthen construction, and decorative techniques",
+    tinmel_activity_4:
+      "Create a visitor interpretation center explaining the mosque's historical significance and restoration process",
+    collaborative_approach: "Collaborative Approach",
+    collaborative_approach_p1:
+      "Our reconstruction efforts are based on a collaborative approach that brings together various stakeholders, including Morocco's Ministry of Culture, UNESCO, ICOMOS, local authorities, academic institutions, and most importantly, the affected communities themselves.",
+    collaborative_approach_p2:
+      "This inclusive strategy ensures that reconstruction not only preserves the physical structures but also respects the cultural significance and community values attached to these heritage sites. We're documenting traditional building techniques, training local craftspeople, and creating educational resources to ensure this knowledge continues to be passed down to future generations.",
+    project_details: "Project Details",
+    date: "Date",
+    earthquake_project_date: "September 2023 - Ongoing",
+    location: "Location",
+    earthquake_project_location: "Al Haouz Province, High Atlas Mountains, Morocco",
+    contributors: "Contributors",
+    earthquake_project_contributors: "85+ specialists and volunteers",
+    support_this_project: "Support This Project",
+    goals: "Goals",
+    earthquake_goal_1: "Document and preserve the unique earthen building techniques of the High Atlas region",
+    earthquake_goal_2:
+      "Implement seismically-resistant reconstruction methods that respect local architectural traditions",
+    earthquake_goal_3: "Develop capacity among local craftspeople through hands-on training workshops",
+    earthquake_goal_4: "Restore key heritage sites while improving their resilience to future earthquakes",
+    earthquake_goal_5: "Create a digital archive of traditional building knowledge for future generations",
+    timeline: "Timeline",
+    earthquake_timeline_1: "Phase 1: Emergency assessment and documentation (Completed - October 2023)",
+    earthquake_timeline_2: "Phase 2: Stabilization of at-risk structures (Completed - December 2023)",
+    earthquake_timeline_3: "Phase 3: Community engagement and planning (Ongoing - January-June 2024)",
+    earthquake_timeline_4: "Phase 4: Restoration of priority heritage sites (Ongoing - April 2024-December 2025)",
+    earthquake_timeline_5: "Phase 5: Knowledge transfer and capacity building (2024-2026)",
+    gallery: "Gallery",
+    gallery_image: "Gallery image",
+    treasures_project_title: "Unveiling Marrakech's Hidden Treasures",
+    treasures_project_short_desc:
+      "An immersive series of events exploring Marrakech's overlooked heritage gems, including history, architecture, craftsmanship, and cultural traditions.",
+    treasures_project_desc_p1:
+      "Unveiling Marrakech's Hidden Treasures is an immersive and enlightening series of events dedicated to exploring the city's often overlooked heritage gems. This initiative goes beyond the well-known tourist attractions to reveal the authentic soul of Marrakech through its lesser-known historical sites, architectural marvels, traditional craftsmanship, and rich cultural traditions.",
+    treasures_project_desc_p2:
+      "Through carefully curated experiences, we invite both locals and visitors to discover the hidden corners of the medina, meet master artisans in their workshops, and learn about the stories and traditions that have shaped Marrakech's unique cultural identity.",
+    treasures_project_desc_p3:
+      "This ongoing program features periodic events throughout the year, each focusing on different aspects of Marrakech's heritage, ensuring a comprehensive exploration of the city's cultural wealth.",
+    program_components: "Program Components",
+    treasures_component_1: "Specialized tours of lesser-known historical sites and architectural gems",
+    treasures_component_2: "Craft workshops with master artisans preserving traditional techniques",
+    treasures_component_3: "Oral history collection and storytelling sessions with community elders",
+    treasures_component_4: "Educational workshops on various aspects of tangible and intangible heritage",
+    treasures_component_5: "Digital documentation of endangered heritage elements",
+    focus_areas: "Focus Areas",
+    treasures_focus_intro: "Our Hidden Treasures initiative explores various dimensions of Marrakech's heritage:",
+    treasures_focus_1: "Vernacular architecture and traditional building techniques",
+    treasures_focus_2: "Endangered crafts and artisanal knowledge",
+    treasures_focus_3: "Cultural practices, rituals, and celebrations",
+    treasures_focus_4: "Historical narratives and collective memory",
+    treasures_focus_5: "Natural heritage and traditional ecological knowledge",
+    treasures_conclusion:
+      "By unveiling these hidden treasures, we aim to foster a deeper appreciation for Marrakech's cultural complexity and encourage more meaningful engagement with its heritage, ultimately contributing to its preservation for future generations.",
+    treasures_project_date: "Ongoing program with various activities throughout the year",
+    treasures_project_location: "Various locations across Marrakech, focusing on lesser-known sites",
+    participants_to_date: "Participants to Date",
+    participants_across_activities: "participants across various program activities",
+    register_for_next_event: "Register for Next Event",
+    key_initiatives: "Key Initiatives",
+    treasures_initiative_1: "Hidden Heritage Tours: Guided explorations of lesser-known historical sites",
+    treasures_initiative_2: "Artisan Encounters: Direct interactions with master craftspeople in their workshops",
+    treasures_initiative_3: "Heritage Storytelling Sessions: Collecting and sharing oral histories and traditions",
+    treasures_initiative_4: "Heritage Skills Workshops: Hands-on learning of traditional techniques",
+    treasures_initiative_5: "Digital Heritage Archive: Creating a digital repository of endangered heritage elements",
+    impact: "Impact",
+    treasures_impact:
+      "This initiative has significantly increased awareness about Marrakech's lesser-known heritage assets, created economic opportunities for traditional craftspeople, and contributed valuable documentation of endangered cultural practices and sites.",
+    ongoing: "Ongoing",
+    schedule: "Schedule",
+    restoration: "Restoration",
+    back_to_projects: "Back to Projects",
+    about_the_project: "About the Project",
+    hidden_treasures_title: "Unveiling Hidden Treasures",
+    hidden_treasures_description:
+      "An immersive series of events exploring Marrakech's overlooked heritage gems, including history, architecture, craftsmanship, and cultural traditions.",
+    hidden_treasures_format: "Formats variés incluant des visites guidées, des ateliers et des expositions",
   },
   fr: {
     // Header
@@ -720,7 +705,7 @@ export const translations = {
       "L'association à but non lucratif, non religieuse et apolitique \"TURÂTH\" a été créée dans le but d'atteindre les objectifs suivants :",
     heritage_importance_title: "L'Importance de la Sensibilisation au Patrimoine Culturel",
     heritage_importance_quote:
-      '"La sensibilisation au patrimoine culturel est essentielle pour le développement d\'une nation qui cherche à construire son avenir tout en préservant les valeurs culturelles de son passé."',
+      "La sensibilisation au patrimoine culturel est essentielle pour le développement d'une nation qui cherche à construire son avenir tout en préservant les valeurs culturelles de son passé.",
     join_mission: "Rejoignez Notre Mission",
 
     // About Page - Mission Section
@@ -844,8 +829,6 @@ export const translations = {
     membership_benefits_description:
       "Devenir membre de l'Association Turâth offre de nombreux avantages et opportunités pour s'engager avec le patrimoine culturel de Marrakech.",
     benefit_events_title: "Événements Exclusifs",
-    benefit_events_description:
-      "Accès à des événements, expositions et activités culturelles réservés aux membres tout au long de l'année.",
     benefit_networking_title: "Opportunités de Réseautage",
     benefit_networking_description:
       "Connectez-vous avec des personnes partageant les mêmes idées et passionnées par la préservation du patrimoine culturel de Marrakech.",
@@ -1016,19 +999,9 @@ export const translations = {
     heritage_days_title: "Journées du Patrimoine de Marrakech",
     heritage_days_description:
       "Un événement annuel mettant en valeur le riche patrimoine de Marrakech à travers des visites guidées, des ateliers et des activités culturelles.",
-    earthquake_reconstruction_title: "Reconstruction Post-Séisme",
-    earthquake_reconstruction_description:
-      "Une initiative cruciale pour soutenir les efforts de reconstruction suite au séisme dévastateur d'Al Haouz de septembre 2023.",
-    hidden_treasures_title: "Dévoiler les Trésors Cachés de Marrakech",
-    hidden_treasures_description:
-      "Une série immersive d'événements explorant les joyaux patrimoniaux méconnus de Marrakech, incluant l'histoire, l'architecture, l'artisanat et les traditions culturelles.",
-
     // Project page specific translations
     heritage_days_date: "23-26 mai 2024 (2ème Édition)",
     heritage_days_next_edition: "2025 (3ème Édition)",
-    earthquake_reconstruction_date: "Septembre 2023 - En cours",
-    earthquake_reconstruction_focus: "Restauration de la Mosquée Tinmel",
-    hidden_treasures_format: "Événements et Programmes Périodiques",
 
     // Heritage Days Project Editions
     project_editions: "Éditions du Projet",
@@ -1059,101 +1032,215 @@ export const translations = {
     heritage_days_third_edition_date: "Mai 2025",
 
     heritage_days_location: "Divers sites historiques à travers Marrakech",
-  },
 
+    // Post-earthquake Reconstruction translations
+    earthquake_reconstruction_title: "Reconstruction Post-Séisme",
+    earthquake_reconstruction_description:
+      "Une initiative cruciale pour soutenir les efforts de reconstruction suite au séisme dévastateur d'Al Haouz en septembre 2023.",
+    earthquake_reconstruction_date: "Septembre 2023 - En cours",
+    earthquake_reconstruction_focus: "Préservation architecturale et techniques de construction traditionnelles",
+    earthquake_about:
+      "Suite au séisme dévastateur d'Al Haouz du 8 septembre 2023, qui a mesuré 6,8 sur l'échelle de Richter et affecté de nombreux sites historiques dans la région des montagnes de l'Atlas, l'Association Turâth s'est immédiatement mobilisée pour soutenir les efforts de reconstruction.",
+    earthquake_key_activities_title: "Activités Principales",
+    earthquake_key_activities_1:
+      "Évaluation complète des dommages des structures historiques dans plus de 20 villages de la région d'Al Haouz",
+    earthquake_key_activities_2:
+      "Stabilisation d'urgence des bâtiments patrimoniaux endommagés à l'aide de techniques réversibles",
+    earthquake_key_activities_3: "Documentation 3D détaillée et relevés architecturaux des structures endommagées",
+    earthquake_key_activities_4:
+      "Coordination avec les agences gouvernementales, l'UNESCO et les organisations internationales de conservation",
+    earthquake_key_activities_5:
+      "Ateliers communautaires pour intégrer les connaissances locales dans les plans de reconstruction",
+    earthquake_tinmel_title: "Restauration de la Mosquée de Tinmel",
+    earthquake_tinmel_description:
+      "La mosquée historique de Tinmel, chef-d'œuvre de l'architecture almohade datant de 1156 et l'une des deux seules mosquées au Maroc ouvertes aux non-musulmans, a subi de graves dommages lors du séisme.",
+    earthquake_tinmel_efforts_1:
+      "Récupérer et cataloguer les éléments architecturaux originaux, y compris les éléments en stuc sculpté et en bois",
+    earthquake_tinmel_efforts_2: "Développer un plan de restauration complet basé sur la documentation historique",
+    earthquake_tinmel_efforts_3:
+      "Former les artisans locaux à la préparation traditionnelle du mortier de chaux et à la construction en terre",
+    earthquake_tinmel_efforts_4:
+      "Créer un centre d'interprétation pour les visiteurs expliquant l'importance historique de la mosquée",
+    earthquake_collaborative_title: "Approche Collaborative",
+    earthquake_collaborative_description:
+      "Nos efforts de reconstruction sont basés sur une approche collaborative qui réunit divers acteurs, notamment le Ministère de la Culture du Maroc, l'UNESCO, l'ICOMOS, les autorités locales, les institutions académiques et, surtout, les communautés affectées elles-mêmes.",
+    earthquake_timeline_title: "Calendrier",
+    earthquake_project_title: "Reconstruction Post-séisme",
+    earthquake_project_short_desc:
+      "Une initiative cruciale pour soutenir les efforts de reconstruction suite au dévastateur séisme d'Al Haouz de septembre 2023.",
+    earthquake_project_desc_p1:
+      "Suite au dévastateur séisme d'Al Haouz du 8 septembre 2023, qui a mesuré 6,8 sur l'échelle de Richter et affecté de nombreux sites historiques dans la région des montagnes de l'Atlas, l'Association Turâth s'est immédiatement mobilisée pour soutenir les efforts de reconstruction. Notre équipe d'architectes, d'ingénieurs et de spécialistes du patrimoine travaille en étroite collaboration avec les communautés locales et les autorités pour évaluer les dommages, documenter les structures affectées et développer des plans de reconstruction durables qui respectent les techniques de construction traditionnelles tout en améliorant la résilience structurelle.",
+    earthquake_project_desc_p2:
+      "Ce projet se concentre particulièrement sur la préservation du patrimoine architectural dans les villages touchés du Haut Atlas, où l'architecture en terre séculaire et les connaissances traditionnelles de construction risquent d'être perdues dans le processus de reconstruction. Nous avons établi une plateforme reliant des experts internationaux avec des maîtres bâtisseurs locaux pour garantir que les efforts de reconstruction honorent les méthodes traditionnelles tout en incorporant des techniques appropriées de renforcement sismique.",
+    key_activities: "Activités Clés",
+    earthquake_activity_1:
+      "Évaluation complète des dommages des structures historiques dans plus de 20 villages à travers la région d'Al Haouz",
+    earthquake_activity_2:
+      "Stabilisation d'urgence des bâtiments patrimoniaux endommagés en utilisant des techniques réversibles qui ne compromettent pas la restauration future",
+    earthquake_activity_3:
+      "Documentation 3D détaillée et relevés architecturaux des structures endommagées pour guider une reconstruction précise",
+    earthquake_activity_4:
+      "Coordination avec les agences gouvernementales, l'UNESCO et les organisations internationales de conservation",
+    earthquake_activity_5:
+      "Ateliers communautaires pour intégrer les connaissances locales et assurer la pertinence culturelle des plans de reconstruction",
+    tinmel_mosque_restoration: "Restauration de la Mosquée de Tinmel",
+    tinmel_mosque_desc:
+      "La historique Mosquée de Tinmel, un chef-d'œuvre de l'architecture almohade datant de 1156 et l'une des deux seules mosquées au Maroc ouvertes aux non-musulmans, a subi de graves dommages pendant le séisme. Nos efforts spécifiques de restauration pour ce site candidat au patrimoine mondial de l'UNESCO comprennent :",
+    tinmel_activity_1:
+      "Récupérer et cataloguer les éléments architecturaux originaux, y compris les stucs sculptés et les éléments en bois",
+    tinmel_activity_2:
+      "Développer un plan de restauration complet basé sur la documentation historique et les preuves archéologiques",
+    tinmel_activity_3:
+      "Former les artisans locaux à la préparation traditionnelle du mortier de chaux, à la construction en terre et aux techniques décoratives",
+    tinmel_activity_4:
+      "Créer un centre d'interprétation pour les visiteurs expliquant l'importance historique de la mosquée et le processus de restauration",
+    collaborative_approach: "Approche Collaborative",
+    collaborative_approach_p1:
+      "Nos efforts de reconstruction sont basés sur une approche collaborative qui réunit divers acteurs, notamment le Ministère de la Culture du Maroc, l'UNESCO, l'ICOMOS, les autorités locales, les institutions académiques et, surtout, les communautés affectées elles-mêmes.",
+    collaborative_approach_p2:
+      "Cette stratégie inclusive garantit que la reconstruction préserve non seulement les structures physiques mais respecte également la signification culturelle et les valeurs communautaires attachées à ces sites patrimoniaux. Nous documentons les techniques de construction traditionnelles, formons les artisans locaux et créons des ressources éducatives pour garantir que ces connaissances continuent d'être transmises aux générations futures.",
+    earthquake_project_date: "Septembre 2023 - En cours",
+    earthquake_project_location: "Province d'Al Haouz, Haut Atlas, Maroc",
+    earthquake_project_contributors: "Plus de 85 spécialistes et bénévoles",
+    earthquake_goal_1:
+      "Documenter et préserver les techniques uniques de construction en terre de la région du Haut Atlas",
+    earthquake_goal_2:
+      "Mettre en œuvre des méthodes de reconstruction résistantes aux séismes qui respectent les traditions architecturales locales",
+    earthquake_goal_3: "Développer les capacités des artisans locaux grâce à des ateliers de formation pratique",
+    earthquake_goal_4:
+      "Restaurer les sites patrimoniaux clés tout en améliorant leur résilience face aux futurs séismes",
+    earthquake_goal_5:
+      "Créer une archive numérique des connaissances traditionnelles de construction pour les générations futures",
+    timeline: "Timeline",
+    earthquake_timeline_1: "Phase 1 : Évaluation d'urgence et documentation (Terminée - Octobre 2023)",
+    earthquake_timeline_2: "Phase 2 : Stabilisation des structures à risque (Terminée - Décembre 2023)",
+    earthquake_timeline_3: "Phase 3 : Engagement communautaire et planification (En cours - Janvier-Juin 2024)",
+    earthquake_timeline_4:
+      "Phase 4 : Restauration des sites patrimoniaux prioritaires (En cours - Avril 2024-Décembre 2025)",
+    earthquake_timeline_5: "Phase 5 : Transfert de connaissances et renforcement des capacités (2024-2026)",
+    treasures_project_title: "Dévoilement des Trésors Cachés de Marrakech",
+    treasures_project_short_desc:
+      "Une série immersive d'événements explorant les joyaux patrimoniaux méconnus de Marrakech, y compris l'histoire, l'architecture, l'artisanat et les traditions culturelles.",
+    treasures_project_desc_p1:
+      "Dévoilement des Trésors Cachés de Marrakech est une série d'événements immersifs et éclairants dédiés à l'exploration des joyaux patrimoniaux souvent négligés de la ville. Cette initiative va au-delà des attractions touristiques bien connues pour révéler l'âme authentique de Marrakech à travers ses sites historiques moins connus, ses merveilles architecturales, son artisanat traditionnel et ses riches traditions culturelles.",
+    treasures_project_desc_p2:
+      "Grâce à des expériences soigneusement organisées, nous invitons les habitants et les visiteurs à découvrir les coins cachés de la médina, à rencontrer des maîtres artisans dans leurs ateliers et à découvrir les histoires et les traditions qui ont façonné l'identité culturelle unique de Marrakech.",
+    treasures_project_desc_p3:
+      "Ce programme continu propose des événements périodiques tout au long de l'année, chacun se concentrant sur différents aspects du patrimoine de Marrakech, assurant une exploration complète de la richesse culturelle de la ville.",
+    program_components: "Composantes du Programme",
+    treasures_component_1: "Visites spécialisées de sites historiques et de joyaux architecturaux moins connus",
+    treasures_component_2: "Ateliers d'artisanat avec des maîtres artisans préservant les techniques traditionnelles",
+    treasures_component_3: "Collecte d'histoires orales et séances de contes avec des aînés de la communauté",
+    treasures_component_4: "Ateliers éducatifs sur divers aspects du patrimoine matériel et immatériel",
+    treasures_component_5: "Documentation numérique des éléments patrimoniaux menacés",
+    focus_areas: "Domaines d'Intérêt",
+    treasures_focus_intro: "Notre initiative Trésors Cachés explore diverses dimensions du patrimoine de Marrakech :",
+    treasures_focus_1: "Architecture vernaculaire et techniques de construction traditionnelles",
+    treasures_focus_2: "Artisanat en voie de disparition et connaissances artisanales",
+    treasures_focus_3: "Pratiques culturelles, rituels et célébrations",
+    treasures_focus_4: "Récits historiques et mémoire collective",
+    treasures_focus_5: "Patrimoine naturel et connaissances écologiques traditionnelles",
+    treasures_conclusion:
+      "En dévoilant ces trésors cachés, nous visons à favoriser une appréciation plus profonde de la complexité culturelle de Marrakech et à encourager un engagement plus significatif avec son patrimoine, contribuant ainsi à sa préservation pour les générations futures.",
+    treasures_project_date: "Programme continu avec diverses activités tout au long de l'année",
+    treasures_project_location: "Divers lieux à travers Marrakech, en se concentrant sur les sites moins connus",
+    participants_to_date: "Participants à ce jour",
+    participants_across_activities: "participants à travers diverse",
+    hidden_treasures_title: "Dévoiler les Trésors Cachés",
+  },
   ar: {
     // Header
     home: "الرئيسية",
-    about: "من نحن",
+    about: "حول",
     volunteer: "تطوع",
-    contact: "اتصل بنا",
+    contact: "اتصل",
     select_language: "اختر اللغة",
-    scroll_down: "مرر لأسفل",
+    scroll_down: "انزل للاسفل",
     established: "تأسست",
 
     // Hero Section
-    hero_title: "الحفاظ على الماضي، تمكين المستقبل",
+    hero_title: "الحفاظ على الماضي، وتمكين المستقبل",
     hero_description:
-      "تراث هي جمعية مغربية غير ربحية تأسست عام 2021 بهدف الحفاظ على التراث المادي وغير المادي لمراكش والمنطقة المحيطة بها. تتبنى الجمعية رؤية شاملة للتراث، تشمل العمارة والمناظر الطبيعية والحرف التقليدية والممارسات الثقافية، وتجمع أعضاء يتشاركون قيمًا مشتركة من معرفة التراث والحفاظ عليه وتعزيزه.",
+      "تراث هي جمعية مغربية غير ربحية تأسست عام 2021 بهدف الحفاظ على التراث المادي وغير المادي لمدينة مراكش ومنطقتها. تتبنى الجمعية رؤية شاملة للتراث، تشمل الهندسة المعمارية والمناظر الطبيعية والحرف التقليدية والممارسات الثقافية، وتوحد الأعضاء الذين يتقاسمون قيمًا مشتركة للمعرفة التراثية والحفاظ عليها وتعزيزها.",
     join_us: "انضم إلينا",
     discover_more: "اكتشف المزيد",
 
     // Add these new translation keys for the typewriter effect
     typewriter_text1: "الحفاظ على تراثنا",
     typewriter_text2: "الاحتفال بالتقاليد",
-    typewriter_text3: "مشاركة الثقافة",
+    typewriter_text3: "تبادل الثقافة",
 
     // Historical Places Section
-    historical_places_title: "كنوز تاريخية",
+    historical_places_title: "الكنوز التاريخية",
     historical_places_description:
-      "اكتشف المواقع التاريخية الشهيرة التي تجعل مراكش متحفًا حيًا للتراث الثقافي والروعة المعمارية.",
+      "اكتشف المواقع التاريخية الشهيرة التي تجعل من مراكش متحفًا حيًا للتراث الثقافي والروعة المعمارية.",
     did_you_know: "هل تعلم؟",
-    jemaa_el_fnaa_title: "جامع الفناء",
+    jemaa_el_fnaa_title: "ساحة جامع الفنا",
     jemaa_el_fnaa_year: "القرن الحادي عشر",
     jemaa_el_fnaa_fact:
-      "يتحول جامع الفناء من سوق خلال النهار إلى مركز ترفيهي في الليل مع رواة القصص والموسيقيين وبائعي الطعام.",
+      "تتحول ساحة جامع الفنا من سوق خلال النهار إلى مركز ترفيهي في الليل مع رواة القصص والموسيقيين وبائعي الطعام.",
     koutoubia_mosque_title: "مسجد الكتبية",
     koutoubia_mosque_year: "القرن الثاني عشر",
-    koutoubia_mosque_fact: "كانت صومعة الكتبية بمثابة نموذج لخيرالدا إشبيلية وبرج حسان في الرباط.",
+    koutoubia_mosque_fact: "كانت مئذنة الكتبية نموذجًا لخيرالدا إشبيلية وبرج الحسن في الرباط.",
     bahia_palace_title: "قصر الباهية",
-    bahia_palace_year: "ستينيات القرن التاسع عشر",
-    bahia_palace_fact: "اسم 'الباهية' يعني 'البريق' باللغة العربية، وقد بُي القصر ليكون أعظم قصر في عصره.",
+    bahia_palace_year: "1860s",
+    bahia_palace_fact: "اسم 'الباهية' يعني 'البريق' باللغة العربية، وقد تم بناء القصر ليكون أعظم قصر في عصره.",
     majorelle_garden_title: "حديقة ماجوريل",
     majorelle_garden_year: "1923",
     majorelle_garden_fact:
-      "الظل المميز من اللون الأزرق المستخدم في جميع أنحاء الحديقة يُعرف باسم 'أزرق ماجوريل' وقد سجله جاك ماجوريل كبراءة اختراع.",
+      "تُعرف الدرجة المميزة من اللون الأزرق المستخدم في جميع أنحاء الحديقة باسم 'أزرق ماجوريل' وقد تم تسجيل براءة اختراعها من قبل جاك ماجوريل.",
     el_badi_palace_title: "قصر البديع",
     el_badi_palace_year: "القرن السادس عشر",
     el_badi_palace_fact:
-      "البديع يعني 'الذي لا مثيل له' باللغة العربية. تم تجريد الكثير من مواده الأصلية لبناء قصور العلويين في مكناس.",
+      "البديع تعني 'لا مثيل له' باللغة العربية. تم تجريد الكثير من مواده الأصلية لبناء القصور العلوية في مكناس.",
 
     // Board Section
-    board_title: "مجلس إدارتنا",
+    board_title: "مجلسنا",
     board_description:
-      "متطوعونا هم قلب تراث النابض. بشغف وتفانٍ، يلعبون دورًا حيويًا في الحفاظ على تراث مراكش. من البحث إلى الفعاليات ومشاريع الترميم، تترك مساهماتهم أثرًا دائمًا. انضم إلينا وكن جزءًا من مجتمع نابض بالحياة يشكل إرثنا الثقافي.",
-    president: "الرئيسة",
-    vice_president: "نائبة الرئيس",
-    treasurer: "أمينة الصندوق",
-    deputy_treasurer: "نائبة أمينة الصندوق",
+      "متطوعونا هم قلب تراث النابض. بشغف وتفانٍ، يلعبون دورًا حيويًا في الحفاظ على تراث مراكش. من البحث إلى الفعاليات ومشاريع الترميم، تترك مساهماتهم تأثيرًا دائمًا. انضم إلينا وكن جزءًا من مجتمع نابض بالحياة يشكل إرثنا الثقافي.",
+    president: "رئيس",
+    vice_president: "نائب الرئيس",
+    treasurer: "أمين الصندوق",
+    deputy_treasurer: "نائب أمين الصندوق",
     secretary_general: "الأمين العام",
-    president_name: "سعاد بلقزيز",
+    president_name: "سعاد بلكزيز",
     president_bio:
-      "سعاد بلقزيز هي الرئيسة المؤسسة لتراث. بشغفها للتراث المغربي وأكثر من 15 عامًا من الخبرة في الحفاظ على التراث الثقافي، تقود مهمة المنظمة لحماية الإرث الثقافي الغني لمراكش.",
-    about_president: "عن الرئيسة",
-    meet_full_board: "تعرف على المجلس الكامل",
-    visit_about_page: "زر صفحة من نحن لمعرفة المزيد عن كل عضو.",
+      "سعاد بلكزيز هي الرئيس المؤسس لتراث. بشغف للتراث المغربي وخبرة تزيد عن 15 عامًا في الحفاظ على الثقافة، تقود مهمة المنظمة لحماية الإرث الثقافي الغني لمراكش.",
+    about_president: "عن الرئيس",
+    meet_full_board: "قابل المجلس بأكمله",
+    visit_about_page: "تفضل بزيارة صفحتنا 'حول' لمعرفة المزيد عن كل عضو.",
 
     // Stats Section
-    volunteers: "متطوعون",
-    donations: "تبرعات",
-    missions: "مهمات",
+    volunteers: "المتطوعون",
+    donations: "التبرعات",
+    missions: "المهام",
 
     // Footer
     our_vision: "رؤيتنا",
     vision_text:
-      "نتطلع إلى مستقبل يكون فيه كل مواطن على دراية بثراء تراثه الثقافي. نهدف إلى إنشاء مجتمع منخرط بعمق في الحفاظ على القيم الثقافية لماضينا وضمان استمراريتها في المستقبل.",
+      "نتصور مستقبلًا يكون فيه كل مواطن على دراية بثراء تراثه الثقافي. نهدف إلى إنشاء مجتمع منخرط بعمق في الحفاظ على القيم الثقافية لماضينا وضمان استمرارها في المستقبل.",
     social_icons: "تابعنا",
     useful_links: "روابط مفيدة",
     introduction: "مقدمة",
     our_partners: "شركاؤنا",
-    about_us: "من نحن",
+    about_us: "معلومات عنا",
     our_journeys: "رحلاتنا",
     contact_info: "معلومات الاتصال",
     address_value: "متحف المواسين، درب الحمام، المواسين، مراكش",
     phone_value: "(+212) 662 388 758",
     email_value: "turath.marrakech@gmail.com",
     copyright: "جميع الحقوق محفوظة.",
-    made_with: "صنع بـ",
+    made_with: "صنع مع",
     in_morocco: "في المغرب",
     subscribe_title: "ابق على اطلاع",
-    subscribe_description: "اشترك في نشرتنا الإخبارية للحصول على آخر الأخبار والفعاليات.",
+    subscribe_description: "اشترك في نشرتنا الإخبارية للحصول على آخر الأخبار والأحداث.",
     email_placeholder: "عنوان بريدك الإلكتروني",
-    subscribe_button: "اشترك",
+    subscribe_button: "اشتراك",
 
     // Location Section
-    location_title: "تواجدنا",
+    location_title: "وجودنا",
     location_description:
-      "تُراث مكرسة للحفاظ على التراث الثقافي للمغرب وتعزيزه. تمتد مبادراتنا ومشاريعنا في جميع أنحاء البلاد، ونعمل عن كثب مع المجتمعات المحلية للحفاظ على إرثها الثقافي الغني.",
+      "تراث مكرسة للحفاظ على التراث الثقافي للمغرب وتعزيزه. تمتد مبادراتنا ومشاريعنا في جميع أنحاء البلاد، وتعمل عن كثب مع المجتمعات المحلية للحفاظ على تراثها الثقافي الغني.",
 
     // Image Alt Texts
     logo_alt: "شعار تراث",
@@ -1162,31 +1249,31 @@ export const translations = {
     menu_toggle_alt: "تبديل القائمة",
 
     // UI Elements
-    loading: "جاري التحميل...",
+    loading: "جار التحميل...",
     error: "حدث خطأ",
-    success: "تم بنجاح",
+    success: "نجاح",
     close: "إغلاق",
-    menu: "القائمة",
-    language: "اللغة",
+    menu: "قائمة",
+    language: "لغة",
 
     // About Page
     about_title: "عن تراث",
     about_subtitle: "الحفاظ على التراث المادي وغير المادي لمراكش ومنطقتها",
     mission_title: "مهمتنا",
     objectives_title: "أهداف الجمعية",
-    objectives_description: 'تأسست جمعية "تراث" غير الربحية وغير الدينية وغير السياسية بهدف تحقيق الأهداف التالية:',
-    heritage_importance_title: "أهمية التوعية بالتراث الثقافي",
+    objectives_description: "تأسست جمعية 'تراث' غير الربحية وغير الدينية وغير السياسية بهدف تحقيق الأهداف التالية:",
+    heritage_importance_title: "أهمية الوعي بالتراث الثقافي",
     heritage_importance_quote:
-      '"التوعية بالتراث الثقافي ضرورية لتنمية أمة تسعى لبناء مستقبلها مع الحفاظ على القيم الثقافية لماضيها."',
+      "إن رفع مستوى الوعي بالتراث الثقافي أمر ضروري لتنمية أمة تسعى إلى بناء مستقبلها مع الحفاظ على القيم الثقافية لماضيها.",
     join_mission: "انضم إلى مهمتنا",
 
     // About Page - Mission Section
     mission_paragraph_1:
       "تراث هي جمعية مغربية تأسست عام 2021، غير ربحية، مكرسة للحفاظ على التراث المادي وغير المادي لمدينة مراكش ومنطقتها.",
     mission_paragraph_2:
-      "يُفهم التراث، في هذا السياق، بمعناه الأوسع، ليشمل العناصر المعمارية والمناظر الطبيعية، وكذلك المعرفة والممارسات الثقافية المرتبطة بالمهن ذات الصلة.",
+      "يُفهم التراث، في هذا السياق، بمعناه الأوسع، الذي يشمل العناصر المعمارية والمناظر الطبيعية، فضلاً عن المعارف والممارسات الثقافية المرتبطة بالمهن ذات الصلة.",
     mission_paragraph_3:
-      "تجمع الجمعية أعضاء يتشاركون قيمًا مشتركة، مثل فهم التراث والحفاظ عليه وتثمينه، وتعزيز التبادل والتعاون عبر مختلف المجالات بالشراكة مع المؤسسات الخاصة والعامة.",
+      "تجمع الجمعية أعضاء يتقاسمون قيمًا مشتركة، مثل فهم التراث والحفاظ عليه وتثمينه، وتعزيز التبادل والتعاون في مختلف المجالات بالشراكة مع المؤسسات الخاصة والعامة.",
     non_profit: "غير ربحية",
     non_religious: "غير دينية",
     apolitical: "غير سياسية",
@@ -1195,14 +1282,14 @@ export const translations = {
     // About Page - Objectives
     objective_1_title: "التوعية / المعلومات",
     objective_1_description:
-      "تنظيم أنشطة متنوعة (مؤتمرات، معارض، جولات إرشادية، علاقات صحفية، تدريب، ورش عمل توعوية، مجموعات تفكير، إلخ) بهدف زيادة الوعي بين عامة الناس (صغارًا وكبارًا) المهتمين بالتراث والحفاظ عليه.",
+      "تنظيم أنشطة مختلفة (مؤتمرات، معارض، جولات إرشادية، علاقات صحفية، تدريب، ورش عمل توعية، مجموعات تفكير، إلخ) بهدف رفع مستوى الوعي بين عامة الناس (صغارًا وكبارًا) المهتمين بالتراث والحفاظ عليه.",
     objective_2_title: "التثمين / الترميم",
-    objective_2_description: "بدء وتشجيع إجراءات الحفظ والتثمين والترميم أو إعادة التأهيل في مواقع محددة.",
+    objective_2_description: "الشروع في وتشجيع أعمال الحفظ أو التثمين أو الترميم أو إعادة التأهيل في مواقع محددة.",
     objective_3_title: "البحث / النشر",
     objective_3_description:
-      "إجراء أو المشاركة في البحوث والتحليلات لبناء وتعزيز المعرفة حول التراث. العمل على تعزيز نشر وتبسيط المواضيع المتعلقة بالتراث وتثمينه (دراسات، تقارير، منشورات...).",
-    objective_4_title: "تعزيز التراث",
-    objective_4_description: "أي عمل آخر يساهم في تثمين التراث المادي وغير المادي لمراكش ومنطقتها.",
+      "إجراء أو المشاركة في البحوث والتحليلات لبناء وتعزيز المعرفة حول التراث. العمل على تعزيز نشر وتعميم الموضوعات المتعلقة بالتراث وتثمينه (دراسات، تقارير، منشورات...).",
+    objective_4_title: "الترويج للتراث",
+    objective_4_description: "أي إجراء آخر يساهم في تثمين التراث المادي وغير المادي لمراكش ومنطقتها.",
 
     // Contact Page
     get_in_touch: "تواصل معنا",
@@ -1214,48 +1301,48 @@ export const translations = {
     email_label: "البريد الإلكتروني",
     subject: "الموضوع",
     message: "الرسالة",
-    send_message_button: "إرسال الرسالة",
-    message_sent: "شكرا لرسالتك! سنرد عليك قريبا.",
+    send_message_button: "أرسل الرسالة",
+    message_sent: "شكرا لرسالتك! سوف نعود إليك قريبا.",
     contact_information: "معلومات الاتصال",
-    find_us: "جدنا",
-    address: "العنوان",
-    phone: "الهاتف",
+    find_us: "تجدنا",
+    address: "عنوان",
+    phone: "هاتف",
     email: "البريد الإلكتروني",
     office_hours: "ساعات العمل",
-    monday_friday: "الإثنين - الجمعة: 9:00 صباحًا - 5:00 مساءً",
-    saturday: "السبت: 10:00 صباحًا - 2:00 مساءً",
+    monday_friday: "الاثنين - الجمعة: 9:00 صباحًا - 5:00 مساءً",
+    saturday: "السبت: 10:00 صباحًا - 2:00 ظهرًا",
     sunday: "الأحد: مغلق",
 
     // Volunteer Page
     join_team: "انضم إلى فريقنا",
     volunteer_title: "تطوع مع تراث",
     volunteer_subtitle: "كن جزءًا من مهمتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه",
-    board_subtitle: "تعرف على الأشخاص وراء هذه المبادرة المذهلة",
-    faq_title: "الأسئلة الشائعة",
+    board_subtitle: "تعرف على الأشخاص الذين يقفون وراء هذه المبادرة الرائعة",
+    faq_title: "أسئلة مكررة",
     faq_subtitle: "كل ما تحتاج لمعرفته حول التطوع مع تراث",
     volunteer_cta_title: "انضم إلينا في الحفاظ على تراث مراكش الغني!",
     volunteer_cta_description:
-      "كن جزءًا من فريق تراث المتحمس وأحدث فرقًا في الحفاظ على الإرث الثقافي لمراكش. انضم إلينا كمتطوع وابدأ رحلة مثرية مليئة بالتعلم والتواصل والمشاركة المجتمعية.",
+      "كن جزءًا من فريق تراث المتحمس وأحدث فرقًا في الحفاظ على الإرث الثقافي لمراكش. انضم إلينا كمتطوع وانطلق في رحلة ثرية مليئة بالتعلم والتواصل والمشاركة المجتمعية.",
     apply_now: "قدم الآن",
-    faq_question_1: "كيف تصبح متطوعًا؟",
+    faq_question_1: "كيف تكون متطوعا؟",
     faq_answer_1:
-      "للتطوع مع تراث، يمكنك ملء نموذج التقديم عبر الإنترنت، أو حضور إحدى جلساتنا الإعلامية، أو الاتصال بنا مباشرة. نرحب بالأفراد من جميع الخلفيات المتحمسين للحفاظ على التراث الثقافي لمراكش.",
+      "لتصبح متطوعًا في تراث، يمكنك ملء نموذج الطلب عبر الإنترنت أو حضور إحدى جلسات المعلومات الخاصة بنا أو الاتصال بنا مباشرة. نرحب بالأفراد من جميع الخلفيات المتحمسين للحفاظ على التراث الثقافي لمراكش.",
 
-    faq_question_2: "ما الذي يجب أن تعرفه قبل التقديم",
+    faq_question_2: "ماذا يجب أن تعرف قبل التقديم",
     faq_answer_2:
-      "قبل التقديم، من المفيد فهم مهمتنا وقيمنا، والالتزام الزمني المطلوب، وأنواع فرص التطوع المتاحة. نوصي بمراجعة موقعنا الإلكتروني ووسائل التواصل الاجتماعي للحصول على فهم أفضل لعملنا والتأثير الذي نحدثه.",
+      "قبل التقديم، من المفيد فهم مهمتنا وقيمنا والالتزام بالوقت المطلوب وأنواع فرص التطوع المتاحة. نوصي بمراجعة موقعنا على الإنترنت ووسائل التواصل الاجتماعي للحصول على فكرة أفضل عن عملنا والتأثير الذي نحدثه.",
 
-    faq_question_3: "معلومات عن عملية التقديم",
+    faq_question_3: "معلومات حول عملية التقديم",
     faq_answer_3:
-      "تتضمن عملية التقديم لدينا ملء نموذج، ومقابلة مع منسق المتطوعين لدينا، وجلسة توجيهية. تستغرق العملية بأكملها عادةً 2-3 أسابيع، ولدينا فترات قبول منتظمة على مدار العام.",
+      "تتضمن عملية التقديم الخاصة بنا ملء نموذج ومقابلة مع منسق المتطوعين لدينا وجلسة توجيه. تستغرق العملية بأكملها عادةً 2-3 أسابيع، ولدينا فترات قبول منتظمة على مدار العام.",
 
     faq_question_4: "فعاليات تقدير المتطوعين",
     faq_answer_4:
-      "نستضيف بانتظام فعاليات تقديرية للاعتراف بالمساهمات الثمينة لمتطوعينا. وتشمل هذه حفلات سنوية، وشهادات تقدير، ووصول خاص إلى الفعاليات والمواقع الثقافية في مراكش.",
+      "نستضيف بانتظام فعاليات تقدير للاعتراف بالمساهمات القيمة لمتطوعينا. وتشمل هذه الاحتفالات السنوية وشهادات التقدير والوصول الخاص إلى الفعاليات والمواقع الثقافية في مراكش.",
 
-    faq_question_5: "التطوير المهني والشخصي",
+    faq_question_5: "التطوير الوظيفي والشخصي",
     faq_answer_5:
-      "يوفر التطوع مع تراث العديد من الفرص للنمو الشخصي والمهني. ستطور مهارات جديدة، وتوسع شبكتك، وتكتسب خبرة قيمة في الحفاظ على التراث، وإدارة الفعاليات، والبحث، والمزيد.",
+      "يوفر التطوع مع تراث العديد من الفرص للنمو الشخصي والمهني. ستطور مهارات جديدة وتوسع شبكتك وتكتسب خبرة قيمة في الحفاظ على التراث وإدارة الفعاليات والبحث والمزيد.",
 
     faq_question_6: "إحداث تأثير دائم",
     faq_answer_6:
@@ -1263,129 +1350,132 @@ export const translations = {
 
     faq_question_7: "نشر الوعي حول التطوع",
     faq_answer_7:
-      "ساعدنا في تنمية مجتمع المتطوعين لدينا من خلال مشاركة تجربتك مع الأصدقاء والعائلة. يمكنك أيضًا متابعة ومشاركة منشوراتنا على وسائل التواصل الاجتماعي، والمشاركة في فعالياتنا العامة، وأن تصبح سفيرًا للحفاظ على التراث في مجتمعك.",
+      "ساعدنا في تنمية مجتمع المتطوعين لدينا من خلال مشاركة تجربتك مع الأصدقاء والعائلة. يمكنك أيضًا متابعة ومشاركة منشوراتنا على وسائل التواصل الاجتماعي والمشاركة في فعالياتنا العامة وتصبح سفيرًا للحفاظ على التراث في مجتمعك.",
 
     faq_question_8: "كيف يمكنك أن تصبح شريكًا خارجيًا",
     faq_answer_8:
-      "يمكن للمنظمات المهتمة بالشراكة مع تراث التواصل مع فريق الشراكات لدينا. نتعاون مع المؤسسات التعليمية والشركات والوكالات الحكومية والمنظمات غير الحكومية الأخرى في مختلف المشاريع والمبادرات.",
+      "يمكن للمنظمات المهتمة بالشراكة مع تراث التواصل مع فريق الشراكة لدينا. نحن نتعاون مع المؤسسات التعليمية والشركات والوكالات الحكومية والمنظمات غير الحكومية الأخرى في مختلف المشاريع والمبادرات.",
 
-    faq_question_9: "ما هي فوائد التطوع التي تقدمها تراث؟",
+    faq_question_9: "ما هي مزايا المتطوعين التي تقدمها تراث؟",
     faq_answer_9:
-      "يتلقى متطوعونا تدريبًا، وفرص للتواصل، ودعوات لفعاليات حصرية، واعترافًا بمساهماته، والرضا عن إحداث تأثير هادف في الحفاظ على التراث الثقافي.",
+      "يتلقى متطوعونا التدريب وفرص التواصل ودعوات لحضور فعاليات حصرية والتقدير لمساهماتهم والرضا عن إحداث تأثير ذي معنى على الحفاظ على التراث الثقافي.",
 
     faq_question_10: "تدريب ودعم المتطوعين",
     faq_answer_10:
-      "نقدم تدريبًا شاملاً ودعمًا مستمرًا لجميع متطوعينا. يتضمن ذلك جلسات توجيهية، وورش عمل خاصة بالمهارات، وإرشاد من أعضاء الفريق ذوي الخبرة، وفحوصات منتظمة لضمان حصولك على كل ما تحتاجه للنجاح.",
+      "نحن نقدم تدريبًا شاملاً ودعمًا مستمرًا لجميع متطوعينا. ويشمل ذلك جلسات توجيه وورش عمل خاصة بالمهارات والإرشاد من أعضاء الفريق ذوي الخبرة وعمليات فحص منتظمة للتأكد من حصولك على كل ما تحتاجه لتحقيق النجاح.",
 
     faq_question_11: "فرص تطوع مرنة",
     faq_answer_11:
-      "نحن نتفهم أن متطوعينا لديهم التزامات متنوعة، لذلك نقدم خيارات جداول زمنية مرنة. يمكنك التطوع بشكل منتظم، أو لفعاليات أو مشاريع محددة، أو عن بُعد، اعتمادًا على توفرك واهتماماتك.",
+      "نحن نتفهم أن متطوعينا لديهم التزامات مختلفة، لذلك نقدم خيارات جدولة مرنة. يمكنك التطوع بشكل منتظم أو في فعاليات أو مشاريع محددة أو عن بُعد، اعتمادًا على مدى توفرك واهتماماتك.",
 
-    faq_question_12: "أدوار تطوع متنوعة",
+    faq_question_12: "أدوار تطوعية متنوعة",
     faq_answer_12:
-      "تقدم تراث مجموعة واسعة من أدوار التطوع لتناسب المهارات والاهتمامات المختلفة. وتشمل هذه المرشدين السياحيين، والباحثين، ومنسقي الفعاليات، ومديري وسائل التواصل الاجتماعي، والمصورين، والمترجمين، والدعم الإداري، والمزيد.",
+      "تقدم تراث مجموعة واسعة من الأدوار التطوعية لتتناسب مع المهارات والاهتمامات المختلفة. وتشمل هذه المرشدين السياحيين والباحثين ومنسقي الفعاليات ومديري وسائل التواصل الاجتماعي والمصورين والمترجمين والدعم الإداري والمزيد.",
 
     // New volunteer dropdown menu items
-    notre_bureau: "مجلسنا",
-    devenir_membre: "كن عضوًا",
-    devenir_volontaire: "كن متطوعًا",
+    notre_bureau: "مكتبنا",
+    devenir_membre: "كن عضوا",
+    devenir_volontaire: "تطوع",
 
     // Add new translation keys for the Devenir Membre and Devenir Volontaire pages
-    become_member_description: "انضم إلى مجتمعنا من المهتمين بالتراث وساهم في الحفاظ على الإرث الثقافي الغني لمراكش.",
-    membership_benefits: "فوائد العضوية",
+    become_member_description: "انضم إلى مجتمعنا من عشاق التراث وساهم في الحفاظ على الإرث الثقافي الغني لمراكش.",
+    membership_benefits: "مزايا العضوية",
     membership_benefits_description:
-      "يوفر الانضمام إلى جمعية تراث العديد من المزايا والفرص للمشاركة في التراث الثقافي لمراكش.",
+      "يوفر أن تصبح عضوًا في جمعية تراث العديد من المزايا والفرص للمشاركة في التراث الثقافي لمراكش.",
     benefit_events_title: "فعاليات حصرية",
-    benefit_events_description: "الوصول إلى فعاليات ومعارض وأنشطة ثقافية خاصة بالأعضاء على مدار العام.",
     benefit_networking_title: "فرص التواصل",
-    benefit_networking_description: "تواصل مع أشخاص يشاركونك نفس الاهتمامات والشغف بالحفاظ على التراث الثقافي لمراكش.",
+    benefit_networking_description: "تواصل مع الأفراد ذوي التفكير المماثل المتحمسين للحفاظ على التراث الثقافي لمراكش.",
     benefit_updates_title: "تحديثات منتظمة",
-    benefit_updates_description: "استلام رسائل إخبارية وتحديثات حول مشاريعنا وإنجازاتنا والمبادرات القادمة.",
+    benefit_updates_description: "تلقي النشرات الإخبارية والتحديثات حول مشاريعنا وإنجازاتنا والمبادرات القادمة.",
     benefit_voting_title: "حقوق التصويت",
-    benefit_voting_description: "المشاركة في الجمعيات العمومية للجمعية والمساهمة في القرارات الرئيسية.",
+    benefit_voting_description: "شارك في الجمعيات العامة للجمعية وأبدي رأيك في القرارات الرئيسية.",
     membership_fee: 'رسوم العضوية السنوية: <span class="font-bold">300 درهم</span> (رسوم مخفضة للطلاب: 150 درهم)',
-    apply_membership: "التقدم للعضوية",
+    apply_membership: "طلب عضوية",
     apply_membership_description:
-      "املأ النموذج أدناه للتقدم بطلب العضوية. سيقوم فريقنا بمراجعة طلبك والاتصال بك قريبًا.",
-    profession: "المهنة",
-    why_join_turath: "لماذا ترغب في الانضمام إلى تراث؟",
+      "املأ النموذج أدناه لتقديم طلب للحصول على العضوية. سيقوم فريقنا بمراجعة طلبك والاتصال بك قريبًا.",
+    profession: "مهنة",
+    why_join_turath: "لماذا تريد الانضمام إلى تراث؟",
     membership_type: "نوع العضوية",
-    regular_membership: "عادية (300 درهم)",
+    regular_membership: "عادي (300 درهم)",
     student_membership: "طالب (150 درهم)",
-    processing: "جاري المعالجة...",
-    submit_application: "تقديم الطلب",
-    form_error: "حدث خطأ. يرجى المحاولة مرة أخرى لاحقًا.",
-    membership_form_success: "شكرًا لتقديمك! سنتواصل معك قريبًا.",
+    processing: "جار المعالجة...",
+    submit_application: "إرسال الطلب",
+    form_error: "حدث خطأ. يرجى المحاولة مرة أخرى في وقت لاحق.",
+    membership_form_success: "شكرا لطلبك! سوف نتصل بك قريبا.",
 
-    become_volunteer_description: "شارك مهاراتك وشغفك للمساعدة في الحفاظ على التراث الثقافي الغني لمراكش وتعزيزه.",
+    become_volunteer_description: "شارك بمهاراتك وشغفك للمساعدة في الحفاظ على التراث الثقافي الغني لمراكش وتعزيزه.",
     volunteer_opportunities: "فرص التطوع",
     volunteer_opportunities_description:
-      "اكتشف الطرق المختلفة التي يمكنك من خلالها المساهمة في مهمة تراث وإحداث تأثير هادف في الحفاظ على التراث الثقافي لمراكش.",
+      "اكتشف الطرق المختلفة التي يمكنك من خلالها المساهمة في مهمة تراث وإحداث تأثير ذي معنى على الحفاظ على التراث الثقافي لمراكش.",
     opportunity_event_title: "دعم الفعاليات",
     opportunity_event_description: "المساعدة في تنظيم وإدارة الفعاليات الثقافية والمعارض وورش العمل على مدار العام.",
-    opportunity_event_commitment: "مرن، حسب الفعاليات",
+    opportunity_event_commitment: "مرنة، على أساس الفعاليات",
     opportunity_research_title: "البحث والتوثيق",
     opportunity_research_description: "المساعدة في توثيق المواقع التاريخية والحرف التقليدية والممارسات الثقافية.",
-    opportunity_research_commitment: "5-10 ساعات أسبوعيًا",
-    opportunity_outreach_title: "التواصل المجتمعي",
-    opportunity_outreach_description: "التفاعل مع المجتمعات المحلية لزيادة الوعي حول الحفاظ على التراث.",
-    opportunity_outreach_commitment: "3-5 ساعات أسبوعيًا",
+    opportunity_research_commitment: "5-10 ساعات في الأسبوع",
+    opportunity_outreach_title: "التوعية المجتمعية",
+    opportunity_outreach_description: "التفاعل مع المجتمعات المحلية لرفع مستوى الوعي حول الحفاظ على التراث.",
+    opportunity_outreach_commitment: "3-5 ساعات في الأسبوع",
     opportunity_admin_title: "الدعم الإداري",
     opportunity_admin_description: "المساعدة في العمليات اليومية والاتصالات وإدارة المشاريع.",
-    opportunity_admin_commitment: "مرن، 2-8 ساعات أسبوعيًا",
-    time_commitment: "الالتزام الزمني",
-    volunteer_benefits_note: "يحصل جميع المتطوعين على تدريب ودعم وتقدير لمساهماتهم القيمة.",
-    apply_volunteer: "التقدم للتطوع",
+    opportunity_admin_commitment: "مرنة، 2-8 ساعات في الأسبوع",
+    time_commitment: "الالتزام بالوقت",
+    volunteer_benefits_note: "يتلقى جميع المتطوعين التدريب والدعم والتقدير لمساهماتهم القيمة.",
+    apply_volunteer: "التقدم بطلب للتطوع",
     apply_volunteer_description:
       "املأ النموذج أدناه للتعبير عن اهتمامك بالتطوع مع تراث. سيقوم فريقنا بمراجعة طلبك والاتصال بك لمناقشة الفرص التي تتناسب مع مهاراتك واهتماماتك.",
-    skills_experience: "المهارات والخبرات",
+    skills_experience: "المهارات والخبرة",
     areas_of_interest: "مجالات الاهتمام",
     availability: "التوفر",
-    why_volunteer_turath: "لماذا ترغب في التطوع مع تراث؟",
-    volunteer_form_success: "شكرًا لاهتمامك بالتطوع! سنتواصل معك قريبًا.",
+    why_volunteer_turath: "لماذا تريد التطوع مع تراث؟",
+    volunteer_form_success: "شكرا لاهتمامك بالتطوع! سوف نتصل بك قريبا.",
 
-    partners: "الشركاء",
-    partners_title: "كن شريكًا مع تراث",
-    partners_subtitle: "ادعم مهمتنا في الحفاظ على التراث الثقافي لمراكش وتعزيزه",
+    partners: "شركاء",
+    partners_title: "كن شريكًا لتراث",
+    partners_subtitle: "ادعم مهمتنا للحفاظ على التراث الثقافي لمراكش وتعزيزه",
     partnership_types: "أنواع الشراكة",
     partnership_types_description: "اكتشف الطرق المختلفة التي يمكنك من خلالها الشراكة مع تراث وإحداث تأثير دائم",
     monthly_partner: "شريك شهري",
-    monthly_partner_description: "قدم دعمًا مستمرًا من خلال مساهمات شهرية تساعد في تمويل أنشطتنا وعملياتنا المنتظمة.",
+    monthly_partner_description:
+      "قدم دعمًا مستمرًا من خلال المساهمات الشهرية التي تساعد في تمويل أنشطتنا وعملياتنا المنتظمة.",
     annual_partner: "شريك سنوي",
-    annual_partner_description: "أحدث تأثيرًا كبيرًا من خلال شراكة سنوية تدعم مشاريع الحفاظ على المدى الطويل.",
-    event_sponsor: "راعي الفعاليات",
+    annual_partner_description:
+      "أحدث تأثيرًا كبيرًا من خلال شراكة سنوية تدعم مشاريعنا للحفاظ على التراث على المدى الطويل.",
+    event_sponsor: "راعي الفعالية",
     event_sponsor_description:
-      "رعاية فعاليات أو ورش عمل أو معارض محددة لمساعدتنا في مشاركة التراث الثقافي لمراكش مع جمهور أوسع.",
+      "قم برعاية فعاليات أو ورش عمل أو معارض محددة لمساعدتنا في مشاركة التراث الثقافي لمراكش مع جمهور أوسع.",
     project_sponsor: "راعي المشروع",
-    project_sponsor_description: "تمويل مشاريع محددة للحفظ أو التوثيق تتماشى مع قيم واهتمامات مؤسستك.",
+    project_sponsor_description:
+      "قم بتمويل مشاريع محددة للحفاظ على التراث أو توثيقه والتي تتماشى مع قيم مؤسستك واهتماماتها.",
     in_kind_partner: "شريك عيني",
-    in_kind_partner_description: "توفير السلع أو الخدمات أو الخبرات التي تدعم مهمتنا وعملياتنا.",
-    partnership_benefits: "فوائد الشراكة",
+    in_kind_partner_description: "قدم سلعًا أو خدمات أو خبرات ��دعم مهمتنا وعملياتنا.",
+    partnership_benefits: "مزايا الشراكة",
     partnership_benefits_description:
-      "يحصل شركاؤنا على الاعتراف والرؤية والرضا عن تقديم مساهمة هادفة في الحفاظ على التراث الثقافي",
-    benefit_visibility_title: "رؤية العلامة التجارية",
-    benefit_visibility_description: "عرض شعارك واسمك على موقعنا الإلكتروني والمنشورات وفي الفعاليات ذات الصلة.",
+      "يحصل شركاؤنا على التقدير والظهور والرضا عن تقديم مساهمة ذات مغزى في الحفاظ على الثقافة",
+    benefit_visibility_title: "الظهور للعلامة التجارية",
+    benefit_visibility_description: "يظهر شعارك واسمك على موقعنا الإلكتروني ومنشوراتنا وفي الفعاليات ذات الصلة.",
     benefit_impact_title: "تأثير قابل للقياس",
-    benefit_impact_description: "تحديثات منتظمة حول كيفية مساهمة دعمك في إحداث فرق في الحفاظ على تراث مراكش.",
+    benefit_impact_description: "تحديثات منتظمة حول كيفية إحداث دعمك فرقًا في الحفاظ على تراث مراكش.",
     benefit_network_title: "فرص التواصل",
-    benefit_network_description: "تواصل مع منظمات وأفراد آخرين متحمسين للتراث الثقافي.",
-    benefit_events_access_title: "وصول VIP",
-    benefit_events_access_description: "وصول خاص إلى الفعاليات والمعارض وتجارب حصرية خلف الكواليس.",
-    support_events: "دعم فعالياتنا",
-    support_events_description: "ساعدنا في تنظيم فعاليات ثقافية مؤثرة تزيد الوعي حول التراث الغني لمراكش",
+    benefit_network_description: "تواصل مع المنظمات والأفراد الآخرين المتحمسين للتراث الثقافي.",
+    benefit_events_access_title: "الوصول لكبار الشخصيات",
+    benefit_events_description: "الوصول الخاص إلى الفعاليات والمعارض والتجارب الحصرية من وراء الكواليس.",
+    support_events: "ادعم فعالياتنا",
+    support_events_description: "ساعدنا في تنظيم فعاليات ثقافية مؤثرة ترفع مستوى الوعي حول تراث مراكش الغني",
     upcoming_events: "الفعاليات القادمة",
-    event_heritage_days: "أيام التراث بمراكش 2024",
+    event_heritage_days: "أيام التراث في مراكش 2024",
     event_heritage_days_date: "15-22 أكتوبر 2024",
     event_heritage_days_description:
-      "احتفال يستمر لمدة أسبوع يتضمن جولات مرشدة وورش عمل وعروض تسلط الضوء على التراث الثقافي لمراكش.",
+      "احتفال لمدة أسبوع يضم جولات إرشادية وورش عمل وعروض تسلط الضوء على التراث الثقافي لمراكش.",
     event_crafts_exhibition: "معرض الحرف التقليدية",
     event_crafts_exhibition_date: "5-10 ديسمبر 2024",
-    event_crafts_exhibition_description: "معرض يسلط الضوء على عمل الحرفيين المهرة وأهمية الحفاظ على الحرف التقليدية.",
+    event_crafts_exhibition_description:
+      "معرض يسلط الضوء على عمل الحرفيين الرئيسيين وأهمية الحفاظ على الحرف التقليدية.",
     event_architectural_symposium: "ندوة التراث المعماري",
     event_architectural_symposium_date: "18-20 فبراير 2025",
-    event_architectural_symposium_description: "تجمع للخبراء لمناقشة التحديات والحلول في مجال الحفاظ المعماري.",
-    make_donation: "قدم تبرعًا",
-    make_donation_description: "مساهمتك، مهما كان حجمها، تساعدنا على مواصلة عملنا في الحفاظ على التراث الثقافي لمراكش",
+    event_architectural_symposium_description: "تجمع للخبراء لمناقشة التحديات والحلول في الحفاظ على التراث المعماري.",
+    make_donation: "تبرع",
+    make_donation_description: "تساعدنا مساهمتك، مهما كان حجمها، في مواصلة عملنا في الحفاظ على التراث الثقافي لمراكش",
     donation_options: "خيارات التبرع",
     one_time_donation: "تبرع لمرة واحدة",
     recurring_donation: "تبرع متكرر",
@@ -1394,96 +1484,189 @@ export const translations = {
     donor_information: "معلومات المتبرع",
     payment_information: "معلومات الدفع",
     card_number: "رقم البطاقة",
-    expiration_date: "تاريخ انتهاء الصلاحية",
-    cvv: "رمز التحقق",
+    expiration_date: "تاريخ الانتهاء",
+    cvv: "CVV",
     donate_button: "تبرع الآن",
-    donation_success: "شكرًا على تبرعك! دعمك يساعدنا في الحفاظ على التراث الثقافي لمراكش.",
+    donation_success: "شكرا لتبرعك! يساعدنا دعمك في الحفاظ على التراث الثقافي لمراكش.",
     become_partner_cta: "كن شريكًا اليوم",
     become_partner_description: "انضم إلينا في مهمتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه للأجيال القادمة.",
     contact_partnerships: "اتصل بفريق الشراكات لدينا",
-    branch: "الفرع",
+    branch: "فرع",
 
-    // Add banking information translations in Arabic
+    // Add banking information translations in French
     banking_details: "دعم مهمتنا",
-    banking_details_description: "للتبرع ودعم جهودنا في الحفاظ على التراث، يرجى استخدام المعلومات المصرفية التالية:",
+    banking_details_description: "لتقديم تبرع ودعم جهودنا للحفاظ على التراث، يرجى استخدام المعلومات المصرفية التالية:",
     bank_name: "اسم البنك",
-    account_holder: "صاحب الحساب",
+    account_holder: "اسم صاحب الحساب",
     account_number: "رقم الحساب",
-    iban: "رقم الآيبان",
-    swift_code: "رمز سويفت",
+    iban: "IBAN",
+    swift_code: "رمز SWIFT/BIC",
     reference: "مرجع الدفع",
     donation_reference: "تبرع-تراث",
     donation_note:
-      "يرجى تضمين اسمك في تفاصيل التحويل حتى نتمكن من الاعتراف بمساهمتك. للحصول على شهادات الخصم الضريبي أو أي أسئلة حول التبرعات، يرجى الاتصال بنا على finance@turath.org.",
+      "يرجى تضمين اسمك في تفاصيل التحويل حتى نتمكن من الاعتراف بمساهمتك. للحصول على شهادات الإعفاء الضريبي أو أي أسئلة حول التبرعات، يرجى الاتصال بنا على finance@turath.org.",
 
-    // Add new translation keys for projects in the Arabic section
+    // Add new translation keys for projects in the French section
     projects: "المشاريع",
     our_initiatives: "مبادراتنا",
-    projects_title: "مشاريع التراث لدينا",
+    projects_title: "مشاريعنا التراثية",
     projects_hero_description: "اكتشف مبادراتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه",
     our_projects: "مشاريعنا الرئيسية",
-    our_projects_description: "استكشف مبادراتنا الرئيسية الهادفة إلى الحفاظ على التراث الثقافي لمراكش والاحتفال به",
-    event: "فعالية",
+    our_projects_description: "استكشف مبادراتنا الرئيسية التي تهدف إلى الحفاظ على التراث الثقافي لمراكش والاحتفال به",
+    event: "حدث",
     restoration: "ترميم",
-    ongoing: "مستمر",
-    participants: "مشاركون",
+    ongoing: "جاري التنفيذ",
+    participants: "المشاركون",
     next: "التالي",
-    learn_more: "اعرف المزيد",
-    support_our_projects: "ادعم مشاريع التراث لدينا",
+    learn_more: "تعلم المزيد",
+    support_our_projects: "ادعم مشاريعنا التراثية",
     support_projects_description:
       "يمكن لمساهمتك أن تحدث فرقًا كبيرًا في الحفاظ على التراث الثقافي الغني لمراكش للأجيال القادمة. انضم إلينا في مهمتنا لحماية وتعزيز تاريخنا المشترك.",
-    become_partner: "كن شريكًا",
+    become_partner: "كن شريكا",
     volunteer_with_us: "تطوع معنا",
     all_projects: "جميع المشاريع",
-    completed_projects: "المشاريع المنجزة",
+    completed_projects: "المشاريع المكتملة",
     ongoing_projects: "المشاريع الجارية",
     upcoming_projects: "المشاريع القادمة",
 
-    heritage_days_title: "أيام التراث بمراكش",
+    heritage_days_title: "أيام التراث في مراكش",
     heritage_days_description:
-      "حدث سنوي يسلط الضوء على التراث الغني لمراكش من خلال جولات مرشدة وورش عمل وأنشطة ثقافية.",
-    earthquake_reconstruction_title: "إعادة الإعمار بعد الزلزال",
-    earthquake_reconstruction_description:
-      "مبادرة حاسمة لدعم جهود إعادة الإعمار بعد زلزال الحوز المدمر في سبتمبر 2023.",
-    hidden_treasures_title: "كشف كنوز مراكش الخفية",
-    hidden_treasures_description:
-      "سلسلة من الفعاليات الغامرة لاستكشاف جواهر التراث المغمورة في مراكش، بما في ذلك التاريخ والعمارة والحرف اليدوية والتقاليد الثقافية.",
-
+      "حدث سنوي يسلط الضوء على تراث مراكش الغني من خلال الجولات المصحوبة بمرشدين وورش العمل والأنشطة الثقافية.",
     // Project page specific translations
     heritage_days_date: "23-26 مايو 2024 (النسخة الثانية)",
     heritage_days_next_edition: "2025 (النسخة الثالثة)",
-    earthquake_reconstruction_date: "سبتمبر 2023 - مستمر",
-    earthquake_reconstruction_focus: "ترميم مسجد تينمل",
-    hidden_treasures_format: "فعاليات وبرامج دورية",
 
     // Heritage Days Project Editions
     project_editions: "إصدارات المشروع",
-    project_editions_description: "استكشف الإصدارات المختلفة لمشروع أيام التراث بمراكش",
+    project_editions_description: "استكشف الإصدارات المختلفة من مشروع أيام التراث في مراكش",
     completed: "مكتمل",
-    upcoming: "قادم",
+    upcoming: "القادمة",
     view_details: "عرض التفاصيل",
-    interested_in_heritage_days: "مهتم بأيام التراث؟",
+    interested_in_heritage_days: "هل أنت مهتم بأيام التراث؟",
     heritage_days_cta_description:
-      "انضم إلينا في الإصدار القادم أو استكشف فرص المشاركة في هذا الاحتفال الثقافي بتراث مراكش الغني.",
-    contact_for_participation: "تواصل للمشاركة",
-    volunteer_for_next_edition: "تطوع للإصدار القادم",
+      "انضم إلينا في النسخة القادمة أو استكشف فرص المشاركة في هذا الاحتفال الثقافي بتراث مراكش الغني.",
+    contact_for_participation: "اتصل للمشاركة",
+    volunteer_for_next_edition: "تطوع في النسخة القادمة",
 
     // Heritage Days Editions
-    heritage_days_first_edition: "أيام التراث - الإصدار الأول",
+    heritage_days_first_edition: "أيام التراث - النسخة الأولى",
     heritage_days_first_edition_description:
-      "الإصدار الافتتاحي الذي أسس تقليدًا جديدًا للاحتفال وعرض التراث الثقافي الغني لمراكش.",
+      "النسخة الافتتاحية التي أرست تقليدًا جديدًا للاحتفال بالتراث الثقافي الغني لمراكش وعرضه.",
     heritage_days_first_edition_date: "مايو 2022",
 
-    heritage_days_second_edition: "أيام التراث - الإصدار الثاني",
-    heritage_days_second_edition_description:
-      "البناء على نجاح الإصدار الأول مع توسيع البرمجة وزيادة المشاركة المجتمعية.",
+    heritage_days_second_edition: "أيام التراث - النسخة الثانية",
+    heritage_days_second_edition_description: "بناءً على نجاح النسخة الأولى مع برمجة موسعة وزيادة المشاركة المجتمعية.",
     heritage_days_second_edition_date: "23-26 مايو 2024",
 
-    heritage_days_third_edition: "أيام التراث - الإصدار الثالث",
+    heritage_days_third_edition: "أيام التراث - النسخة الثالثة",
     heritage_days_third_edition_description:
-      "يعد إصدارنا القادم بتجارب جديدة واستكشافات أعمق ونهج مبتكرة لتقدير التراث.",
+      "تعد نسختنا القادمة بتجارب جديدة واستكشافات أعمق وأساليب مبتكرة لتقدير التراث.",
     heritage_days_third_edition_date: "مايو 2025",
 
-    heritage_days_location: "مواقع تاريخية متنوعة في جميع أنحاء مراكش",
+    heritage_days_location: "مواقع تاريخية مختلفة في جميع أنحاء مراكش",
+
+    // Post-earthquake Reconstruction translations
+    earthquake_reconstruction_title: "إعادة الإعمار بعد الزلزال",
+    earthquake_reconstruction_description:
+      "مبادرة حاسمة لدعم جهود إعادة الإعمار في أعقاب زلزال الحوز المدمر في سبتمبر 2023.",
+    earthquake_reconstruction_date: "سبتمبر 2023 - جاري التنفيذ",
+    earthquake_reconstruction_focus: "الحفاظ على الهندسة المعمارية وتقنيات البناء التقليدية",
+    earthquake_about:
+      "في أعقاب زلزال الحوز المدمر في 8 سبتمبر 2023، والذي بلغت قوته 6.8 درجة على مقياس ريختر وأثر على العديد من المواقع التاريخية في منطقة جبال الأطلس، تحركت جمعية تراث على الفور لدعم جهود إعادة الإعمار.",
+    earthquake_key_activities_title: "الأنشطة الرئيسية",
+    earthquake_key_activities_1: "تقييم شامل للأضرار التي لحقت بالهياكل التاريخية في أكثر من 20 قرية في منطقة الحوز",
+    earthquake_key_activities_2: "الاستقرار الطارئ للمباني التراثية المتضررة باستخدام تقنيات قابلة للعكس",
+    earthquake_key_activities_3: "توثيق ثلاثي الأبعاد مفصل ومسح معماري للهياكل المتضررة",
+    earthquake_key_activities_4: "التنسيق مع الوكالات الحكومية واليونسكو والمنظمات الدولية للحفاظ على التراث",
+    earthquake_key_activities_5: "ورش عمل مجتمعية لدمج المعرفة المحلية في خطط إعادة الإعمار",
+    earthquake_tinmel_title: "ترميم مسجد تنمل",
+    earthquake_tinmel_description:
+      "تعرض مسجد تنمل التاريخي، وهو تحفة من العمارة الموحدية يعود تاريخها إلى عام 1156 وأحد مسجدين فقط في المغرب مفتوحين لغير المسلمين، لأضرار جسيمة خلال الزلزال.",
+    earthquake_tinmel_efforts_1: "استعادة وفهرسة العناصر المعمارية الأصلية، بما في ذلك الجص المنحوت والعناصر الخشبية",
+    earthquake_tinmel_efforts_2: "وضع خطة ترميم شاملة تستند إلى الوثائق التاريخية",
+    earthquake_tinmel_efforts_3: "تدريب الحرفيين المحليين على التحضير التقليدي لملاط الجير والبناء الترابي",
+    earthquake_tinmel_efforts_4: "إنشاء مركز تفسير للزوار يشرح الأهمية التاريخية للمسجد",
+    earthquake_collaborative_title: "نهج تعاوني",
+    earthquake_collaborative_description:
+      "تستند جهود إعادة الإعمار لدينا إلى نهج تعاوني يجمع مختلف أصحاب المصلحة، بما في ذلك وزارة الثقافة المغربية واليونسكو والإيكوموس والسلطات المحلية والمؤسسات الأكاديمية والأهم من ذلك المجتمعات المتضررة نفسها.",
+    earthquake_timeline_title: "الجدول الزمني",
+    earthquake_project_title: "إعادة الإعمار بعد الزلزال",
+    earthquake_project_short_desc: "مبادرة حاسمة لدعم جهود إعادة الإعمار في أعقاب زلزال الحوز المدمر في سبتمبر 2023.",
+    earthquake_project_desc_p1:
+      "في أعقاب زلزال الحوز المدمر في 8 سبتمبر 2023، والذي بلغت قوته 6.8 درجة على مقياس ريختر وأثر على العديد من المواقع التاريخية في منطقة جبال الأطلس، تحركت جمعية تراث على الفور لدعم جهود إعادة الإعمار. يعمل فريقنا من المهندسين المعماريين والمهندسين والمتخصصين في التراث عن كثب مع المجتمعات المحلية والسلطات لتقييم الأضرار وتوثيق الهياكل المتضررة ووضع خطط إعادة إعمار مستدامة تحترم تقنيات البناء التقليدية مع تحسين المرونة الهيكلية.",
+    earthquake_project_desc_p2:
+      "يركز هذا المشروع بشكل خاص على الحفاظ على التراث المعماري في القرى المتضررة في الأطلس الكبير، حيث أن العمارة الترابية التي يعود تاريخها إلى قرون والمعرفة التقليدية بالبناء معرضة لخطر الضياع في عملية إعادة الإعمار. لقد أنشأنا منصة تربط الخبراء الدوليين مع كبار البنائين المحليين لضمان أن جهود إعادة الإعمار تكرم الأساليب التقليدية مع دمج تقنيات التعزيز الزلزالي المناسبة.",
+    key_activities: "الأنشطة الرئيسية",
+    earthquake_activity_1:
+      "تقييم شامل للأضرار التي لحقت بالهياكل التاريخية في أكثر من 20 قرية في جميع أنحاء منطقة الحوز",
+    earthquake_activity_2:
+      "الاستقرار الطارئ للمباني التراثية المتضررة باستخدام تقنيات قابلة للعكس لا تضر بالترميم المستقبلي",
+    earthquake_activity_3: "توثيق ثلاثي الأبعاد مفصل ومسح معماري للهياكل المتضررة لتوجيه إعادة الإعمار الدقيقة",
+    earthquake_activity_4: "التنسيق مع الوكالات الحكومية واليونسكو والمنظمات الدولية للحفاظ على التراث",
+    earthquake_activity_5: "ورش عمل مجتمعية لدمج المعرفة المحلية وضمان الملاءمة الثقافية لخطط إعادة الإعمار",
+    tinmel_mosque_restoration: "ترميم مسجد تنمل",
+    tinmel_mosque_desc:
+      "تعرض مسجد تنمل التاريخي، وهو تحفة من العمارة الموحدية يعود تاريخها إلى عام 1156 وأحد مسجدين فقط في المغرب مفتوحين لغير المسلمين، لأضرار جسيمة خلال الزلزال. تشمل جهودنا المحددة لترميم هذا الموقع المرشح للتراث العالمي لليونسكو ما يلي:",
+    tinmel_activity_1: "استعادة وفهرسة العناصر الم��مارية الأصلية، بما في ذلك الجص المنحوت والعناصر الخشبية",
+    tinmel_activity_2: "وضع خطة ترميم شاملة تستند إلى الوثائق التاريخية والأدلة الأثرية",
+    tinmel_activity_3: "تدريب الحرفيين المحليين على التحضير التقليدي لملاط الجير والبناء الترابي والتقنيات الزخرفية",
+    tinmel_activity_4: "إنشاء مركز تفسير للزوار يشرح الأهمية التاريخية للمسجد وعملية الترميم",
+    collaborative_approach: "نهج تعاوني",
+    collaborative_approach_p1:
+      "تستند جهود إعادة الإعمار لدينا إلى نهج تعاوني يجمع مختلف أصحاب المصلحة، بما في ذلك وزارة الثقافة المغربية واليونسكو والإيكوموس والسلطات المحلية والمؤسسات الأكاديمية والأهم من ذلك المجتمعات المتضررة نفسها.",
+    collaborative_approach_p2:
+      "تضمن هذه الاستراتيجية الشاملة أن إعادة الإعمار لا تحافظ فقط على الهياكل المادية ولكنها تحترم أيضًا الأهمية الثقافية والقيم المجتمعية المرتبطة بهذه المواقع التراثية. نحن نوثق تقنيات البناء التقليدية وندرب الحرفيين المحليين وننشئ موارد تعليمية لضمان استمرار نقل هذه المعرفة إلى الأجيال القادمة.",
+      key_initiatives: "المبادرات الرئيسية",
+      treasures_initiative_1: "جولات التراث الخفي: استكشافات موجهة للمواقع التاريخية الأقل شهرة",
+      treasures_initiative_2: "لقاءات الحرفيين: تفاعلات مباشرة مع كبار الحرفيين في ورش العمل الخاصة بهم",
+      treasures_initiative_3: "جلسات سرد قصص التراث: جمع ومشاركة التقاليد والقصص الشفوية",
+      treasures_initiative_4: "ورش عمل مهارات التراث: تعلم عملي للتقنيات التقليدية",
+      treasures_initiative_5: "أرشيف التراث الرقمي: إنشاء مستودع رقمي لعناصر التراث المهددة بالانقراض",
+      impact: "التأثير",
+      treasures_impact:
+        "زادت هذه المبادرة بشكل كبير من الوعي بشأن أصول التراث الأقل شهرة في مراكش، وخلقت فرصًا اقتصادية للحرفيين التقليديين، وساهمت في توثيق قيم للممارسات والمواقع الثقافية المهددة بالانقراض.",
+      earthquake_project_date: "سبتمبر 2023 - جاري التنفيذ",
+    earthquake_project_location: "إقليم الحوز، جبال الأطلس الكبير، المغرب",
+    earthquake_project_contributors: "أكثر من 85 متخصصًا ومتطوعًا",
+    earthquake_goal_1: "توثيق وحفظ تقنيات البناء الترابي الفريدة لمنطقة الأطلس الكبير",
+    earthquake_goal_2: "تنفيذ طرق إعادة إعمار مقاومة للزلازل تحترم التقاليد المعمارية المحلية",
+    earthquake_goal_3: "تنمية قدرات الحرفيين المحليين من خلال ورش عمل تدريبية عملية",
+    earthquake_goal_4: "ترميم المواقع التراثية الرئيسية مع تحسين قدرتها على الصمود في وجه الزلازل المستقبلية",
+    earthquake_goal_5: "إنشاء أرشيف رقمي للمعرفة التقليدية بالبناء للأجيال القادمة",
+    timeline: "الجدول الزمني",
+    earthquake_timeline_1: "المرحلة 1: التقييم الطارئ والتوثيق (اكتمل - أكتوبر 2023)",
+    earthquake_timeline_2: "المرحلة 2: تثبيت الهياكل المعرضة للخطر (اكتمل - ديسمبر 2023)",
+    earthquake_timeline_3: "المرحلة 3: المشاركة المجتمعية والتخطيط (جاري التنفيذ - يناير-يونيو 2024)",
+    earthquake_timeline_4: "المرحلة 4: ترميم المواقع التراثية ذات الأولوية (جاري التنفيذ - أبريل 2024-ديسمبر 2025)",
+    earthquake_timeline_5: "المرحلة 5: نقل المعرفة وبناء القدرات (2024-2026)",
+    treasures_project_title: "الكشف عن كنوز مراكش الخفية",
+    treasures_project_short_desc:
+      "سلسلة غامرة من الفعاليات تستكشف جواهر التراث المتجاهلة في مراكش، بما في ذلك التاريخ والهندسة المعمارية والحرف اليدوية والتقاليد الثقافية.",
+    treasures_project_desc_p1:
+      "الكشف عن كنوز مراكش الخفية هي سلسلة غامرة ومستنيرة من الفعاليات المخصصة لاستكشاف جواهر التراث التي غالبًا ما يتم تجاهلها في المدينة. تتجاوز هذه المبادرة مناطق الجذب السياحي المعروفة للكشف عن الروح الأصيلة لمراكش من خلال مواقعها التاريخية الأقل شهرة وروائعها المعمارية وحرفها اليدوية التقليدية وتقاليدها الثقافية الغنية.",
+    treasures_project_desc_p2:
+      "من خلال التجارب المنسقة بعناية، ندعو السكان المحليين والزوار على حد سواء لاكتشاف الزوايا الخفية في المدينة المنورة، ومقابلة كبار الحرفيين في ورش عملهم، والتعرف على القصص والتقاليد التي شكلت الهوية الثقافية الفريدة لمراكش.",
+    treasures_project_desc_p3:
+      "يقدم هذا البرنامج المستمر فعاليات دورية على مدار العام، تركز كل منها على جوانب مختلفة من تراث مراكش، مما يضمن استكشافًا شاملاً للثروة الثقافية للمدينة.",
+    program_components: "مكونات البرنامج",
+    treasures_component_1: "جولات متخصصة في المواقع التاريخية والجواهر المعمارية الأقل شهرة",
+    treasures_component_2: "ورش عمل الحرف اليدوية مع كبار الحرفيين الذين يحافظون على التقنيات التقليدية",
+    treasures_component_3: "جمع التاريخ الشفوي وجلسات سرد القصص مع كبار السن في المجتمع",
+    treasures_component_4: "ورش عمل تعليمية حول مختلف جوانب التراث المادي وغير المادي",
+    treasures_component_5: "التوثيق الرقمي للعناصر التراثية المهددة بالانقراض",
+    focus_areas: "مجالات التركيز",
+    treasures_focus_intro: "تستكشف مبادرتنا كنوز خفية أبعادًا مختلفة من تراث مراكش:",
+    treasures_focus_1: "العمارة العامية وتقنيات البناء التقليدية",
+    treasures_focus_2: "الحرف المهددة بالانقراض والمعرفة الحرفية",
+    treasures_focus_3: "الممارسات الثقافية والطقوس والاحتفالات",
+    treasures_focus_4: "السرد التاريخي والذاكرة الجماعية",
+    treasures_focus_5: "التراث الطبيعي والمعرفة البيئية التقليدية",
+    treasures_conclusion:
+      "من خلال الكشف عن هذه الكنوز الخفية، نهدف إلى تعزيز تقدير أعمق للتعقيد الثقافي لمراكش وتشجيع المشاركة الهادفة مع تراثها، وبالتالي المساهمة في الحفاظ عليها للأجيال القادمة.",
+    treasures_project_date: "برنامج مستمر مع فعاليات مختلفة على مدار العام",
+    treasures_project_location: "مواقع مختلفة في جميع أنحاء مراكش، مع التركيز على المواقع الأقل شهرة",
+    participants_to_date: "المشاركون حتى الآن",
+    participants_across_activities: "المشاركون في مختلف",
+    hidden_treasures_title: "الكشف عن كنوز مراكش الخفية",
   },
 }
