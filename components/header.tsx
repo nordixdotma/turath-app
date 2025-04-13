@@ -62,7 +62,7 @@ export default function Header() {
 
   // Update the project links in the header to include all projects
   const projectLinks = [
-    { href: "/projects/salon-de-leau", label: t("salon_de_leau_title") },
+    { href: "/projects/salon-de_leau", label: t("salon_de_leau_title") },
     { href: "/projects/heritage-days", label: t("heritage_days_title") },
     { href: "/projects/post-earthquake_reconstruction", label: t("earthquake_reconstruction_title") },
     { href: "/projects/unveiling-hidden_treasures", label: t("hidden_treasures_title") },
