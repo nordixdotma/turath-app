@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, Calendar, MapPin, Users } from "lucide-react"
 import { useLanguage } from "@/hooks/use-language"
 
-export default function PostEarthquakeProjectPage() {
-  const { language, t } = useLanguage()
+export default function UnveilingHiddenTreasuresPage() {
+  const { t } = useLanguage()
 
   // Hero section animation
   const { ref: heroRef, inView: heroInView } = useInView({
@@ -37,7 +37,7 @@ export default function PostEarthquakeProjectPage() {
         className="relative bg-transparent"
         style={{
           height: "60vh",
-          backgroundImage: `url('https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          backgroundImage: `url('/Logo turath 2-1.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -60,12 +60,12 @@ export default function PostEarthquakeProjectPage() {
                 <span className="text-sm font-medium">{t("back_to_projects")}</span>
               </Link>
               <div className="inline-block mb-4 px-3 py-1 bg-primary/20 backdrop-blur-sm rounded-none">
-                <span className="text-xs font-medium text-white">{t("restoration")}</span>
+                <span className="text-xs font-medium text-white">{t("ongoing")}</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
-                {t("earthquake_project_title")}
+                {t("treasures_project_title")}
               </h1>
-              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("earthquake_project_short_desc")}</p>
+              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("treasures_project_short_desc")}</p>
             </div>
           </Container>
         </div>
@@ -87,56 +87,60 @@ export default function PostEarthquakeProjectPage() {
               <div className="h-1 w-16 bg-primary mb-8"></div>
 
               <div className="prose max-w-none text-gray-700 font-tomato">
-                <p className="mb-6">{t("earthquake_project_desc_p1")}</p>
-                <p className="mb-6">{t("earthquake_project_desc_p2")}</p>
+                <p className="mb-6">{t("treasures_project_desc_p1")}</p>
+                <p className="mb-6">{t("treasures_project_desc_p2")}</p>
+                <p className="mb-6">{t("treasures_project_desc_p3")}</p>
 
-                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("key_activities")}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("program_components")}</h3>
                 <ul className="space-y-2 mb-8">
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("earthquake_activity_1")}</span>
+                    <span>{t("treasures_component_1")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("earthquake_activity_2")}</span>
+                    <span>{t("treasures_component_2")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("earthquake_activity_3")}</span>
+                    <span>{t("treasures_component_3")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("earthquake_activity_4")}</span>
+                    <span>{t("treasures_component_4")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("earthquake_activity_5")}</span>
+                    <span>{t("treasures_component_5")}</span>
                   </li>
                 </ul>
 
-                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("earthquake_tinmel_title")}</h3>
-                <p>{t("earthquake_tinmel_description")}</p>
+                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("focus_areas")}</h3>
+                <p>{t("treasures_focus_intro")}</p>
                 <ul className="space-y-2 mb-8">
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("tinmel_activity_1")}</span>
+                    <span>{t("treasures_focus_1")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("tinmel_activity_2")}</span>
+                    <span>{t("treasures_focus_2")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("tinmel_activity_3")}</span>
+                    <span>{t("treasures_focus_3")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span>{t("tinmel_activity_4")}</span>
+                    <span>{t("treasures_focus_4")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                    <span>{t("treasures_focus_5")}</span>
                   </li>
                 </ul>
 
-                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("earthquake_collaborative_title")}</h3>
-                <p>{t("earthquake_collaborative_description")}</p>
+                <p className="mt-6">{t("treasures_conclusion")}</p>
               </div>
             </div>
 
@@ -150,7 +154,7 @@ export default function PostEarthquakeProjectPage() {
                     <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900 font-tomato">{t("date")}</p>
-                      <p className="text-gray-700 font-tomato">{t("earthquake_project_date")}</p>
+                      <p className="text-gray-700 font-tomato">{t("treasures_project_date")}</p>
                     </div>
                   </div>
 
@@ -158,76 +162,55 @@ export default function PostEarthquakeProjectPage() {
                     <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900 font-tomato">{t("location")}</p>
-                      <p className="text-gray-700 font-tomato">{t("earthquake_project_location")}</p>
+                      <p className="text-gray-700 font-tomato">{t("treasures_project_location")}</p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
                     <Users className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900 font-tomato">{t("contributors")}</p>
-                      <p className="text-gray-700 font-tomato">{t("earthquake_project_contributors")}</p>
+                      <p className="font-medium text-gray-900 font-tomato">{t("participants_to_date")}</p>
+                      <p className="text-gray-700 font-tomato">120+ {t("participants_across_activities")}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-none font-tomato">
-                    {t("support_this_project")}
+                    {t("register_for_next_event")}
                   </Button>
                 </div>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-md border border-gray-200 mt-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("goals")}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("key_initiatives")}</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_goal_1")}</span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_1")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_goal_2")}</span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_2")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_goal_3")}</span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_3")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_goal_4")}</span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_4")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_goal_5")}</span>
+                    <span className="text-gray-700 font-tomato">{t("treasures_initiative_5")}</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-md border border-gray-200 mt-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("timeline")}</h3>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_timeline_1")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_timeline_2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_timeline_3")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_timeline_4")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                    <span className="text-gray-700 font-tomato">{t("earthquake_timeline_5")}</span>
-                  </li>
-                </ul>
+                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("impact")}</h3>
+                <p className="text-gray-700 font-tomato">{t("treasures_impact")}</p>
               </div>
             </div>
           </div>
@@ -258,7 +241,7 @@ export default function PostEarthquakeProjectPage() {
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
                   <Image
-                    src="https://images.unsplash.com/photo-1603714228681-b399854b8f80?q=80&w=1974&auto=format&fit=crop"
+                    src={`/Logo turath 2-1.png`}
                     alt={`${t("gallery_image")} ${index}`}
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"

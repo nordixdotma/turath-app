@@ -53,7 +53,7 @@ export const translations = {
       "Our volunteers are the heartbeat of Turâth. With passion and dedication, they play a vital role in preserving Marrakech's heritage. From research to events and restoration projects, their contributions make a lasting impact. Join us and be part of a vibrant community shaping our cultural legacy.",
     president: "PRESIDENT",
     vice_president: "VICE-PRÉSIDENT",
-    treasurer: "TRÉSORIER",
+    treasurer: "TREASURER",
     deputy_treasurer: "TRÉSORIER ADJOINT",
     secretary_general: "SECRÉTAIRE GÉNÉRAL",
     president_name: "Soad Belkeziz",
@@ -587,6 +587,38 @@ export const translations = {
     hidden_treasures_description:
       "An immersive series of events exploring Marrakech's overlooked heritage gems, including history, architecture, craftsmanship, and cultural traditions.",
     hidden_treasures_format: "Formats variés incluant des visites guidées, des ateliers et des expositions",
+    salon_de_leau_title: "Salon de l'eau",
+    salon_de_leau_description:
+      "Towards Sustainable Urban Water Management: Reducing Waste and Enhancing Efficiency in Arid Climates",
+    salon_de_leau_about:
+      "Mme. Belkeziz Soad, architecte and urban planner, presents a comprehensive view on urban water management, specifically on strategies to address water wastage and promote sustainable practices within cities like Marrakech. Representing the Regional Council of the Order of Architects of Tensift and Turâth Association, which focuses on heritage preservation, she underscores that the bulk of water consumption in Morocco is for irrigation, surpassing global averages.",
+    salon_de_leau_key_issues_title: "Key Issues in Urban Water Management",
+    salon_de_leau_water_leaks_title: "Water Leaks in Urban Infrastructure",
+    salon_de_leau_water_leaks_description:
+      "Major water losses in urban areas result from leaks in buried pipelines, with estimates indicating up to 50% of water is lost in Morocco, although Marrakech shows relatively better performance with only 35% loss. Advanced solutions, such as digital technology and artificial intelligence, are crucial to detect and minimize these losses efficiently.",
+    salon_de_leau_urbanization_description:
+      "Rapid urbanization has led to the impermeabilization of city surfaces, which prevents natural water infiltration into the groundwater. Instead, rainwater is channeled through networks that are prone to waste and pollution, contributing to floods and a loss of natural cooling effects in urban areas.",
+    salon_de_leau_urban_design_title: "Innovative Approaches to Urban Design",
+    salon_de_leau_urban_design_description:
+      "There's a push to make cities more permeable to water by implementing green infrastructure like vegetated terraces, permeable pavements, and urban green spaces. Policies and incentives, such as those outlined in Morocco's 2016 Sustainable Urbanism Guidelines, encourage these solutions by rewarding builders who incorporate permeable and rainwater management techniques.",
+    salon_de_leau_reusing_water_title: "Reusing Rainwater and Treated Wastewater",
+    salon_de_leau_reusing_water_description:
+      "At a property level, rainwater capture can support irrigation, while cities should consider treated wastewater for public green spaces, a practice already underway for some golf courses in Marrakech. Advanced wastewater treatment technologies, such as SMART-ALG by the startup EBF, show promise for broader application.",
+    salon_de_leau_focus_area_1: "Urban water management strategies",
+    salon_de_leau_focus_area_2: "Reducing water wastage in infrastructure",
+    salon_de_leau_focus_area_3: "Green infrastructure implementation",
+    salon_de_leau_focus_area_4: "Rainwater capture and reuse systems",
+    salon_de_leau_focus_area_5: "Wastewater treatment technologies",
+    salon_de_leau_stat_1_title: "Water Loss in Morocco",
+    salon_de_leau_stat_1_value: "Up to 50% from urban infrastructure leaks",
+    salon_de_leau_stat_2_title: "Marrakech Performance",
+    salon_de_leau_stat_2_value: "35% water loss - better than national average",
+    salon_de_leau_stat_3_title: "Sustainable Practices",
+    salon_de_leau_stat_3_value: "Growing implementation of green infrastructure and water reuse",
+    conference: "Conference",
+    presenter: "Presenter",
+    key_focus_areas: "Key Focus Areas",
+    statistics: "Statistics",
   },
   fr: {
     // Header
@@ -1150,6 +1182,38 @@ export const translations = {
     hidden_treasures_title: "Dévoiler les Trésors Cachés",
     current_partners_description:
       "Nous sommes fiers de collaborer avec ces organisations estimées qui partagent notre engagement à préserver le patrimoine culturel de Marrakech.",
+    salon_de_leau_title: "Salon de l'eau",
+    salon_de_leau_description:
+      "Vers une gestion durable de l'eau urbaine : Réduire le gaspillage et améliorer l'efficacité dans les climats arides",
+    salon_de_leau_about:
+      "Mme. Belkeziz Soad, architecte et urbaniste, présente une vision globale de la gestion de l'eau urbaine, en particulier sur les stratégies pour lutter contre le gaspillage d'eau et promouvoir des pratiques durables dans les villes comme Marrakech. Représentant le Conseil Régional de l'Ordre des Architectes de Tensift et l'Association Turâth, qui se concentre sur la préservation du patrimoine, elle souligne que la majeure partie de la consommation d'eau au Maroc est destinée à l'irrigation, dépassant les moyennes mondiales.",
+    salon_de_leau_key_issues_title: "Problèmes clés dans la gestion de l'eau urbaine",
+    salon_de_leau_water_leaks_title: "Fuites d'eau dans les infrastructures urbaines",
+    salon_de_leau_water_leaks_description:
+      "Les pertes d'eau importantes dans les zones urbaines résultent de fuites dans les canalisations enterrées, avec des estimations indiquant jusqu'à 50% de perte d'eau au Maroc, bien que Marrakech présente une performance relativement meilleure avec seulement 35% de perte. Des solutions avancées, telles que la technologie numérique et l'intelligence artificielle, sont cruciales pour détecter et minimiser efficacement ces pertes.",
+    salon_de_leau_urbanization_description:
+      "L'urbanisation rapide a conduit à l'imperméabilisation des surfaces urbaines, ce qui empêche l'infiltration naturelle de l'eau dans les nappes phréatiques. Au lieu de cela, l'eau de pluie est canalisée à travers des réseaux sujets au gaspillage et à la pollution, contribuant aux inondations et à une perte des effets naturels de refroidissement dans les zones urbaines.",
+    salon_de_leau_urban_design_title: "Approches innovantes de la conception urbaine",
+    salon_de_leau_urban_design_description:
+      "Il y a une volonté de rendre les villes plus perméables à l'eau en mettant en œuvre des infrastructures vertes comme des terrasses végétalisées, des pavés perméables et des espaces verts urbains. Des politiques et des incitations, comme celles décrites dans les Directives d'Urbanisme Durable du Maroc de 2016, encouragent ces solutions en récompensant les constructeurs qui intègrent des techniques perméables et de gestion des eaux pluviales.",
+    salon_de_leau_reusing_water_title: "Réutilisation des eaux pluviales et des eaux usées traitées",
+    salon_de_leau_reusing_water_description:
+      "Au niveau des propriétés, la capture des eaux pluviales peut soutenir l'irrigation, tandis que les villes devraient envisager l'utilisation des eaux usées traitées pour les espaces verts publics, une pratique déjà en cours pour certains terrains de golf à Marrakech. Les technologies avancées de traitement des eaux usées, comme SMART-ALG de la startup EBF, montrent des promesses pour une application plus large.",
+    salon_de_leau_focus_area_1: "Stratégies de gestion de l'eau urbaine",
+    salon_de_leau_focus_area_2: "Réduction du gaspillage d'eau dans les infrastructures",
+    salon_de_leau_focus_area_3: "Mise en œuvre d'infrastructures vertes",
+    salon_de_leau_focus_area_4: "Systèmes de capture et de réutilisation des eaux pluviales",
+    salon_de_leau_focus_area_5: "Technologies de traitement des eaux usées",
+    salon_de_leau_stat_1_title: "Perte d'eau au Maroc",
+    salon_de_leau_stat_1_value: "Jusqu'à 50% due aux fuites dans les infrastructures urbaines",
+    salon_de_leau_stat_2_title: "Performance de Marrakech",
+    salon_de_leau_stat_2_value: "35% de perte d'eau - meilleur que la moyenne nationale",
+    salon_de_leau_stat_3_title: "Pratiques durables",
+    salon_de_leau_stat_3_value: "Mise en œuvre croissante d'infrastructures vertes et de réutilisation de l'eau",
+    conference: "Conférence",
+    presenter: "Présentateur",
+    key_focus_areas: "Domaines d'intérêt clés",
+    statistics: "Statistiques",
   },
   ar: {
     // Header
@@ -1276,7 +1340,7 @@ export const translations = {
     mission_paragraph_2:
       "يُفهم التراث، في هذا السياق، بمعناه الأوسع، الذي يشمل العناصر المعمارية والمناظر الطبيعية، فضلاً عن المعارف والممارسات الثقافية المرتبطة بالمهن ذات الصلة.",
     mission_paragraph_3:
-      "تجمع الجمعية أعضاء يتقاسمون قيمًا مشتركة، مثل فهم التراث والحفاظ عليه وتثمينه، وتعزيز التبادل والتعاون في مختلف المجالات بالشراكة مع المؤسسات الخاصة والعامة.",
+      "تجمع الجمعية أعضاء يتقاسمون قيمًا مشتركة، مثل فهم التراث والحفاظ عليه وتثمينه، وت��زيز التبادل والتعاون في مختلف المجالات بالشراكة مع المؤسسات الخاصة والعامة.",
     non_profit: "غير ربحية",
     non_religious: "غير دينية",
     apolitical: "غير سياسية",
@@ -1595,7 +1659,7 @@ export const translations = {
     earthquake_project_title: "إعادة الإعمار بعد الزلزال",
     earthquake_project_short_desc: "مبادرة حاسمة لدعم جهود إعادة الإعمار في أعقاب زلزال الحوز المدمر في سبتمبر 2023.",
     earthquake_project_desc_p1:
-      "في أ��قاب زلزال الحوز المدمر في 8 سبتمبر 2023، والذي بلغت قوته 6.8 درجة على مقياس ريختر وأثر على العديد من المواقع التاريخية في منطقة جبال الأطلس، تحركت جمعية تراث على الفور لدعم جهود إعادة الإعمار. يعمل فريقنا من المهندسين المعماريين والمهندسين والمتخصصين في التراث عن كثب مع المجتمعات المحلية والسلطات لتقييم الأضرار وتوثيق الهياكل المتضررة ووضع خطط إعادة إعمار مستدامة تحترم تقنيات البناء التقليدية مع تحسين المرونة الهيكلية.",
+      "في أقاب زلزال الحوز المدمر في 8 سبتمبر 2023، والذي بلغت قوته 6.8 درجة على مقياس ريختر وأثر على العديد من المواقع التاريخية في منطقة جبال الأطلس، تحركت جمعية تراث على الفور لدعم جهود إعادة الإعمار. يعمل فريقنا من المهندسين المعماريين والمهندسين والمتخصصين في التراث عن كثب مع المجتمعات المحلية والسلطات لتقييم الأضرار وتوثيق الهياكل المتضررة ووضع خطط إعادة إعمار مستدامة تحترم تقنيات البناء التقليدية مع تحسين المرونة الهيكلية.",
     earthquake_project_desc_p2:
       "يركز هذا المشروع بشكل خاص على الحفاظ على التراث المعماري في القرى المتضررة في الأطلس الكبير، حيث أن العمارة الترابية التي يعود تاريخها إلى قرون والمعرفة التقليدية بالبناء معرضة لخطر الضياع في عملية إعادة الإعمار. لقد أنشأنا منصة تربط الخبراء الدوليين مع كبار البنائين المحليين لضمان أن جهود إعادة الإعمار تكرم الأساليب التقليدية مع دمج تقنيات التعزيز الزلزالي المناسبة.",
     key_activities: "الأنشطة الرئيسية",
@@ -1672,5 +1736,36 @@ export const translations = {
     hidden_treasures_title: "الكشف عن كنوز مراكش الخفية",
     current_partners_description:
       "نحن فخورون بالتعاون مع هذه المنظمات المحترمة التي تشاركنا التزامنا بالحفاظ على التراث الثقافي لمراكش.",
+    salon_de_leau_title: "صالون المياه",
+    salon_de_leau_description: "نحو إدارة مستدامة للمياه الحضرية: تقليل الهدر وتعزيز الكفاءة في المناخات الجافة",
+    salon_de_leau_about:
+      "تقدم السيدة بلكزيز سعاد، المهندسة المعمارية والمخططة الحضرية، نظرة شاملة حول إدارة المياه الحضرية، وخاصة حول استراتيجيات معالجة هدر المياه وتعزيز الممارسات المستدامة داخل المدن مثل مراكش. وتمثل المجلس الجهوي لهيئة المهندسين المعماريين لتانسيفت وجمعية تراث، التي تركز على الحفاظ على التراث، وتؤكد أن الجزء الأكبر من استهلاك المياه في المغرب هو للري، متجاوزًا المتوسطات العالمية.",
+    salon_de_leau_key_issues_title: "القضايا الرئيسية في إدارة المياه الحضرية",
+    salon_de_leau_water_leaks_title: "تسربات المياه في البنية التحتية الحضرية",
+    salon_de_leau_water_leaks_description:
+      "تنتج خسائر المياه الكبيرة في المناطق الحضرية من تسربات في خطوط الأنابيب المدفونة، مع تقديرات تشير إلى أن ما يصل إلى 50٪ من المياه تضيع في المغرب، على الرغم من أن مراكش تظهر أداءً أفضل نسبيًا مع فقدان 35٪ فقط. الحلول المتقدمة، مثل التكنولوجيا الرقمية والذكاء الاصطناعي، ضرورية للكشف عن هذه الخسائر وتقليلها بكفاءة.",
+    salon_de_leau_urbanization_description:
+      "أدى التوسع الحضري السريع إلى عدم نفاذية أسطح المدينة، مما يمنع تسرب المياه الطبيعي إلى المياه الجوفية. بدلاً من ذلك، يتم توجيه مياه الأمطار عبر شبكات معرضة للهدر والتلوث، مما يساهم في الفيضانات وفقدان تأثيرات التبريد الطبيعية في المناطق الحضرية.",
+    salon_de_leau_urban_design_title: "نهج مبتكرة للتصميم الحضري",
+    salon_de_leau_urban_design_description:
+      "هناك دفعة لجعل المدن أكثر نفاذية للمياه من خلال تنفيذ البنية التحتية الخضراء مثل المدرجات المزروعة والأرصفة النفاذة والمساحات الخضراء الحضرية. تشجع السياسات والحوافز، مثل تلك المبينة في إرشادات التحضر المستدام المغربية لعام 2016، هذه الحلول من خلال مكافأة البناة الذين يدمجون تقنيات نفاذة وإدارة مياه الأمطار.",
+    salon_de_leau_reusing_water_title: "إعادة استخدام مياه الأمطار ومياه الصرف الصحي المعالجة",
+    salon_de_leau_reusing_water_description:
+      "على مستوى الممتلكات، يمكن أن يدعم جمع مياه الأمطار الري، بينما يجب على المدن النظر في مياه الصرف الصحي المعالجة للمساحات الخضراء العامة، وهي ممارسة قيد التنفيذ بالفعل لبعض ملاعب الجولف في مراكش. تظهر تقنيات معالجة مياه الصرف الصحي المتقدمة، مثل SMART-ALG من الشركة الناشئة EBF، وعدًا بتطبيق أوسع.",
+    salon_de_leau_focus_area_1: "استراتيجيات إدارة المياه الحضرية",
+    salon_de_leau_focus_area_2: "تقليل هدر المياه في البنية التحتية",
+    salon_de_leau_focus_area_3: "تنفيذ البنية التحتية الخضراء",
+    salon_de_leau_focus_area_4: "أنظمة جمع وإعادة استخدام مياه الأمطار",
+    salon_de_leau_focus_area_5: "تقنيات معالجة مياه الصرف الصحي",
+    salon_de_leau_stat_1_title: "فقدان المياه في المغرب",
+    salon_de_leau_stat_1_value: "تصل إلى 50٪ من تسربات البنية التحتية الحضرية",
+    salon_de_leau_stat_2_title: "أداء مراكش",
+    salon_de_leau_stat_2_value: "35٪ فقدان المياه - أفضل من المتوسط الوطني",
+    salon_de_leau_stat_3_title: "الممارسات المستدامة",
+    salon_de_leau_stat_3_value: "تنفيذ متزايد للبنية التحتية الخضراء وإعادة استخدام المياه",
+    conference: "مؤتمر",
+    presenter: "المقدم",
+    key_focus_areas: "مجالات التركيز الرئيسية",
+    statistics: "إحصائيات",
   },
 }

@@ -24,19 +24,29 @@ export default function ProjectsPage() {
       id: "heritage_days",
       title: t("heritage_days_title"),
       description: t("heritage_days_description"),
-      image:
-        "/PHOTOS-JDP/P1388814.jpg",
+      image: "/PHOTOS-JDP/P1388814.jpg",
       type: "event",
       participants: 250,
       date: "heritage_days_date",
       nextEdition: "heritage_days_next_edition",
     },
     {
+      id: "salon_de_leau",
+      title: t("salon_de_leau_title"),
+      description: t("salon_de_leau_description"),
+      image:
+        "/Salonimages/DSC_7123-scaled.jpg",
+      type: "conference",
+      participants: 75,
+      date: "2023",
+      presenter: t("presenter") + ": Mme. Belkeziz Soad",
+    },
+    {
       id: "post_earthquake_reconstruction",
       title: t("earthquake_project_title"),
       description: t("earthquake_project_short_desc"),
       image:
-        "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/Logo turath 2-1.png",
       type: "restoration",
       participants: 85,
       date: "earthquake_reconstruction_date",
@@ -47,7 +57,7 @@ export default function ProjectsPage() {
       title: t("treasures_project_title"),
       description: t("treasures_project_short_desc"),
       image:
-        "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "/Logo turath 2-1.png",
       type: "ongoing",
       participants: 120,
       format: "hidden_treasures_format",
@@ -61,8 +71,7 @@ export default function ProjectsPage() {
         className="relative bg-transparent"
         style={{
           height: "60vh",
-          backgroundImage:
-            "url('/PHOTOS-JDP/P1388753.jpg')",
+          backgroundImage: "url('/PHOTOS-JDP/P1388753.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -160,6 +169,14 @@ export default function ProjectsPage() {
                     {project.format && (
                       <div className="bg-primary/10 px-3 py-1 rounded-full">
                         <span className="text-sm font-medium text-primary font-tomato">{t(project.format)}</span>
+                      </div>
+                    )}
+
+                    {project.presenter && (
+                      <div className="bg-primary/10 px-3 py-1 rounded-full">
+                        <span className="text-sm font-medium text-primary font-tomato">
+                          {t("presenter")}: {project.presenter}
+                        </span>
                       </div>
                     )}
                   </div>
