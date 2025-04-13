@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Container } from "@/components/ui/container"
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -164,4 +164,3 @@ export default function HeroSection() {
     </section>
   )
 }
-

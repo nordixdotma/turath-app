@@ -81,7 +81,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="overflow-y-scroll">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" />
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
@@ -91,7 +94,7 @@ export default function RootLayout({
             {/* Background image with overlay */}
             <div className="fixed inset-0 z-[-1]">
               <Image
-                src="/PHOTOS-JDP/DSC06271.jpg"
+                src="https://images.unsplash.com/photo-1699210259985-fba56d28c3df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Background"
                 fill
                 priority
@@ -112,4 +115,3 @@ export default function RootLayout({
     </html>
   )
 }
-

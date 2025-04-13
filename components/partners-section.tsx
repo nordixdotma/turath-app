@@ -105,7 +105,7 @@ export default function PartnersSection() {
               slidesPerView={1}
               loop={true}
               autoplay={{
-                delay: 2500,
+                delay: 4000,
                 disableOnInteraction: false,
               }}
               dir={language === "ar" ? "rtl" : "ltr"}
@@ -132,6 +132,7 @@ export default function PartnersSection() {
                             src={partner.logo || "/placeholder.svg"}
                             alt={partner.name}
                             fill
+                            loading="lazy"
                             className="object-contain"
                           />
                         </div>

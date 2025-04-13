@@ -28,36 +28,31 @@ export default function HistoricalPlacesSection() {
   const historicalPlaces = [
     {
       titleKey: "jemaa_el_fnaa_title",
-      image:
-        "https://images.unsplash.com/photo-1585004607620-fb4c44331e73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1585004607620-fb4c44331e73?q=75&w=1200&auto=format&fit=crop",
       yearKey: "jemaa_el_fnaa_year",
       factKey: "jemaa_el_fnaa_fact",
     },
     {
       titleKey: "koutoubia_mosque_title",
-      image:
-        "https://images.unsplash.com/photo-1569370088252-c26ef022594c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1569370088252-c26ef022594c?q=75&w=1200&auto=format&fit=crop",
       yearKey: "koutoubia_mosque_year",
       factKey: "koutoubia_mosque_fact",
     },
     {
       titleKey: "bahia_palace_title",
-      image:
-        "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1663297824621-27c5ff4cc826?q=75&w=1200&auto=format&fit=crop",
       yearKey: "bahia_palace_year",
       factKey: "bahia_palace_fact",
     },
     {
       titleKey: "majorelle_garden_title",
-      image:
-        "https://images.unsplash.com/photo-1729456229097-e60798212180?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1729456229097-e60798212180?q=75&w=1200&auto=format&fit=crop",
       yearKey: "majorelle_garden_year",
       factKey: "majorelle_garden_fact",
     },
     {
       titleKey: "el_badi_palace_title",
-      image:
-        "https://images.unsplash.com/photo-1592343361402-d4509fb85b36?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1592343361402-d4509fb85b36?q=75&w=1200&auto=format&fit=crop",
       yearKey: "el_badi_palace_year",
       factKey: "el_badi_palace_fact",
     },
@@ -172,6 +167,7 @@ export default function HistoricalPlacesSection() {
                     src={place.image || "/placeholder.svg"}
                     alt={t(place.titleKey)}
                     fill
+                    loading={index === 0 ? "eager" : "lazy"}
                     className="object-cover"
                   />
                   {/* Reduced contrast overlay for mobile */}
@@ -202,4 +198,3 @@ export default function HistoricalPlacesSection() {
     </section>
   )
 }
-
