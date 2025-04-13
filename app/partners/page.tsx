@@ -21,7 +21,7 @@ export default function PartnersPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [error, setError] = useState("")
-  const [donationType, setDonationType] = useState("bmce")
+  const [donationType, setDonationType] = useState("attijari")
   const [donationAmount, setDonationAmount] = useState("100")
   const [mounted, setMounted] = useState(false)
 
@@ -408,233 +408,50 @@ export default function PartnersPage() {
               <p className="text-gray-700 max-w-2xl mx-auto font-tomato">{t("banking_details_description")}</p>
             </div>
 
-            {/* Tabs for different banks */}
             <div className="max-w-3xl mx-auto">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="border-b border-gray-200">
-                  <nav className="flex -mb-px">
-                    <button
-                      className={`py-4 px-6 font-medium text-sm border-b-2 ${
-                        donationType === "bmce"
-                          ? "border-primary text-primary"
-                          : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
-                      }`}
-                      onClick={() => setDonationType("bmce")}
-                    >
-                      BMCE Bank
-                    </button>
-                    <button
-                      className={`py-4 px-6 font-medium text-sm border-b-2 ${
-                        donationType === "cih"
-                          ? "border-primary text-primary"
-                          : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
-                      }`}
-                      onClick={() => setDonationType("cih")}
-                    >
-                      CIH Bank
-                    </button>
-                    <button
-                      className={`py-4 px-6 font-medium text-sm border-b-2 ${
-                        donationType === "bp"
-                          ? "border-primary text-primary"
-                          : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
-                      }`}
-                      onClick={() => setDonationType("bp")}
-                    >
-                      Banque Populaire
-                    </button>
-                  </nav>
+                <div className="p-8 space-y-6">
+                  <div className="flex items-center mb-6">
+                    <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
+                      <Briefcase className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 font-tomato">Attijari Wafabank</h3>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-4">
+                      <div className="bg-gray-50 p-4 rounded-md">
+                        <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                          {t("account_holder")}
+                        </h4>
+                        <p className="text-lg font-medium text-gray-900 font-tomato">Association Turath</p>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-md">
+                        <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                          {t("account_number")} (RIB)
+                        </h4>
+                        <p className="text-lg font-medium text-gray-900 font-tomato">007450001509800030118518</p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <div className="bg-gray-50 p-4 rounded-md">
+                        <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                          {t("bank_name")}
+                        </h4>
+                        <p className="text-lg font-medium text-gray-900 font-tomato">Attijari Wafabank</p>
+                      </div>
+
+                      <div className="bg-gray-50 p-4 rounded-md">
+                        <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                          {t("reference")}
+                        </h4>
+                        <p className="text-lg font-medium text-gray-900 font-tomato">{t("donation_reference")}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                {/* BMCE Bank Details */}
-                {donationType === "bmce" && (
-                  <div className="p-8 space-y-6">
-                    <div className="flex items-center mb-6">
-                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
-                        <Briefcase className="h-6 w-6 text-primary" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900 font-tomato">BMCE Bank</h3>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("account_holder")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">Association Turath</p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("account_number")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">
-                            011 780 000 012 000 000 123 45
-                          </p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("branch")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">Marrakech Guéliz</p>
-                        </div>
-                      </div>
-
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("iban")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">
-                            MA123 011 780 000 012 000 000 123 45
-                          </p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("swift_code")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">BMCEMAGC</p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("reference")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">{t("donation_reference")}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {/* CIH Bank Details */}
-                {donationType === "cih" && (
-                  <div className="p-8 space-y-6">
-                    <div className="flex items-center mb-6">
-                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
-                        <Briefcase className="h-6 w-6 text-primary" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900 font-tomato">CIH Bank</h3>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("account_holder")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">Association Turath</p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("account_number")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">
-                            230 810 000 016 000 000 789 12
-                          </p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("branch")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">Marrakech Mohammed VI</p>
-                        </div>
-                      </div>
-
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("iban")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">
-                            MA123 230 810 000 016 000 000 789 12
-                          </p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("swift_code")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">CIHMMAMCXXX</p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("reference")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">{t("donation_reference")}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {/* Banque Populaire Details */}
-                {donationType === "bp" && (
-                  <div className="p-8 space-y-6">
-                    <div className="flex items-center mb-6">
-                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
-                        <Briefcase className="h-6 w-6 text-primary" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900 font-tomato">Banque Populaire</h3>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("account_holder")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">Association Turath</p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("account_number")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">181 810 21211 456789012345 67</p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("branch")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">Marrakech Menara</p>
-                        </div>
-                      </div>
-
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("iban")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">
-                            MA123 181 810 21211 456789012345 67
-                          </p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("swift_code")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">BCPOMAMC</p>
-                        </div>
-
-                        <div className="bg-gray-50 p-4 rounded-md">
-                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
-                            {t("reference")}
-                          </h4>
-                          <p className="text-lg font-medium text-gray-900 font-tomato">{t("donation_reference")}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
 
                 {/* Donation Note */}
                 <div className="bg-gray-50 p-6 border-t border-gray-200">
@@ -643,14 +460,16 @@ export default function PartnersPage() {
                       <Gift className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-gray-700 text-sm font-tomato mb-4">{t("donation_note")}</p>
+                      <p className="text-gray-700 text-sm font-tomato mb-4">
+                        {t("donation_note").replace("finance@turath.org", "turath.marrakech@gmail.com")}
+                      </p>
                       <div className="flex items-center">
                         <a
-                          href="mailto:finance@turath.org"
+                          href="mailto:turath.marrakech@gmail.com"
                           className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
                         >
                           <Mail className="h-4 w-4 mr-2" />
-                          finance@turath.org
+                          turath.marrakech@gmail.com
                         </a>
                       </div>
                     </div>
