@@ -2,241 +2,192 @@
 
 import { useLanguage } from "@/hooks/use-language"
 import { Container } from "@/components/ui/container"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft, Calendar, MapPin, Target, Users, Award } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
 import { useInView } from "react-intersection-observer"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { ArrowLeft, ArrowRight, Calendar, MapPin } from "lucide-react"
 
 export default function HeritageProjectPage() {
   const { t } = useLanguage()
 
-  // Animation refs
-  const { ref: headerRef, inView: headerInView } = useInView({
+  // Hero section animation
+  const { ref: heroRef, inView: heroInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   })
 
-  const { ref: contentRef, inView: contentInView } = useInView({
+  // Editions section animation
+  const { ref: editionsRef, inView: editionsInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   })
+
+  // Project editions data
+  const editions = [
+    {
+      id: "first_edition",
+      title: t("heritage_days_first_edition"),
+      description: t("heritage_days_first_edition_description"),
+      image: "https://images.unsplash.com/photo-1539020140153-e8c237112e31?q=80&w=1974&auto=format&fit=crop",
+      date: t("heritage_days_first_edition_date"),
+      location: t("heritage_days_location"),
+      status: "completed",
+    },
+    {
+      id: "second_edition",
+      title: t("heritage_days_second_edition"),
+      description: t("heritage_days_second_edition_description"),
+      image: "https://images.unsplash.com/photo-1724762511996-8daf138c0a30?q=80&w=1974&auto=format&fit=crop",
+      date: t("heritage_days_second_edition_date"),
+      location: t("heritage_days_location"),
+      status: "completed",
+    },
+    {
+      id: "third_edition",
+      title: t("heritage_days_third_edition"),
+      description: t("heritage_days_third_edition_description"),
+      image: "https://images.unsplash.com/photo-1594240500626-1e6d5c6de7dc?q=80&w=2070&auto=format&fit=crop",
+      date: t("heritage_days_third_edition_date"),
+      location: t("heritage_days_location"),
+      status: "upcoming",
+    },
+  ]
 
   return (
-    <div className="bg-gray-50 pb-20">
+    <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 h-[60vh] flex items-center">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1724762511996-8daf138c0a30?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Journées du Patrimoine de Marrakech"
-            fill
-            className="object-cover opacity-50"
-          />
+      <section
+        className="relative bg-transparent"
+        style={{
+          height: "60vh",
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1724762511996-8daf138c0a30?q=80&w=1974&auto=format&fit=crop')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Add a dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* Content */}
+        <div className="absolute inset-0 flex items-center">
+          <Container className="max-w-6xl mx-auto relative z-10">
+            <div
+              ref={heroRef}
+              className={cn(
+                "max-w-3xl transition-all duration-1000 transform",
+                heroInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8",
+              )}
+            >
+              <Link href="/projects" className="inline-flex items-center text-white mb-6 group">
+                <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
+                <span className="text-sm font-medium">{t("back_to_projects")}</span>
+              </Link>
+              <div className="inline-block mb-4 px-3 py-1 bg-primary/20 backdrop-blur-sm rounded-none">
+                <span className="text-xs font-medium text-white">{t("event")}</span>
+              </div>
+              <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
+                {t("heritage_days_title")}
+              </h1>
+              <p className="mb-6 text-base text-shadow text-white/90 max-w-lg">{t("heritage_days_description")}</p>
+            </div>
+          </Container>
         </div>
-        <Container className="relative z-10">
+      </section>
+
+      {/* Editions Section */}
+      <section className="py-20 bg-white">
+        <Container className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-tomato text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("project_editions")}</h2>
+            <div className="h-1 w-24 bg-primary mx-auto mb-6"></div>
+            <p className="text-gray-700 max-w-2xl mx-auto font-tomato">{t("project_editions_description")}</p>
+          </div>
+
           <div
-            ref={headerRef}
+            ref={editionsRef}
             className={cn(
-              "max-w-3xl transition-all duration-1000 transform",
-              headerInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8",
+              "space-y-16 transition-all duration-700",
+              editionsInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
             )}
           >
-            <Link
-              href="/projects"
-              className="inline-flex items-center text-white mb-6 hover:text-primary transition-colors"
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              {t("back_to_projects")}
-            </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-tomato">{t("heritage_days_title")}</h1>
-            <p className="text-lg text-white/90 max-w-2xl">{t("heritage_days_description")}</p>
+            {editions.map((edition, index) => (
+              <div
+                key={edition.id}
+                className={cn("grid md:grid-cols-2 gap-8 items-center", index % 2 === 1 ? "md:flex-row-reverse" : "")}
+              >
+                <div className={cn("order-1", index % 2 === 1 ? "md:order-2" : "md:order-1")}>
+                  <div className="relative h-64 md:h-80 rounded-md overflow-hidden shadow-lg">
+                    <Image
+                      src={edition.image || "/placeholder.svg"}
+                      alt={edition.title}
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4">
+                      <div className="inline-block px-3 py-1 bg-primary/80 text-white text-xs font-medium uppercase tracking-wider">
+                        {t(edition.status)}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={cn("order-2", index % 2 === 1 ? "md:order-1" : "md:order-2")}>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 font-tomato">{edition.title}</h3>
+                  <p className="text-gray-700 mb-6 font-tomato">{edition.description}</p>
+
+                  <div className="flex flex-wrap gap-3 mb-6">
+                    <div className="flex items-center bg-primary/10 px-3 py-1 rounded-full">
+                      <Calendar className="h-4 w-4 text-primary mr-2" />
+                      <span className="text-sm font-medium text-primary font-tomato">{edition.date}</span>
+                    </div>
+
+                    <div className="flex items-center bg-primary/10 px-3 py-1 rounded-full">
+                      <MapPin className="h-4 w-4 text-primary mr-2" />
+                      <span className="text-sm font-medium text-primary font-tomato">{edition.location}</span>
+                    </div>
+                  </div>
+
+                  <Link href={`/projects/heritage-days/${edition.id}`}>
+                    <Button
+                      variant="outline"
+                      className="border-primary text-primary hover:bg-primary/10 rounded-none font-tomato"
+                    >
+                      {t("view_details")}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </Container>
       </section>
 
-      {/* Content Section */}
-      <Container className="max-w-6xl mx-auto mt-12">
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Main Content */}
-          <div
-            ref={contentRef}
-            className={cn(
-              "md:col-span-2 transition-all duration-1000 transform",
-              contentInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8",
-            )}
-          >
-            <div className="bg-white p-8 shadow-md mb-8">
-              <h2 className="text-2xl font-bold mb-6 font-tomato">{t("about_project")}</h2>
-              <div className="prose max-w-none">
-                <p>{t("heritage_days_about")}</p>
-                <p>{t("heritage_days_about_2")}</p>
-                <p>{t("heritage_days_about_3")}</p>
-                <h3 className="text-xl font-bold mt-8 mb-4">{t("heritage_days_activities")}</h3>
-                <ul>
-                  <li>
-                    <strong>Guided Tours:</strong> Expert-led explorations of historical sites, revealing hidden stories
-                    and architectural details.
-                  </li>
-                  <li>
-                    <strong>Cooking Classes:</strong> Hands-on experiences learning traditional Moroccan culinary
-                    techniques and recipes.
-                  </li>
-                  <li>
-                    <strong>Exhibitions:</strong> Showcasing artifacts, photographs, and artworks related to Marrakech's
-                    heritage.
-                  </li>
-                  <li>
-                    <strong>Sensory Tours:</strong> Unique experiences engaging all senses to appreciate the cultural
-                    heritage of Marrakech.
-                  </li>
-                  <li>
-                    <strong>Cultural Performances:</strong> Traditional music, dance, and storytelling that bring the
-                    city's heritage to life.
-                  </li>
-                </ul>
-                <h3 className="text-xl font-bold mt-8 mb-4">{t("heritage_days_impact")}</h3>
-                <p>
-                  The Journées du Patrimoine de Marrakech has become a significant cultural event in the city's
-                  calendar, attracting hundreds of participants each year. By making heritage accessible and engaging,
-                  the event helps to:
-                </p>
-                <ul>
-                  <li>Raise awareness about the importance of preserving cultural heritage</li>
-                  <li>Educate younger generations about their cultural roots</li>
-                  <li>Promote sustainable cultural tourism</li>
-                  <li>Support local artisans and cultural practitioners</li>
-                  <li>Foster community pride and identity</li>
-                </ul>
-                <p>
-                  The third edition is already being planned for 2025, indicating the event's ongoing significance and
-                  success in promoting Marrakech's cultural heritage.
-                </p>
-              </div>
-            </div>
-
-            {/* Gallery Section */}
-            <div className="bg-white p-8 shadow-md">
-              <h2 className="text-2xl font-bold mb-6 font-tomato">{t("gallery")}</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div className="relative h-40 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1539020140153-e8c237112e31?q=80&w=1974&auto=format&fit=crop"
-                    alt="Heritage Days event"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="relative h-40 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1539037897686-32d6b95d6f6e?q=80&w=1974&auto=format&fit=crop"
-                    alt="Guided tour"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="relative h-40 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?q=80&w=1974&auto=format&fit=crop"
-                    alt="Traditional crafts workshop"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="relative h-40 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1512236077335-f1cda9239c11?q=80&w=1974&auto=format&fit=crop"
-                    alt="Cultural performance"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="relative h-40 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1531761535209-180857e963b9?q=80&w=1974&auto=format&fit=crop"
-                    alt="Exhibition display"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="relative h-40 rounded overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1565689478170-7c200beb5d17?q=80&w=1974&auto=format&fit=crop"
-                    alt="Cooking class"
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-50">
+        <Container className="max-w-6xl mx-auto">
+          <div className="bg-primary/10 rounded-2xl p-8 md:p-12">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 font-tomato text-primary">
+                {t("interested_in_heritage_days")}
+              </h2>
+              <p className="text-gray-700 mb-8 font-tomato">{t("heritage_days_cta_description")}</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild size="lg" className="font-tomato">
+                  <Link href="/contact">{t("contact_for_participation")}</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="font-tomato">
+                  <Link href="/volunteer">{t("volunteer_for_next_edition")}</Link>
+                </Button>
               </div>
             </div>
           </div>
-
-          {/* Sidebar */}
-          <div className="md:col-span-1">
-            <div className="bg-white p-6 shadow-md mb-8">
-              <h3 className="text-xl font-bold mb-4 font-tomato">{t("project_details")}</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <Calendar className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                  <div>
-                    <p className="font-medium">{t("date")}</p>
-                    <p className="text-gray-600">May 23-26, 2024 (2nd Edition)</p>
-                    <p className="text-gray-600">2025 (Upcoming 3rd Edition)</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                  <div>
-                    <p className="font-medium">{t("location")}</p>
-                    <p className="text-gray-600">Various locations across Marrakech</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <Users className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                  <div>
-                    <p className="font-medium">{t("participants_to_date")}</p>
-                    <p className="text-gray-600">250+ participants per edition</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <Target className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                  <div>
-                    <p className="font-medium">{t("goals")}</p>
-                    <ul className="text-gray-600 list-disc ml-4">
-                      <li>Highlight Marrakech's rich heritage</li>
-                      <li>Make cultural sites accessible to all</li>
-                      <li>Educate through interactive experiences</li>
-                      <li>Preserve traditional knowledge</li>
-                    </ul>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <Award className="h-5 w-5 text-primary mr-3 mt-0.5" />
-                  <div>
-                    <p className="font-medium">{t("significance")}</p>
-                    <p className="text-gray-600">
-                      A flagship event in Marrakech's cultural calendar, recognized in tourism guides and local media
-                      for its contribution to heritage awareness.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-primary/10 p-6 shadow-md">
-              <h3 className="text-xl font-bold mb-4 font-tomato">{t("register_event")}</h3>
-              <p className="text-gray-700 mb-6">
-                Join us for the upcoming 3rd edition of the Journées du Patrimoine de Marrakech in 2025. Registration
-                will open closer to the event date.
-              </p>
-              <Link href="/contact">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white">{t("contact_us")}</Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </Container>
+        </Container>
+      </section>
     </div>
   )
 }

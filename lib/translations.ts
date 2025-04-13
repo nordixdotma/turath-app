@@ -2,7 +2,6 @@ export const translations = {
   en: {
     // Header
     home: "Home",
-    projects: "Projects",
     about: "About",
     volunteer: "Volunteer",
     contact: "Contact",
@@ -48,32 +47,6 @@ export const translations = {
     el_badi_palace_fact:
       "El Badi means 'The Incomparable' in Arabic. Much of its original materials were stripped to build the Alawite palaces in Meknes.",
 
-    // Projects Section
-    projects_title: "Heritage Horizons: Unveiling Marrakech's Hidden Treasures",
-    projects_description:
-      "Unveiling Marrakech's Hidden Treasures is an immersive and enlightening series of events organized by Turâth, dedicated to exploring the rich heritage of Marrakech and bringing attention to its often overlooked gems. Join us on an exciting journey of discovery as we delve into the depths of the city's history, architecture, craftsmanship, and cultural traditions.",
-    project1_title: "JOURNÉES DU PATRIMOINE DE MARRAKECH",
-    project1_description:
-      "A week-long celebration featuring guided tours of historical sites, workshops on traditional crafts, and cultural performances that showcase the rich heritage of Marrakech.",
-    project2_title: "TRADITIONAL CRAFTSMANSHIP WORKSHOPS",
-    project2_description:
-      "Hands-on workshops led by master artisans, teaching traditional Moroccan crafts such as pottery, weaving, and woodworking to preserve these ancient skills for future generations.",
-    project3_title: "ARCHITECTURAL PRESERVATION INITIATIVES",
-    project3_description:
-      "Collaborative projects focused on documenting, restoring, and preserving the unique architectural elements of Marrakech's historical buildings and neighborhoods.",
-    project4_title: "POST-EARTHQUAKE RECONSTRUCTION AND HERITAGE PRESERVATION",
-    project4_description:
-      "Following the devastating earthquake in Al Haouz on September 8, 2023, Turath mobilized architects, engineers, and specialists to support reconstruction efforts. Their focus was on assessing damages and securing heritage sites, particularly the Tinmel mosque, which was completely destroyed.",
-    project5_title: "UNVEILING MARRAKECH'S HIDDEN TREASURES",
-    project5_description:
-      "An immersive and enlightening series of events dedicated to exploring Marrakech's often overlooked heritage gems. This initiative focuses on the city's rich history, unique architecture, traditional craftsmanship, and diverse cultural traditions through various ongoing activities and educational programs.",
-    view_all_projects: "View All Projects",
-    learn_more: "Learn More",
-    participants: "Participants",
-    event: "Event",
-    workshop: "Workshop",
-    restoration: "Restoration",
-
     // Board Section
     board_title: "Our board",
     board_description:
@@ -93,7 +66,6 @@ export const translations = {
     // Stats Section
     volunteers: "Volunteers",
     donations: "Donations",
-    projects: "Projects",
     missions: "Missions",
 
     // Footer
@@ -256,37 +228,6 @@ export const translations = {
     faq_answer_12:
       "Turâth offers a wide range of volunteer roles to match different skills and interests. These include tour guides, researchers, event coordinators, social media managers, photographers, translators, administrative support, and more.",
 
-    // Projects Page
-    our_initiatives: "Our Initiatives",
-    projects_hero_description:
-      "Explore our projects dedicated to preserving and promoting the rich cultural heritage of Marrakech",
-    our_projects: "Our Projects",
-    our_projects_description:
-      "Discover our initiatives aimed at preserving and promoting the rich cultural heritage of Marrakech and its region",
-
-    // Project Detail Pages
-    back_to_projects: "Back to Projects",
-    about_project: "About the Project",
-    project_details: "Project Details",
-    date: "Date",
-    location: "Location",
-    activities: "Activities",
-    goals: "Goals",
-    impact: "Impact",
-    gallery: "Gallery",
-    register_event: "Register for Next Event",
-    support_project: "Support This Project",
-    register_workshop: "Register for a Workshop",
-
-    // Additional Project Detail Keys
-    workshop_types: "Workshop Types",
-    schedule: "Schedule",
-    participants_to_date: "Participants to Date",
-    significance: "Significance",
-    key_initiatives: "Key Initiatives",
-    timeline: "Timeline",
-    contributors: "Contributors",
-
     // New volunteer dropdown menu items
     notre_bureau: "Our Board",
     devenir_membre: "Become a Member",
@@ -384,8 +325,7 @@ export const translations = {
     benefit_network_title: "Networking Opportunities",
     benefit_network_description: "Connect with other organizations and individuals passionate about cultural heritage.",
     benefit_events_access_title: "VIP Access",
-    benefit_events_access_description:
-      "Special access to events, exhibitions, and exclusive behind-the-scenes experiences.",
+    benefit_events_description: "Special access to events, exhibitions, and exclusive behind-the-scenes experiences.",
     support_events: "Support Our Events",
     support_events_description:
       "Help us organize impactful cultural events that raise awareness about Marrakech's rich heritage",
@@ -421,36 +361,249 @@ export const translations = {
     become_partner_description:
       "Join us in our mission to preserve and promote the rich cultural heritage of Marrakech for future generations.",
     contact_partnerships: "Contact our Partnerships Team",
+    branch: "Branch",
 
-    heritage_days_title: "Journées du Patrimoine de Marrakech",
+    banking_details: "Support Our Mission",
+    banking_details_description:
+      "To make a donation and support our heritage preservation efforts, please use the following banking information:",
+    bank_name: "Bank Name",
+    account_holder: "Account Holder",
+    account_number: "Account Number",
+    iban: "IBAN",
+    swift_code: "SWIFT/BIC Code",
+    reference: "Payment Reference",
+    donation_reference: "DONATION-TURATH",
+    donation_note:
+      "Please include your name in the transfer details so we can acknowledge your contribution. For tax deduction certificates or any questions about donations, please contact us at finance@turath.org.",
+
+    // Projects section
+    projects: "Projects",
+    our_initiatives: "Our Initiatives",
+    projects_title: "Our Heritage Projects",
+    projects_hero_description:
+      "Discover our initiatives to preserve and promote the rich cultural heritage of Marrakech",
+    our_projects: "Our Key Projects",
+    our_projects_description:
+      "Explore our major initiatives aimed at preserving and celebrating Marrakech's cultural heritage",
+    event: "Event",
+    restoration: "Restoration",
+    ongoing: "Ongoing",
+    participants: "Participants",
+    next: "Next",
+    learn_more: "Learn More",
+    support_our_projects: "Support Our Heritage Projects",
+    support_projects_description:
+      "Your contribution can make a significant difference in preserving Marrakech's rich cultural heritage for future generations. Join us in our mission to protect and promote our shared history.",
+    become_partner: "Become a Partner",
+    volunteer_with_us: "Volunteer With Us",
+
+    // Heritage Days Project
+    heritage_days_title: "Heritage Days of Marrakech",
     heritage_days_description:
-      "An annual celebration showcasing the rich cultural heritage of Marrakech through guided tours, workshops, exhibitions, and cultural performances.",
+      "An annual event highlighting Marrakech's rich patrimonial heritage through guided tours, workshops, and cultural activities.",
     heritage_days_about:
-      "The Journées du Patrimoine de Marrakech (Heritage Days of Marrakech) is an annual event aimed at highlighting Marrakech's rich patrimonial heritage. The second edition occurred from May 23 to 26, 2024, featuring a diverse program of cultural activities.",
+      "The Heritage Days of Marrakech is an annual event aimed at highlighting the city's rich patrimonial heritage. The event offers a unique opportunity for both locals and tourists to discover or rediscover the historical and cultural treasures of Marrakech.",
+    heritage_days_about_2:
+      "The second edition took place from May 23 to 26, 2024, featuring a diverse program of activities including guided tours, cooking classes, exhibitions, and sensory tours, all offered free of charge to participants.",
+    heritage_days_about_3:
+      "These events are designed to showcase monuments under new perspectives with the support of historians, architects, and heritage specialists, creating meaningful connections between the public and Marrakech's cultural legacy.",
+    heritage_days_date: "May 23-26, 2024 (2nd Edition)",
+    heritage_days_next_edition: "2025 (3rd Edition)",
+    heritage_days_location: "Various historical sites across Marrakech",
     heritage_days_activities: "Activities",
     heritage_days_impact: "Impact",
+    heritage_days_impact_text:
+      "The Heritage Days of Marrakech has a significant impact on cultural awareness and heritage preservation:",
+    heritage_days_future:
+      "Looking ahead to the third edition in 2025, we aim to expand the program further, reaching more communities and highlighting additional aspects of Marrakech's rich cultural heritage.",
 
-    earthquake_reconstruction_title: "Post-Earthquake Reconstruction and Heritage Preservation",
+    heritage_days_activities_list: {
+      guided_tours: "Guided tours of historical monuments and hidden architectural gems",
+      cooking_classes: "Traditional Moroccan cooking classes showcasing culinary heritage",
+      exhibitions: "Art and historical exhibitions highlighting local craftsmanship",
+      sensory_tours: "Sensory tours designed to experience heritage through all five senses",
+      cultural_performances: "Cultural performances featuring traditional music and dance",
+    },
+
+    heritage_days_impact_list: {
+      awareness: "Raising public awareness about the importance of cultural heritage preservation",
+      educate: "Educating younger generations about their cultural roots and identity",
+      promote: "Promoting sustainable tourism that respects and values local heritage",
+      support: "Supporting local artisans and cultural practitioners",
+      foster: "Fostering community pride and engagement in heritage conservation",
+    },
+
+    heritage_days_goals: {
+      highlight: "Highlight the rich and diverse cultural heritage of Marrakech",
+      access: "Provide free access to cultural sites and activities for all",
+      educate: "Educate the public about the importance of heritage preservation",
+      preserve: "Contribute to the preservation of tangible and intangible heritage",
+    },
+
+    // Earthquake Reconstruction Project
+    earthquake_reconstruction_title: "Post-earthquake Reconstruction",
     earthquake_reconstruction_description:
-      "Mobilizing expertise to assess, secure, and restore heritage sites damaged by the devastating Al Haouz earthquake of September 2023.",
+      "A crucial initiative to support reconstruction efforts following the devastating Al Haouz earthquake of September 2023.",
     earthquake_reconstruction_about:
-      "Following the devastating earthquake in Al Haouz on September 8, 2023, Turath played a crucial role in mobilizing architects, engineers, and heritage specialists to support reconstruction efforts. This emergency response initiative focused on assessing damages and securing heritage sites that were severely impacted by the natural disaster.",
+      "Following the devastating Al Haouz earthquake on September 8, 2023, which measured 6.8 on the Richter scale and affected numerous historical sites in the Atlas Mountains region, Turâth Association immediately mobilized to support reconstruction efforts. Our team of architects, engineers, and heritage specialists has been working closely with local communities and authorities to assess damage, document affected structures, and develop sustainable reconstruction plans that respect traditional building techniques while improving structural resilience.",
+    earthquake_reconstruction_about_2:
+      "This project focuses particularly on the preservation of architectural heritage in the affected villages of the High Atlas, where centuries-old earthen architecture and traditional building knowledge are at risk of being lost in the reconstruction process. We've established a platform connecting international experts with local master builders to ensure that reconstruction efforts honor traditional methods while incorporating appropriate seismic reinforcement techniques.",
     earthquake_activities: "Key Activities",
-    tinmel_mosque: "Tinmel Mosque Restoration",
-    collaborative_approach: "Collaborative Approach",
+    earthquake_activities_list: {
+      assessment:
+        "Comprehensive damage assessment of historical structures in over 20 villages across the Al Haouz region",
+      stabilization:
+        "Emergency stabilization of damaged heritage buildings using reversible techniques that don't compromise future restoration",
+      documentation:
+        "Detailed 3D documentation and architectural surveys of damaged structures to guide accurate reconstruction",
+      coordination: "Coordination with government agencies, UNESCO, and international conservation organizations",
+      engagement:
+        "Community workshops to incorporate local knowledge and ensure cultural appropriateness of reconstruction plans",
+    },
 
+    tinmel_mosque: "Tinmel Mosque Restoration",
+    tinmel_mosque_text:
+      "The historic Tinmel Mosque, a masterpiece of Almohad architecture dating back to 1156 and one of only two mosques in Morocco open to non-Muslims, suffered severe damage during the earthquake. Our specific restoration efforts for this UNESCO World Heritage candidate site include:",
+    tinmel_mosque_goals: {
+      recover: "Recover and catalog original architectural elements, including carved stucco and wooden elements",
+      develop: "Develop a comprehensive restoration plan based on historical documentation and archaeological evidence",
+      train:
+        "Train local craftspeople in traditional lime mortar preparation, earthen construction, and decorative techniques",
+      create:
+        "Create a visitor interpretation center explaining the mosque's historical significance and restoration process",
+    },
+
+    collaborative_approach: "Collaborative Approach",
+    collaborative_approach_text:
+      "Our reconstruction efforts are based on a collaborative approach that brings together various stakeholders, including Morocco's Ministry of Culture, UNESCO, ICOMOS, local authorities, academic institutions, and most importantly, the affected communities themselves.",
+    collaborative_approach_text_2:
+      "This inclusive strategy ensures that reconstruction not only preserves the physical structures but also respects the cultural significance and community values attached to these heritage sites. We're documenting traditional building techniques, training local craftspeople, and creating educational resources to ensure this knowledge continues to be passed down to future generations.",
+
+    earthquake_goals: {
+      document: "Document and preserve the unique earthen building techniques of the High Atlas region",
+      implement: "Implement seismically-resistant reconstruction methods that respect local architectural traditions",
+      develop: "Develop capacity among local craftspeople through hands-on training workshops",
+      restore: "Restore key heritage sites while improving their resilience to future earthquakes",
+      create: "Create a digital archive of traditional building knowledge for future generations",
+    },
+
+    earthquake_timeline: {
+      phase1: "Phase 1: Emergency assessment and documentation (Completed - October 2023)",
+      phase2: "Phase 2: Stabilization of at-risk structures (Completed - December 2023)",
+      phase3: "Phase 3: Community engagement and planning (Ongoing - January-June 2024)",
+      phase4: "Phase 4: Restoration of priority heritage sites (Ongoing - April 2024-December 2025)",
+      phase5: "Phase 5: Knowledge transfer and capacity building (2024-2026)",
+    },
+
+    // Hidden Treasures Project
     hidden_treasures_title: "Unveiling Marrakech's Hidden Treasures",
     hidden_treasures_description:
-      "An immersive and enlightening series of events dedicated to exploring Marrakech's often overlooked heritage gems.",
+      "An immersive series of events exploring Marrakech's overlooked heritage gems, including history, architecture, craftsmanship, and cultural traditions.",
     hidden_treasures_about:
-      "\"Unveiling Marrakech's Hidden Treasures\" is an immersive and enlightening series of events dedicated to exploring Marrakech's often overlooked heritage gems. This initiative focuses on the city's rich history, unique architecture, traditional craftsmanship, and diverse cultural traditions.",
+      "Unveiling Marrakech's Hidden Treasures is an immersive and enlightening series of events dedicated to exploring the city's often overlooked heritage gems. This initiative goes beyond the well-known tourist attractions to reveal the authentic soul of Marrakech through its lesser-known historical sites, architectural marvels, traditional craftsmanship, and rich cultural traditions.",
+    hidden_treasures_about_2:
+      "Through carefully curated experiences, we invite both locals and visitors to discover the hidden corners of the medina, meet master artisans in their workshops, and learn about the stories and traditions that have shaped Marrakech's unique cultural identity.",
+    hidden_treasures_about_3:
+      "This ongoing program features periodic events throughout the year, each focusing on different aspects of Marrakech's heritage, ensuring a comprehensive exploration of the city's cultural wealth.",
+
     program_components: "Program Components",
+    program_components_list: {
+      tours: "Specialized tours of lesser-known historical sites and architectural gems",
+      craft: "Craft workshops with master artisans preserving traditional techniques",
+      oral: "Oral history collection and storytelling sessions with community elders",
+      workshops: "Educational workshops on various aspects of tangible and intangible heritage",
+      digital: "Digital documentation of endangered heritage elements",
+    },
+
     focus_areas: "Focus Areas",
+    focus_areas_intro: "Our Hidden Treasures initiative explores various dimensions of Marrakech's heritage:",
+    focus_areas_list: {
+      architecture: "Vernacular architecture and traditional building techniques",
+      craft: "Endangered crafts and artisanal knowledge",
+      cultural: "Cultural practices, rituals, and celebrations",
+      historical: "Historical narratives and collective memory",
+      natural: "Natural heritage and traditional ecological knowledge",
+    },
+
+    hidden_treasures_conclusion:
+      "By unveiling these hidden treasures, we aim to foster a deeper appreciation for Marrakech's cultural complexity and encourage more meaningful engagement with its heritage, ultimately contributing to its preservation for future generations.",
+
+    hidden_treasures_key_initiatives: {
+      tours: "Hidden Heritage Tours: Guided explorations of lesser-known historical sites",
+      craft: "Artisan Encounters: Direct interactions with master craftspeople in their workshops",
+      oral: "Heritage Storytelling Sessions: Collecting and sharing oral histories and traditions",
+      workshops: "Heritage Skills Workshops: Hands-on learning of traditional techniques",
+      digital: "Digital Heritage Archive: Creating a digital repository of endangered heritage elements",
+    },
+
+    hidden_treasures_impact_text:
+      "This initiative has significantly increased awareness about Marrakech's lesser-known heritage assets, created economic opportunities for traditional craftspeople, and contributed valuable documentation of endangered cultural practices and sites.",
+
+    // Common project page elements
+    about_project: "About the Project",
+    project_details: "Project Details",
+    date: "Date",
+    location: "Location",
+    contributors: "Contributors",
+    participants_to_date: "Participants to Date",
+    participants_per_edition: "participants per edition",
+    schedule: "Schedule",
+    workshop_details: "Workshop Details",
+    register_event: "Register for Next Event",
+    register_workshop: "Register for Workshop",
+    support_project: "Support This Project",
+    goals: "Goals",
+    gallery: "Gallery",
+    impact: "Impact",
+    key_initiatives: "Key Initiatives",
+    back_to_projects: "Back to Projects",
+    workshop_types: "Workshop Types",
+    craftsmanship_impact_text:
+      "These workshops have a significant impact on preserving traditional crafts by creating economic opportunities for artisans, documenting endangered techniques, and fostering a new generation of craftspeople committed to maintaining these cultural practices.",
+    significance: "Significance",
+    architectural_significance_text:
+      "Architectural preservation is not just about maintaining physical structures; it's about safeguarding the cultural identity, historical narrative, and traditional knowledge embedded in these buildings. Our work helps ensure that future generations can experience and learn from Marrakech's architectural heritage.",
+
+    // Project page specific translations
+    heritage_days_date: "May 23-26, 2024 (2nd Edition)",
+    heritage_days_next_edition: "2025 (3rd Edition)",
+    earthquake_reconstruction_date: "September 2023 - Ongoing",
+    earthquake_reconstruction_focus: "Tinmel Mosque Restoration",
+    hidden_treasures_format: "Periodic Events & Programs",
+
+    // Heritage Days Project Editions
+    project_editions: "Project Editions",
+    project_editions_description: "Explore the different editions of the Heritage Days of Marrakech project",
+    completed: "Completed",
+    upcoming: "Upcoming",
+    view_details: "View Details",
+    interested_in_heritage_days: "Interested in Heritage Days?",
+    heritage_days_cta_description:
+      "Join us for the next edition or explore opportunities to participate in this cultural celebration of Marrakech's rich heritage.",
+    contact_for_participation: "Contact for Participation",
+    volunteer_for_next_edition: "Volunteer for Next Edition",
+
+    // Heritage Days Editions
+    heritage_days_first_edition: "Heritage Days - First Edition",
+    heritage_days_first_edition_description:
+      "The inaugural edition that established a new tradition of celebrating and showcasing Marrakech's rich cultural heritage.",
+    heritage_days_first_edition_date: "May 2022",
+
+    heritage_days_second_edition: "Heritage Days - Second Edition",
+    heritage_days_second_edition_description:
+      "Building on the success of the first edition with expanded programming and increased community participation.",
+    heritage_days_second_edition_date: "May 23-26, 2024",
+
+    heritage_days_third_edition: "Heritage Days - Third Edition",
+    heritage_days_third_edition_description:
+      "Our upcoming edition promises new experiences, deeper explorations, and innovative approaches to heritage appreciation.",
+    heritage_days_third_edition_date: "May 2025",
+
+    heritage_days_location: "Various historical sites across Marrakech",
   },
   fr: {
     // Header
     home: "Accueil",
-    projects: "Projets",
     about: "À propos",
     volunteer: "Bénévolat",
     contact: "Contact",
@@ -496,32 +649,6 @@ export const translations = {
     el_badi_palace_fact:
       "El Badi signifie 'L'Incomparable' en arabe. Une grande partie de ses matériaux d'origine ont été dépouillés pour construire les palais alaouite à Meknès.",
 
-    // Projects Section
-    projects_title: "Horizons du Patrimoine : Dévoiler les Trésors Cachés de Marrakech",
-    projects_description:
-      "Dévoiler les Trésors Cachés de Marrakech est une série d'événements immersifs et éclairants organisés par Turâth, dédiés à l'exploration du riche patrimoine de Marrakech et à attirer l'attention sur ses joyaux souvent négligés. Rejoignez-nous dans un voyage passionnant de découverte alors que nous plongeons dans les profondeurs de l'histoire, de l'architecture, de l'artisanat et des traditions culturelles de la ville.",
-    project1_title: "JOURNÉES DU PATRIMOINE DE MARRAKECH",
-    project1_description:
-      "Une célébration d'une semaine comprenant des visites guidées de sites historiques, des ateliers sur l'artisanat traditionnel et des performances culturelles qui mettent en valeur le riche patrimoine de Marrakech.",
-    project2_title: "ATELIERS D'ARTISANAT TRADITIONNEL",
-    project2_description:
-      "Des ateliers pratiques dirigés par des maîtres artisans, enseignant l'artisanat marocain traditionnel comme la poterie, le tissage et le travail du bois pour préserver ces compétences ancestrales pour les générations futures.",
-    project3_title: "INITIATIVES DE PRÉSERVATION ARCHITECTURALE",
-    project3_description:
-      "Des projets collaboratifs axés sur la documentation, la restauration et la préservation des éléments architecturaux uniques des bâtiments et quartiers historiques de Marrakech.",
-    project4_title: "RECONSTRUCTION POST-SÉISME ET PRÉSERVATION DU PATRIMOINE",
-    project4_description:
-      "Suite au séisme dévastateur d'Al Haouz le 8 septembre 2023, Turâth a mobilisé architectes, ingénieurs et spécialistes pour soutenir les efforts de reconstruction. Leur objectif était d'évaluer les dommages et de sécuriser les sites patrimoniaux, notamment la mosquée de Tinmel, qui a été complètement détruite.",
-    project5_title: "DÉVOILER LES TRÉSORS CACHÉS DE MARRAKECH",
-    project5_description:
-      "Une série d'événements immersifs et éclairants dédiés à l'exploration des joyaux patrimoniaux souvent négligés de Marrakech. Cette initiative se concentre sur la riche histoire de la ville, son architecture unique, son artisanat traditionnel et ses diverses traditions culturelles à travers diverses activités continues et programmes éducatifs.",
-    view_all_projects: "Voir Tous les Projets",
-    learn_more: "En Savoir Plus",
-    participants: "Participants",
-    event: "Événement",
-    workshop: "Atelier",
-    restoration: "Restauration",
-
     // Board Section
     board_title: "Notre conseil",
     board_description:
@@ -541,7 +668,6 @@ export const translations = {
     // Stats Section
     volunteers: "Bénévoles",
     donations: "Dons",
-    projects: "Projets",
     missions: "Missions",
 
     // Footer
@@ -706,37 +832,6 @@ export const translations = {
     faq_answer_12:
       "Turâth offre une large gamme de rôles de bénévolat correspondant à différentes compétences et intérêts. Ceux-ci comprennent des guides touristiques, des chercheurs, des coordinateurs d'événements, des gestionnaires de médias sociaux, des photographes, des traducteurs, du soutien administratif, et plus encore.",
 
-    // Projects Page
-    our_initiatives: "Nos Initiatives",
-    projects_hero_description:
-      "Explorez nos projets dédiés à la préservation et à la promotion du riche patrimoine culturel de Marrakech",
-    our_projects: "Nos Projets",
-    our_projects_description:
-      "Découvrez nos initiatives visant à préserver et à promouvoir le riche patrimoine culturel de Marrakech et de sa région",
-
-    // Project Detail Pages
-    back_to_projects: "Retour aux Projets",
-    about_project: "À propos du Projet",
-    project_details: "Détails du Projet",
-    date: "Date",
-    location: "Lieu",
-    activities: "Activités",
-    goals: "Objectifs",
-    impact: "Impact",
-    gallery: "Galerie",
-    register_event: "S'inscrire au Prochain Événement",
-    support_project: "Soutenir ce Projet",
-    register_workshop: "S'inscrire à un Atelier",
-
-    // Additional Project Detail Keys
-    workshop_types: "Types d'Ateliers",
-    schedule: "Calendrier",
-    participants_to_date: "Participants à ce Jour",
-    significance: "Importance",
-    key_initiatives: "Initiatives Clés",
-    timeline: "Chronologie",
-    contributors: "Contributeurs",
-
     // New volunteer dropdown menu items
     notre_bureau: "Notre Bureau",
     devenir_membre: "Devenir Membre",
@@ -841,8 +936,7 @@ export const translations = {
     benefit_network_description:
       "Connectez-vous avec d'autres organisations et individus passionnés par le patrimoine culturel.",
     benefit_events_access_title: "Accès VIP",
-    benefit_events_access_description:
-      "Accès spécial aux événements, expositions et expériences exclusives en coulisses.",
+    benefit_events_description: "Accès spécial aux événements, expositions et expériences exclusives en coulisses.",
     support_events: "Soutenez Nos Événements",
     support_events_description:
       "Aidez-nous à organiser des événements culturels impactants qui sensibilisent au riche patrimoine de Marrakech",
@@ -878,36 +972,98 @@ export const translations = {
     become_partner_description:
       "Rejoignez-nous dans notre mission de préservation et de promotion du riche patrimoine culturel de Marrakech pour les générations futures.",
     contact_partnerships: "Contactez notre Équipe de Partenariats",
+    branch: "Agence",
+
+    // Add banking information translations in French
+    banking_details: "Soutenir Notre Mission",
+    banking_details_description:
+      "Pour faire un don et soutenir nos efforts de préservation du patrimoine, veuillez utiliser les informations bancaires suivantes :",
+    bank_name: "Nom de la Banque",
+    account_holder: "Titulaire du Compte",
+    account_number: "Numéro de Compte",
+    iban: "IBAN",
+    swift_code: "Code SWIFT/BIC",
+    reference: "Référence de Paiement",
+    donation_reference: "DON-TURATH",
+    donation_note:
+      "Veuillez inclure votre nom dans les détails du virement afin que nous puissions reconnaître votre contribution. Pour les certificats de déduction fiscale ou toute question concernant les dons, veuillez nous contacter à finance@turath.org.",
+
+    // Add new translation keys for projects in the French section
+    projects: "Projets",
+    our_initiatives: "Nos Initiatives",
+    projects_title: "Nos Projets Patrimoniaux",
+    projects_hero_description:
+      "Découvrez nos initiatives pour préserver et promouvoir le riche patrimoine culturel de Marrakech",
+    our_projects: "Nos Projets Clés",
+    our_projects_description:
+      "Explorez nos principales initiatives visant à préserver et célébrer le patrimoine culturel de Marrakech",
+    event: "Événement",
+    restoration: "Restauration",
+    ongoing: "En cours",
+    participants: "Participants",
+    next: "Prochain",
+    learn_more: "En savoir plus",
+    support_our_projects: "Soutenez Nos Projets Patrimoniaux",
+    support_projects_description:
+      "Votre contribution peut faire une différence significative dans la préservation du riche patrimoine culturel de Marrakech pour les générations futures. Rejoignez-nous dans notre mission de protection et de promotion de notre histoire commune.",
+    become_partner: "Devenir Partenaire",
+    volunteer_with_us: "Devenir Bénévole",
+    all_projects: "Tous les Projets",
+    completed_projects: "Projets Terminés",
+    ongoing_projects: "Projets en Cours",
+    upcoming_projects: "Projets à Venir",
 
     heritage_days_title: "Journées du Patrimoine de Marrakech",
     heritage_days_description:
-      "Une célébration annuelle mettant en valeur le riche patrimoine culturel de Marrakech à travers des visites guidées, des ateliers, des expositions et des performances culturelles.",
-    heritage_days_about:
-      "Les Journées du Patrimoine de Marrakech sont un événement annuel visant à mettre en lumière le riche patrimoine de Marrakech. La deuxième édition s'est déroulée du 23 au 26 mai 2024, proposant un programme diversifié d'activités culturelles.",
-    heritage_days_activities: "Activités",
-    heritage_days_impact: "Impact",
-
-    earthquake_reconstruction_title: "Reconstruction Post-Séisme et Préservation du Patrimoine",
+      "Un événement annuel mettant en valeur le riche patrimoine de Marrakech à travers des visites guidées, des ateliers et des activités culturelles.",
+    earthquake_reconstruction_title: "Reconstruction Post-Séisme",
     earthquake_reconstruction_description:
-      "Mobilisation d'expertise pour évaluer, sécuriser et restaurer les sites patrimoniaux endommagés par le séisme dévastateur d'Al Haouz de septembre 2023.",
-    earthquake_reconstruction_about:
-      "Suite au séisme dévastateur d'Al Haouz le 8 septembre 2023, Turâth a joué un rôle crucial en mobilisant architectes, ingénieurs et spécialistes du patrimoine pour soutenir les efforts de reconstruction. Cette initiative d'urgence s'est concentrée sur l'évaluation des dommages et la sécurisation des sites patrimoniaux gravement touchés par la catastrophe naturelle.",
-    earthquake_activities: "Activités Principales",
-    tinmel_mosque: "Restauration de la Mosquée de Tinmel",
-    collaborative_approach: "Approche Collaborative",
-
+      "Une initiative cruciale pour soutenir les efforts de reconstruction suite au séisme dévastateur d'Al Haouz de septembre 2023.",
     hidden_treasures_title: "Dévoiler les Trésors Cachés de Marrakech",
     hidden_treasures_description:
-      "Une série d'événements immersifs et éclairants dédiés à l'exploration des joyaux patrimoniaux souvent négligés de Marrakech.",
-    hidden_treasures_about:
-      "\"Dévoiler les Trésors Cachés de Marrakech\" est une série d'événements immersifs et éclairants dédiés à l'exploration des joyaux patrimoniaux souvent négligés de Marrakech. Cette initiative se concentre sur la riche histoire de la ville, son architecture unique, son artisanat traditionnel et ses diverses traditions culturelles.",
-    program_components: "Composantes du Programme",
-    focus_areas: "Domaines d'Intérêt",
+      "Une série immersive d'événements explorant les joyaux patrimoniaux méconnus de Marrakech, incluant l'histoire, l'architecture, l'artisanat et les traditions culturelles.",
+
+    // Project page specific translations
+    heritage_days_date: "23-26 mai 2024 (2ème Édition)",
+    heritage_days_next_edition: "2025 (3ème Édition)",
+    earthquake_reconstruction_date: "Septembre 2023 - En cours",
+    earthquake_reconstruction_focus: "Restauration de la Mosquée Tinmel",
+    hidden_treasures_format: "Événements et Programmes Périodiques",
+
+    // Heritage Days Project Editions
+    project_editions: "Éditions du Projet",
+    project_editions_description: "Explorez les différentes éditions du projet Journées du Patrimoine de Marrakech",
+    completed: "Terminé",
+    upcoming: "À venir",
+    view_details: "Voir les détails",
+    interested_in_heritage_days: "Intéressé par les Journées du Patrimoine ?",
+    heritage_days_cta_description:
+      "Rejoignez-nous pour la prochaine édition ou explorez les opportunités de participer à cette célébration culturelle du riche patrimoine de Marrakech.",
+    contact_for_participation: "Contact pour Participation",
+    volunteer_for_next_edition: "Devenir Bénévole pour la Prochaine Édition",
+
+    // Heritage Days Editions
+    heritage_days_first_edition: "Journées du Patrimoine - Première Édition",
+    heritage_days_first_edition_description:
+      "L'édition inaugurale qui a établi une nouvelle tradition de célébration et de mise en valeur du riche patrimoine culturel de Marrakech.",
+    heritage_days_first_edition_date: "Mai 2022",
+
+    heritage_days_second_edition: "Journées du Patrimoine - Deuxième Édition",
+    heritage_days_second_edition_description:
+      "S'appuyant sur le succès de la première édition avec une programmation élargie et une participation communautaire accrue.",
+    heritage_days_second_edition_date: "23-26 mai 2024",
+
+    heritage_days_third_edition: "Journées du Patrimoine - Troisième Édition",
+    heritage_days_third_edition_description:
+      "Notre prochaine édition promet de nouvelles expériences, des explorations plus profondes et des approches innovantes de l'appréciation du patrimoine.",
+    heritage_days_third_edition_date: "Mai 2025",
+
+    heritage_days_location: "Divers sites historiques à travers Marrakech",
   },
+
   ar: {
     // Header
     home: "الرئيسية",
-    projects: "المشاريع",
     about: "من نحن",
     volunteer: "تطوع",
     contact: "اتصل بنا",
@@ -951,32 +1107,6 @@ export const translations = {
     el_badi_palace_fact:
       "البديع يعني 'الذي لا مثيل له' باللغة العربية. تم تجريد الكثير من مواده الأصلية لبناء قصور العلويين في مكناس.",
 
-    // Projects Section
-    projects_title: "آفاق التراث: الكشف عن كنوز مراكش الخفية",
-    projects_description:
-      "الكشف عن كنوز مراكش الخفية هي سلسلة من الفعاليات الغامرة والمنيرة التي تنظمها تراث، مخصصة لاستكشاف التراث الغني لمراكش ولفت الانتباه إلى جواهرها التي غالبًا ما يتم تجاهلها. انضم إلينا في رحلة مثيرة للاكتشاف بينما نتعمق في أعماق تاريخ المدينة وهندستها المعمارية وحرفها وتقاليدها الثقافية.",
-    project1_title: "أيام التراث بمراكش",
-    project1_description:
-      "احتفال يستمر لمدة أسبوع يتضمن جولات مرشدة للمواقع التاريخية، وورش عمل حول الحرف التقليدية، وعروض ثقافية تعرض التراث الغني لمراكش.",
-    project2_title: "ورش الحرف التقليدية",
-    project2_description:
-      "ورش عمل عملية يقودها حرفيون مهرة، يعلمون الحرف المغربية التقليدية مثل الفخار والنسيج والنجارة للحفاظ على هذه المهارات القديمة للأجيال القادمة.",
-    project3_title: "مبادرات الحفاظ على العمارة",
-    project3_description:
-      "مشاريع تعاونية تركز على توثيق وترميم والحفاظ على العناصر المعمارية الفريدة للمباني والأحياء التاريخية في مراكش.",
-    project4_title: "إعادة الإعمار بعد الزلزال والحفاظ على التراث",
-    project4_description:
-      "بعد الزلزال المدمر في الحوز في 8 سبتمبر 2023، قامت تراث بتعبئة المهندسين المعماريين والمهندسين والمتخصصين لدعم جهود إعادة الإعمار. كان تركيزهم على تقييم الأضرار وتأمين المواقع التراثية، وخاصة مسجد تينمل، الذي دمر بالكامل.",
-    project5_title: "الكشف عن كنوز مراكش الخفية",
-    project5_description:
-      "سلسلة من الفعاليات الغامرة والمنيرة المخصصة لاستكشاف جواهر التراث التي غالبًا ما يتم تجاهلها في مراكش. تركز هذه المبادرة على التاريخ الغني للمدينة، وهندستها المعمارية الفريدة، وحرفها التقليدية، وتقاليدها الثقافية المتنوعة من خلال أنشطة مستمرة مختلفة وبرامج تعليمية.",
-    view_all_projects: "عرض جميع المشاريع",
-    learn_more: "اعرف المزيد",
-    participants: "مشاركون",
-    event: "فعالية",
-    workshop: "ورشة عمل",
-    restoration: "ترميم",
-
     // Board Section
     board_title: "مجلس إدارتنا",
     board_description:
@@ -996,7 +1126,6 @@ export const translations = {
     // Stats Section
     volunteers: "متطوعون",
     donations: "تبرعات",
-    projects: "مشاريع",
     missions: "مهمات",
 
     // Footer
@@ -1142,7 +1271,7 @@ export const translations = {
 
     faq_question_9: "ما هي فوائد التطوع التي تقدمها تراث؟",
     faq_answer_9:
-      "يتلقى متطوعونا تدريبًا، وفرص للتواصل، ودعوات لفعاليات حصرية، واعترافًا بمساهماتهم، والرضا عن إحداث تأثير هادف في الحفاظ على التراث الثقافي.",
+      "يتلقى متطوعونا تدريبًا، وفرص للتواصل، ودعوات لفعاليات حصرية، واعترافًا بمساهماته، والرضا عن إحداث تأثير هادف في الحفاظ على التراث الثقافي.",
 
     faq_question_10: "تدريب ودعم المتطوعين",
     faq_answer_10:
@@ -1155,35 +1284,6 @@ export const translations = {
     faq_question_12: "أدوار تطوع متنوعة",
     faq_answer_12:
       "تقدم تراث مجموعة واسعة من أدوار التطوع لتناسب المهارات والاهتمامات المختلفة. وتشمل هذه المرشدين السياحيين، والباحثين، ومنسقي الفعاليات، ومديري وسائل التواصل الاجتماعي، والمصورين، والمترجمين، والدعم الإداري، والمزيد.",
-
-    // Projects Page
-    our_initiatives: "مبادراتنا",
-    projects_hero_description: "استكشف مشاريعنا المخصصة للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه",
-    our_projects: "مشاريعنا",
-    our_projects_description: "اكتشف مبادراتنا الهادفة إلى الحفاظ على التراث الثقافي الغني لمراكش ومنطقتها وتعزيزه",
-
-    // Project Detail Pages
-    back_to_projects: "العودة إلى المشاريع",
-    about_project: "عن المشروع",
-    project_details: "تفاصيل المشروع",
-    date: "التاريخ",
-    location: "الموقع",
-    activities: "الأنشطة",
-    goals: "الأهداف",
-    impact: "التأثير",
-    gallery: "معرض الصور",
-    register_event: "التسجيل للفعالية القادمة",
-    support_project: "دعم هذا المشروع",
-    register_workshop: "التسجيل في ورشة عمل",
-
-    // Additional Project Detail Keys
-    workshop_types: "أنواع ورش العمل",
-    schedule: "الجدول الزمني",
-    participants_to_date: "المشاركون حتى الآن",
-    significance: "الأهمية",
-    key_initiatives: "المبادرات الرئيسية",
-    timeline: "الإطار الزمني",
-    contributors: "المساهمون",
 
     // New volunteer dropdown menu items
     notre_bureau: "مجلسنا",
@@ -1301,30 +1401,89 @@ export const translations = {
     become_partner_cta: "كن شريكًا اليوم",
     become_partner_description: "انضم إلينا في مهمتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه للأجيال القادمة.",
     contact_partnerships: "اتصل بفريق الشراكات لدينا",
+    branch: "الفرع",
+
+    // Add banking information translations in Arabic
+    banking_details: "دعم مهمتنا",
+    banking_details_description: "للتبرع ودعم جهودنا في الحفاظ على التراث، يرجى استخدام المعلومات المصرفية التالية:",
+    bank_name: "اسم البنك",
+    account_holder: "صاحب الحساب",
+    account_number: "رقم الحساب",
+    iban: "رقم الآيبان",
+    swift_code: "رمز سويفت",
+    reference: "مرجع الدفع",
+    donation_reference: "تبرع-تراث",
+    donation_note:
+      "يرجى تضمين اسمك في تفاصيل التحويل حتى نتمكن من الاعتراف بمساهمتك. للحصول على شهادات الخصم الضريبي أو أي أسئلة حول التبرعات، يرجى الاتصال بنا على finance@turath.org.",
+
+    // Add new translation keys for projects in the Arabic section
+    projects: "المشاريع",
+    our_initiatives: "مبادراتنا",
+    projects_title: "مشاريع التراث لدينا",
+    projects_hero_description: "اكتشف مبادراتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه",
+    our_projects: "مشاريعنا الرئيسية",
+    our_projects_description: "استكشف مبادراتنا الرئيسية الهادفة إلى الحفاظ على التراث الثقافي لمراكش والاحتفال به",
+    event: "فعالية",
+    restoration: "ترميم",
+    ongoing: "مستمر",
+    participants: "مشاركون",
+    next: "التالي",
+    learn_more: "اعرف المزيد",
+    support_our_projects: "ادعم مشاريع التراث لدينا",
+    support_projects_description:
+      "يمكن لمساهمتك أن تحدث فرقًا كبيرًا في الحفاظ على التراث الثقافي الغني لمراكش للأجيال القادمة. انضم إلينا في مهمتنا لحماية وتعزيز تاريخنا المشترك.",
+    become_partner: "كن شريكًا",
+    volunteer_with_us: "تطوع معنا",
+    all_projects: "جميع المشاريع",
+    completed_projects: "المشاريع المنجزة",
+    ongoing_projects: "المشاريع الجارية",
+    upcoming_projects: "المشاريع القادمة",
 
     heritage_days_title: "أيام التراث بمراكش",
     heritage_days_description:
-      "احتفال سنوي يعرض التراث الثقافي الغني لمراكش من خلال جولات مرشدة وورش عمل ومعارض وعروض ثقافية.",
-    heritage_days_about:
-      "أيام التراث بمراكش هي فعالية سنوية تهدف إلى إبراز التراث الغني لمراكش. أقيمت النسخة الثانية من 23 إلى 26 مايو 2024، وتضمنت برنامجًا متنوعًا من الأنشطة الثقافية.",
-    heritage_days_activities: "الأنشطة",
-    heritage_days_impact: "التأثير",
-
-    earthquake_reconstruction_title: "إعادة الإعمار بعد الزلزال والحفاظ على التراث",
+      "حدث سنوي يسلط الضوء على التراث الغني لمراكش من خلال جولات مرشدة وورش عمل وأنشطة ثقافية.",
+    earthquake_reconstruction_title: "إعادة الإعمار بعد الزلزال",
     earthquake_reconstruction_description:
-      "تعبئة الخبرات لتقييم وتأمين وترميم المواقع التراثية المتضررة من زلزال الحوز المدمر في سبتمبر 2023.",
-    earthquake_reconstruction_about:
-      "بعد الزلزال المدمر في الحوز في 8 سبتمبر 2023، لعبت تراث دورًا حاسمًا في تعبئة المهندسين المعماريين والمهندسين ومتخصصي التراث لدعم جهود إعادة الإعمار. ركزت هذه المبادرة الطارئة على تقييم الأضرار وتأمين المواقع التراثية التي تأثرت بشدة بالكارثة الطبيعية.",
-    earthquake_activities: "الأنشطة الرئيسية",
-    tinmel_mosque: "ترميم مسجد تينمل",
-    collaborative_approach: "نهج تعاوني",
-
-    hidden_treasures_title: "الكشف عن كنوز مراكش الخفية",
+      "مبادرة حاسمة لدعم جهود إعادة الإعمار بعد زلزال الحوز المدمر في سبتمبر 2023.",
+    hidden_treasures_title: "كشف كنوز مراكش الخفية",
     hidden_treasures_description:
-      "سلسلة من الفعاليات الغامرة والمنيرة المخصصة لاستكشاف جواهر التراث التي غالبًا ما يتم تجاهلها في مراكش.",
-    hidden_treasures_about:
-      '"الكشف عن كنوز مراكش الخفية" هي سلسلة من الفعاليات الغامرة والمنيرة المخصصة لاستكشاف جواهر التراث التي غالبًا ما يتم تجاهلها في مراكش. تركز هذه المبادرة على التاريخ الغني للمدينة، وهندستها المعمارية الفريدة، وحرفها التقليدية، وتقاليدها الثقافية المتنوعة.',
-    program_components: "مكونات البرنامج",
-    focus_areas: "مجالات التركيز",
+      "سلسلة من الفعاليات الغامرة لاستكشاف جواهر التراث المغمورة في مراكش، بما في ذلك التاريخ والعمارة والحرف اليدوية والتقاليد الثقافية.",
+
+    // Project page specific translations
+    heritage_days_date: "23-26 مايو 2024 (النسخة الثانية)",
+    heritage_days_next_edition: "2025 (النسخة الثالثة)",
+    earthquake_reconstruction_date: "سبتمبر 2023 - مستمر",
+    earthquake_reconstruction_focus: "ترميم مسجد تينمل",
+    hidden_treasures_format: "فعاليات وبرامج دورية",
+
+    // Heritage Days Project Editions
+    project_editions: "إصدارات المشروع",
+    project_editions_description: "استكشف الإصدارات المختلفة لمشروع أيام التراث بمراكش",
+    completed: "مكتمل",
+    upcoming: "قادم",
+    view_details: "عرض التفاصيل",
+    interested_in_heritage_days: "مهتم بأيام التراث؟",
+    heritage_days_cta_description:
+      "انضم إلينا في الإصدار القادم أو استكشف فرص المشاركة في هذا الاحتفال الثقافي بتراث مراكش الغني.",
+    contact_for_participation: "تواصل للمشاركة",
+    volunteer_for_next_edition: "تطوع للإصدار القادم",
+
+    // Heritage Days Editions
+    heritage_days_first_edition: "أيام التراث - الإصدار الأول",
+    heritage_days_first_edition_description:
+      "الإصدار الافتتاحي الذي أسس تقليدًا جديدًا للاحتفال وعرض التراث الثقافي الغني لمراكش.",
+    heritage_days_first_edition_date: "مايو 2022",
+
+    heritage_days_second_edition: "أيام التراث - الإصدار الثاني",
+    heritage_days_second_edition_description:
+      "البناء على نجاح الإصدار الأول مع توسيع البرمجة وزيادة المشاركة المجتمعية.",
+    heritage_days_second_edition_date: "23-26 مايو 2024",
+
+    heritage_days_third_edition: "أيام التراث - الإصدار الثالث",
+    heritage_days_third_edition_description:
+      "يعد إصدارنا القادم بتجارب جديدة واستكشافات أعمق ونهج مبتكرة لتقدير التراث.",
+    heritage_days_third_edition_date: "مايو 2025",
+
+    heritage_days_location: "مواقع تاريخية متنوعة في جميع أنحاء مراكش",
   },
 }

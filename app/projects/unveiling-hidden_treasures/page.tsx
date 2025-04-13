@@ -9,7 +9,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Calendar, MapPin, Users } from "lucide-react"
 
-export default function CraftsmanshipProjectPage() {
+export default function UnveilingTreasuresProjectPage() {
   const { t } = useLanguage()
 
   // Hero section animation
@@ -32,28 +32,42 @@ export default function CraftsmanshipProjectPage() {
 
   // Project details
   const project = {
-    title: "TRADITIONAL CRAFTSMANSHIP WORKSHOPS",
-    description:
-      "Hands-on workshops led by master artisans, teaching traditional Moroccan crafts such as pottery, weaving, and woodworking to preserve these ancient skills for future generations.",
-    fullDescription:
-      "Our Traditional Craftsmanship Workshops are designed to preserve and promote the rich artisanal heritage of Morocco. Led by master artisans with decades of experience, these workshops offer participants the opportunity to learn traditional crafts such as pottery, weaving, woodworking, leather crafting, and metalwork. Through these hands-on experiences, we aim to ensure that these ancient skills and techniques are passed down to future generations, while also providing economic opportunities for local artisans and creating meaningful cultural exchanges.",
-    date: "Monthly workshops throughout the year",
-    location: "Artisan Center, Marrakech Medina",
+    title: t("hidden_treasures_title"),
+    description: t("hidden_treasures_description"),
+    fullDescription: t("hidden_treasures_about"),
+    date: "Ongoing program with various activities throughout the year",
+    location: "Various locations across Marrakech, focusing on lesser-known sites",
     participants: 120,
     mainImage:
-      "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     gallery: [
-      "https://images.unsplash.com/photo-1681686587176-d0e1a37edd47?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1518112390430-f4ab02e9c2c8?q=80&w=2081&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1677702162842-b4a4b3c47a27?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1974&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1974&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1585670210693-e7fdd16b142e?q=80&w=1974&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560930950-5cc20e80e392?q=80&w=1974&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512236077335-f1cda9239c11?q=80&w=1974&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551184451-76b762941ad6?q=80&w=1974&auto=format&fit=crop",
     ],
-    workshops: [
-      "Pottery and Ceramics",
-      "Traditional Weaving",
-      "Woodworking and Carpentry",
-      "Leather Crafting",
-      "Metalwork and Jewelry Making",
-      "Zellige Tile Making",
+    components: [
+      t("program_components_list.tours"),
+      t("program_components_list.craft"),
+      t("program_components_list.oral"),
+      t("program_components_list.workshops"),
+      t("program_components_list.digital"),
+    ],
+    focusAreas: [
+      t("focus_areas_list.architecture"),
+      t("focus_areas_list.craft"),
+      t("focus_areas_list.cultural"),
+      t("focus_areas_list.historical"),
+      t("focus_areas_list.natural"),
+    ],
+    initiatives: [
+      t("hidden_treasures_key_initiatives.tours"),
+      t("hidden_treasures_key_initiatives.craft"),
+      t("hidden_treasures_key_initiatives.oral"),
+      t("hidden_treasures_key_initiatives.workshops"),
+      t("hidden_treasures_key_initiatives.digital"),
     ],
   }
 
@@ -84,10 +98,10 @@ export default function CraftsmanshipProjectPage() {
             >
               <Link href="/projects" className="inline-flex items-center text-white mb-6 group">
                 <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
-                <span className="text-sm font-medium">Back to Projects</span>
+                <span className="text-sm font-medium">{t("back_to_projects")}</span>
               </Link>
               <div className="inline-block mb-4 px-3 py-1 bg-primary/20 backdrop-blur-sm rounded-none">
-                <span className="text-xs font-medium text-white">Workshop</span>
+                <span className="text-xs font-medium text-white">{t("ongoing")}</span>
               </div>
               <h1 className="font-tomato mb-4 text-3xl font-bold leading-tight text-shadow text-white md:text-4xl lg:text-5xl">
                 {project.title}
@@ -115,32 +129,37 @@ export default function CraftsmanshipProjectPage() {
 
               <div className="prose max-w-none text-gray-700 font-tomato">
                 <p className="mb-6">{project.fullDescription}</p>
+                <p className="mb-6">{t("hidden_treasures_about_2")}</p>
+                <p className="mb-6">{t("hidden_treasures_about_3")}</p>
 
-                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("workshop_types")}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("program_components")}</h3>
                 <ul className="space-y-2 mb-8">
-                  {project.workshops.map((workshop, index) => (
+                  {project.components.map((component, index) => (
                     <li key={index} className="flex items-start">
                       <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
-                      <span>{workshop}</span>
+                      <span>{component}</span>
                     </li>
                   ))}
                 </ul>
 
-                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("impact")}</h3>
-                <p>
-                  These workshops have a significant impact on both cultural preservation and the local economy. By
-                  teaching traditional crafts to new generations, we ensure that these skills are not lost to time.
-                  Additionally, the workshops provide economic opportunities for local artisans who serve as instructors
-                  and mentors. Participants gain a deeper appreciation for Moroccan craftsmanship and culture, while
-                  also developing practical skills that they can continue to practice and share with others.
-                </p>
+                <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">{t("focus_areas")}</h3>
+                <p>{t("focus_areas_intro")}</p>
+                <ul className="space-y-2 mb-8">
+                  {project.focusAreas.map((area, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                      <span>{area}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p>{t("hidden_treasures_conclusion")}</p>
               </div>
             </div>
 
             {/* Sidebar */}
             <div>
               <div className="bg-gray-50 p-6 rounded-md border border-gray-200">
-                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("workshop_details")}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("project_details")}</h3>
 
                 <div className="space-y-6">
                   <div className="flex items-start">
@@ -163,16 +182,35 @@ export default function CraftsmanshipProjectPage() {
                     <Users className="h-5 w-5 text-primary mr-3 mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900 font-tomato">{t("participants_to_date")}</p>
-                      <p className="text-gray-700 font-tomato">{project.participants} people</p>
+                      <p className="text-gray-700 font-tomato">
+                        {project.participants}+ participants across various program activities
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-none font-tomato">
-                    {t("register_workshop")}
+                    {t("register_event")}
                   </Button>
                 </div>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-md border border-gray-200 mt-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("key_initiatives")}</h3>
+                <ul className="space-y-2">
+                  {project.initiatives.map((initiative, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="inline-block h-2 w-2 bg-primary rounded-full mt-2 mr-3"></span>
+                      <span className="text-gray-700 font-tomato">{initiative}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-md border border-gray-200 mt-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-6 font-tomato">{t("impact")}</h3>
+                <p className="text-gray-700 font-tomato">{t("hidden_treasures_impact_text")}</p>
               </div>
             </div>
           </div>
@@ -217,4 +255,3 @@ export default function CraftsmanshipProjectPage() {
     </div>
   )
 }
-

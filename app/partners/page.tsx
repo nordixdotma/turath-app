@@ -7,9 +7,7 @@ import { Container } from "@/components/ui/container"
 import { useInView } from "react-intersection-observer"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Input } from "@/components/ui/input"
-import { Calendar, Award, Users, Gift, Briefcase, Heart, ChevronRight } from "lucide-react"
+import { Calendar, Award, Users, Gift, Briefcase, Heart, Mail } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
 
@@ -18,7 +16,7 @@ export default function PartnersPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [error, setError] = useState("")
-  const [donationType, setDonationType] = useState("one-time")
+  const [donationType, setDonationType] = useState("bmce")
   const [donationAmount, setDonationAmount] = useState("100")
 
   // Hero section animation
@@ -255,7 +253,7 @@ export default function PartnersPage() {
         </Container>
       </section>
 
-      {/* Donation Section */}
+      {/* Donation & Banking Information Section - Redesigned */}
       <section className="py-20 bg-gray-50">
         <Container className="max-w-6xl mx-auto">
           <div
@@ -266,164 +264,260 @@ export default function PartnersPage() {
             )}
           >
             <div className="text-center mb-16">
-              <h2 className="font-tomato text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("make_donation")}</h2>
+              <h2 className="font-tomato text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("banking_details")}</h2>
               <div className="h-1 w-24 bg-primary mx-auto mb-6"></div>
-              <p className="text-gray-700 max-w-2xl mx-auto font-tomato">{t("make_donation_description")}</p>
+              <p className="text-gray-700 max-w-2xl mx-auto font-tomato">{t("banking_details_description")}</p>
             </div>
 
-            <div className="max-w-2xl mx-auto bg-white p-8 rounded-md shadow-sm border border-gray-100">
-              <Tabs defaultValue="one-time" onValueChange={(value) => setDonationType(value)}>
-                <TabsList className="grid w-full grid-cols-2 mb-6">
-                  <TabsTrigger value="one-time">{t("one_time_donation")}</TabsTrigger>
-                  <TabsTrigger value="recurring">{t("recurring_donation")}</TabsTrigger>
-                </TabsList>
+            {/* Tabs for different banks */}
+            <div className="max-w-3xl mx-auto">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="border-b border-gray-200">
+                  <nav className="flex -mb-px">
+                    <button
+                      className={`py-4 px-6 font-medium text-sm border-b-2 ${
+                        donationType === "bmce"
+                          ? "border-primary text-primary"
+                          : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                      }`}
+                      onClick={() => setDonationType("bmce")}
+                    >
+                      BMCE Bank
+                    </button>
+                    <button
+                      className={`py-4 px-6 font-medium text-sm border-b-2 ${
+                        donationType === "cih"
+                          ? "border-primary text-primary"
+                          : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                      }`}
+                      onClick={() => setDonationType("cih")}
+                    >
+                      CIH Bank
+                    </button>
+                    <button
+                      className={`py-4 px-6 font-medium text-sm border-b-2 ${
+                        donationType === "bp"
+                          ? "border-primary text-primary"
+                          : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                      }`}
+                      onClick={() => setDonationType("bp")}
+                    >
+                      Banque Populaire
+                    </button>
+                  </nav>
+                </div>
 
-                <form onSubmit={handleDonationSubmit} className="space-y-6">
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-4 font-tomato">{t("donation_amount")}</h3>
-                    <div className="grid grid-cols-4 gap-3 mb-4">
-                      {["50", "100", "250", "500"].map((amount) => (
-                        <Button
-                          key={amount}
-                          type="button"
-                          variant={donationAmount === amount ? "default" : "outline"}
-                          className={cn(
-                            "rounded-none font-tomato",
-                            donationAmount === amount
-                              ? "bg-primary hover:bg-primary/90"
-                              : "border-gray-300 hover:bg-gray-50",
-                          )}
-                          onClick={() => setDonationAmount(amount)}
+                {/* BMCE Bank Details */}
+                {donationType === "bmce" && (
+                  <div className="p-8 space-y-6">
+                    <div className="flex items-center mb-6">
+                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
+                        <Briefcase className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 font-tomato">BMCE Bank</h3>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("account_holder")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">Association Turath</p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("account_number")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">
+                            011 780 000 012 000 000 123 45
+                          </p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("branch")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">Marrakech Guéliz</p>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("iban")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">
+                            MA123 011 780 000 012 000 000 123 45
+                          </p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("swift_code")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">BMCEMAGC</p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("reference")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">{t("donation_reference")}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* CIH Bank Details */}
+                {donationType === "cih" && (
+                  <div className="p-8 space-y-6">
+                    <div className="flex items-center mb-6">
+                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
+                        <Briefcase className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 font-tomato">CIH Bank</h3>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("account_holder")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">Association Turath</p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("account_number")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">
+                            230 810 000 016 000 000 789 12
+                          </p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("branch")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">Marrakech Mohammed VI</p>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("iban")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">
+                            MA123 230 810 000 016 000 000 789 12
+                          </p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("swift_code")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">CIHMMAMCXXX</p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("reference")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">{t("donation_reference")}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Banque Populaire Details */}
+                {donationType === "bp" && (
+                  <div className="p-8 space-y-6">
+                    <div className="flex items-center mb-6">
+                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
+                        <Briefcase className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 font-tomato">Banque Populaire</h3>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("account_holder")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">Association Turath</p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("account_number")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">181 810 21211 456789012345 67</p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("branch")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">Marrakech Menara</p>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("iban")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">
+                            MA123 181 810 21211 456789012345 67
+                          </p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("swift_code")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">BCPOMAMC</p>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-md">
+                          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-2 font-tomato">
+                            {t("reference")}
+                          </h4>
+                          <p className="text-lg font-medium text-gray-900 font-tomato">{t("donation_reference")}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Donation Note */}
+                <div className="bg-gray-50 p-6 border-t border-gray-200">
+                  <div className="flex items-start">
+                    <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 shrink-0">
+                      <Gift className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-gray-700 text-sm font-tomato mb-4">{t("donation_note")}</p>
+                      <div className="flex items-center">
+                        <a
+                          href="mailto:finance@turath.org"
+                          className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
                         >
-                          {amount} MAD
-                        </Button>
-                      ))}
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Input
-                        type="text"
-                        placeholder={t("custom_amount")}
-                        className="rounded-none border-gray-300 focus:border-primary focus:ring-primary"
-                        onChange={(e) => setDonationAmount(e.target.value)}
-                        value={!["50", "100", "250", "500"].includes(donationAmount) ? donationAmount : ""}
-                      />
-                      <span className="text-gray-700 font-tomato">MAD</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-4 font-tomato">{t("donor_information")}</h3>
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                      <div className="space-y-2">
-                        <label htmlFor="firstName" className="text-sm font-medium text-gray-700 font-tomato">
-                          {t("first_name")} *
-                        </label>
-                        <Input
-                          id="firstName"
-                          name="firstName"
-                          required
-                          className="rounded-none border-gray-300 focus:border-primary focus:ring-primary"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label htmlFor="lastName" className="text-sm font-medium text-gray-700 font-tomato">
-                          {t("last_name")} *
-                        </label>
-                        <Input
-                          id="lastName"
-                          name="lastName"
-                          required
-                          className="rounded-none border-gray-300 focus:border-primary focus:ring-primary"
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium text-gray-700 font-tomato">
-                        {t("email_label")} *
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        className="rounded-none border-gray-300 focus:border-primary focus:ring-primary"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-4 font-tomato">{t("payment_information")}</h3>
-                    <div className="space-y-4">
-                      <div className="space-y-2">
-                        <label htmlFor="cardNumber" className="text-sm font-medium text-gray-700 font-tomato">
-                          {t("card_number")} *
-                        </label>
-                        <Input
-                          id="cardNumber"
-                          name="cardNumber"
-                          required
-                          className="rounded-none border-gray-300 focus:border-primary focus:ring-primary"
-                        />
-                      </div>
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <label htmlFor="expDate" className="text-sm font-medium text-gray-700 font-tomato">
-                            {t("expiration_date")} *
-                          </label>
-                          <Input
-                            id="expDate"
-                            name="expDate"
-                            placeholder="MM/YY"
-                            required
-                            className="rounded-none border-gray-300 focus:border-primary focus:ring-primary"
-                          />
-                        </div>
-                        <div className="space-y-2">
-                          <label htmlFor="cvv" className="text-sm font-medium text-gray-700 font-tomato">
-                            {t("cvv")} *
-                          </label>
-                          <Input
-                            id="cvv"
-                            name="cvv"
-                            required
-                            className="rounded-none border-gray-300 focus:border-primary focus:ring-primary"
-                          />
-                        </div>
+                          <Mail className="h-4 w-4 mr-2" />
+                          finance@turath.org
+                        </a>
                       </div>
                     </div>
                   </div>
-
-                  <Button
-                    type="submit"
-                    className="bg-primary hover:bg-primary/90 text-white rounded-none font-tomato w-full"
-                    disabled={isLoading}
-                  >
-                    {isLoading ? (
-                      <span className="flex items-center">
-                        <span className="animate-spin mr-2">⏳</span>
-                        {t("processing")}
-                      </span>
-                    ) : (
-                      <span className="flex items-center">
-                        {t("donate_button")}
-                        <ChevronRight className="ml-2 h-4 w-4" />
-                      </span>
-                    )}
-                  </Button>
-
-                  {error && (
-                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md font-tomato">
-                      {t("form_error")}
-                    </div>
-                  )}
-
-                  {formSubmitted && (
-                    <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-md font-tomato">
-                      {t("donation_success")}
-                    </div>
-                  )}
-                </form>
-              </Tabs>
+                </div>
+              </div>
             </div>
           </div>
         </Container>

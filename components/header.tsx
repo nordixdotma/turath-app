@@ -62,11 +62,9 @@ export default function Header() {
 
   // Update the project links in the header to include all projects
   const projectLinks = [
-    { href: "/projects/heritage-days", label: t("project1_title") },
-    { href: "/projects/craftsmanship-workshops", label: t("project2_title") },
-    { href: "/projects/architectural-preservation", label: t("project3_title") },
-    { href: "/projects/post-earthquake-reconstruction", label: t("project4_title") },
-    { href: "/projects/unveiling-hidden-treasures", label: t("project5_title") },
+    { href: "/projects/heritage-days", label: t("heritage_days_title") },
+    { href: "/projects/post-earthquake-reconstruction", label: t("earthquake_reconstruction_title") },
+    { href: "/projects/unveiling-hidden-treasures", label: t("hidden_treasures_title") },
   ]
 
   // Add volunteer dropdown links

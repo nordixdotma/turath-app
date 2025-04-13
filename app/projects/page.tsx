@@ -21,56 +21,36 @@ export default function ProjectsPage() {
   // Projects data
   const projects = [
     {
-      id: "heritage-days",
-      title: t("project1_title"),
-      description: t("project1_description"),
+      id: "heritage_days",
+      title: t("heritage_days_title"),
+      description: t("heritage_days_description"),
       image:
         "https://images.unsplash.com/photo-1724762511996-8daf138c0a30?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "event",
       participants: 250,
-      date: "May 23-26, 2024 (2nd Edition)",
-      nextEdition: "2025 (3rd Edition)",
+      date: "heritage_days_date",
+      nextEdition: "heritage_days_next_edition",
     },
     {
-      id: "craftsmanship-workshops",
-      title: t("project2_title"),
-      description: t("project2_description"),
-      image:
-        "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      type: "workshop",
-      participants: 150,
-      date: "Ongoing",
-    },
-    {
-      id: "architectural-preservation",
-      title: t("project3_title"),
-      description: t("project3_description"),
-      image:
-        "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      type: "preservation",
-      participants: 200,
-      date: "Ongoing",
-    },
-    {
-      id: "post-earthquake-reconstruction",
-      title: t("project4_title"),
-      description: t("project4_description"),
+      id: "post_earthquake_reconstruction",
+      title: t("earthquake_reconstruction_title"),
+      description: t("earthquake_reconstruction_description"),
       image:
         "https://images.unsplash.com/photo-1722411927625-0e478acf502b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "restoration",
       participants: 85,
-      date: "September 2023 - Ongoing",
-      focus: "Tinmel Mosque Restoration",
+      date: "earthquake_reconstruction_date",
+      focus: "earthquake_reconstruction_focus",
     },
     {
-      id: "unveiling-hidden-treasures",
-      title: t("project5_title"),
-      description: t("project5_description"),
+      id: "unveiling_hidden_treasures",
+      title: t("hidden_treasures_title"),
+      description: t("hidden_treasures_description"),
       image:
         "https://images.unsplash.com/photo-1736718126907-bb2232556351?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       type: "ongoing",
       participants: 120,
-      format: "Periodic Events & Programs",
+      format: "hidden_treasures_format",
     },
   ]
 
@@ -138,7 +118,7 @@ export default function ProjectsPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div className="absolute bottom-4 left-4">
                       <div className="inline-block px-3 py-1 bg-primary/80 text-white text-xs font-medium uppercase tracking-wider">
-                        {project.type}
+                        {t(project.type)}
                       </div>
                     </div>
                   </div>
@@ -152,50 +132,72 @@ export default function ProjectsPage() {
                     {project.participants && (
                       <div className="bg-primary/10 px-3 py-1 rounded-full">
                         <span className="text-sm font-medium text-primary font-tomato">
-                          {project.participants} Participants
+                          {project.participants} {t("participants")}
                         </span>
                       </div>
                     )}
 
                     {project.date && (
                       <div className="bg-primary/10 px-3 py-1 rounded-full">
-                        <span className="text-sm font-medium text-primary font-tomato">{project.date}</span>
+                        <span className="text-sm font-medium text-primary font-tomato">{t(project.date)}</span>
                       </div>
                     )}
 
                     {project.nextEdition && (
                       <div className="bg-primary/10 px-3 py-1 rounded-full">
                         <span className="text-sm font-medium text-primary font-tomato">
-                          Next: {project.nextEdition}
+                          {t("next")}: {t(project.nextEdition)}
                         </span>
                       </div>
                     )}
 
                     {project.focus && (
                       <div className="bg-primary/10 px-3 py-1 rounded-full">
-                        <span className="text-sm font-medium text-primary font-tomato">{project.focus}</span>
+                        <span className="text-sm font-medium text-primary font-tomato">{t(project.focus)}</span>
                       </div>
                     )}
 
                     {project.format && (
                       <div className="bg-primary/10 px-3 py-1 rounded-full">
-                        <span className="text-sm font-medium text-primary font-tomato">{project.format}</span>
+                        <span className="text-sm font-medium text-primary font-tomato">{t(project.format)}</span>
                       </div>
                     )}
                   </div>
 
-                  <Link href={`/projects/${project.id}`}>
+                  <Link href={`/projects/${project.id.replace("_", "-")}`}>
                     <Button
                       variant="outline"
                       className="border-primary text-primary hover:bg-primary/10 rounded-none font-tomato"
                     >
-                      Learn More
+                      {t("learn_more")}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
                 </div>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-50">
+        <Container className="max-w-6xl mx-auto">
+          <div className="bg-primary/10 rounded-2xl p-8 md:p-12">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 font-tomato text-primary">
+                {t("support_our_projects")}
+              </h2>
+              <p className="text-gray-700 mb-8 font-tomato">{t("support_projects_description")}</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild size="lg" className="font-tomato">
+                  <Link href="/partners">{t("become_partner")}</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="font-tomato">
+                  <Link href="/volunteer">{t("volunteer_with_us")}</Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </Container>
       </section>

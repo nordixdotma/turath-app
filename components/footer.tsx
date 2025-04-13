@@ -17,11 +17,14 @@ export default function Footer() {
     { icon: Instagram, href: "#", label: "Instagram" },
   ]
 
+  // Update the usefulLinks array to match the header navigation
   const usefulLinks = [
-    { href: "/about", label: "introduction" },
-    { href: "#", label: "our_partners" },
-    { href: "/about", label: "about_us" },
-    { href: "/news", label: "our_journeys" },
+    { href: "/", label: "home" },
+    { href: "/about", label: "about" },
+    { href: "/volunteer", label: "volunteer" },
+    { href: "/projects", label: "projects" },
+    { href: "/partners", label: "partners" },
+    { href: "/contact", label: "contact" },
   ]
 
   const contactInfo = [
@@ -113,7 +116,7 @@ export default function Footer() {
                       <p className="font-medium text-white font-tomato">{t(item.title)}</p>
                       {item.link ? (
                         <p className="mt-1 text-sm text-white/80 font-tomato">
-                          <a href={item.link} className="transition-all duration-300 hover:text-primary relative group">
+                          <a href={typeof item.link === "string" ? item.link : undefined} className="transition-all duration-300 hover:text-primary relative group">
                             {t(item.value)}
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                           </a>
@@ -156,4 +159,3 @@ export default function Footer() {
     </footer>
   )
 }
-
