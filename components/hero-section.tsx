@@ -30,9 +30,9 @@ export default function HeroSection() {
 
   // Hero images - Marrakech heritage specific
   const heroImages = [
-    "https://images.unsplash.com/photo-1536237717235-0acadb345d8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D", // Moroccan textiles
-    "https://images.unsplash.com/photo-1624804823268-7d5454caa8c8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D", // Second image
-    "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Moroccan architecture
+    "/PHOTOS-JDP/P1388698.jpg",
+    "/PHOTOS-JDP/P1388723.jpg",
+    "https://images.unsplash.com/photo-1536237717235-0acadb345d8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
   ]
 
   // Adjust for mobile browser chrome
@@ -73,7 +73,7 @@ export default function HeroSection() {
       style={{
         height: viewportHeight,
         backgroundImage:
-          "url('https://plus.unsplash.com/premium_photo-1697729885210-41d99b8a8688?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          "url('/HOMEPAGEIMAGE.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

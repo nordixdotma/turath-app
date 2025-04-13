@@ -197,7 +197,7 @@ export default function Header() {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`text-sm font-medium transition-all duration-300 hover:scale-105 relative group font-tomato ${
+                className={`text-sm md:text-base font-medium transition-all duration-300 hover:scale-105 relative group font-tomato ${
                   scrolled ? "text-gray-800 hover:text-primary" : "text-white hover:text-white/80"
                 } ${pathname === link.href ? "text-primary" : ""}`}
               >

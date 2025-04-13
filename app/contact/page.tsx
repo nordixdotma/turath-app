@@ -81,7 +81,7 @@ export default function ContactPage() {
         className="relative bg-transparent"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1594240500626-1e6d5c6de7dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('/PHOTOS-JDP/DSC06244.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -289,7 +289,7 @@ export default function ContactPage() {
         className="relative bg-transparent"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('/PHOTOS-JDP/P1388723.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",

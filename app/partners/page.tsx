@@ -10,14 +10,86 @@ import { Button } from "@/components/ui/button"
 import { Calendar, Award, Users, Gift, Briefcase, Heart, Mail } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper/modules"
+import "swiper/css"
+import Image from "next/image"
+import { useEffect } from "react"
 
 export default function PartnersPage() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const [isLoading, setIsLoading] = useState(false)
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [error, setError] = useState("")
   const [donationType, setDonationType] = useState("bmce")
   const [donationAmount, setDonationAmount] = useState("100")
+  const [mounted, setMounted] = useState(false)
+
+  // Add a new ref for the partners section
+  // Add this with the other refs at the beginning of the component
+
+  // Add this ref for the partners section
+  const { ref: partnersRef, inView: partnersInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  })
+
+  // Add this after the other state declarations
+  // const [mounted, setMounted] = useState(false)
+
+  // Add this useEffect hook to handle mounting
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Add this useEffect to handle language changes
+  useEffect(() => {
+    // Force remount of Swiper when language changes
+    setMounted(false)
+    setTimeout(() => {
+      setMounted(true)
+    }, 50)
+  }, [language])
+
+  // Add the partners data
+  const partners = [
+    {
+      name: "Ministerio de Asuntos Exteriores",
+      logo: "https://www.exteriores.gob.es/PublishingImages/Banners/logoMinisterio.svg",
+    },
+    {
+      name: "Fondation Jardin Majorelle",
+      logo: "https://th.bing.com/th/id/OIP.JJETPCjpQJDZr_fHwe32nAHaCw?rs=1&pid=ImgDetMain",
+    },
+    {
+      name: "UM6P",
+      logo: "https://www.um6p.ma/sites/default/files/logo%20(4)_1.png",
+    },
+    {
+      name: "Casa Memoire",
+      logo: "https://www.casamemoire.org/css/images/logo.png",
+    },
+    {
+      name: "Ministère de la Jeunesse",
+      logo: "https://mjcc.gov.ma/wp-content/uploads/2021/12/mjcc_black.svg",
+    },
+    {
+      name: "ICESCO",
+      logo: "https://icesco.org/wp-content/uploads/2023/05/logo-New.png",
+    },
+    {
+      name: "Ville de Marrakech",
+      logo: "https://www.ville-marrakech.ma/images/config/logo11.webp",
+    },
+    {
+      name: "Fondation Mohammed V",
+      logo: "https://www.fm5.ma/themes/custom/fm5/logo-en.svg",
+    },
+  ]
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Hero section animation
   const { ref: heroRef, inView: heroInView } = useInView({
@@ -102,6 +174,12 @@ export default function PartnersPage() {
     },
   ]
 
+  // Current Partners section animation
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  })
+
   const handleDonationSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
@@ -134,7 +212,7 @@ export default function PartnersPage() {
         className="relative bg-transparent"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('/PHOTOS-JDP/P1388698.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -163,6 +241,67 @@ export default function PartnersPage() {
             </div>
           </Container>
         </div>
+      </section>
+
+      {/* Current Partners Section */}
+      <section className="py-16 bg-white">
+        <Container className="max-w-6xl mx-auto">
+          {/* Then update the ref in the partners section
+          // Change the div ref from "inView" to "partnersInView" */}
+          <div ref={partnersRef} className="w-full !opacity-100" style={{ opacity: "1 !important" }}>
+            <div className="text-center mb-12">
+              <h2 className="font-tomato text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("our_partners")}</h2>
+              <div className="h-1 w-24 bg-primary mx-auto mb-6"></div>
+              <p className="text-gray-700 max-w-2xl mx-auto font-tomato">{t("current_partners_description")}</p>
+            </div>
+
+            {mounted && (
+              <Swiper
+                modules={[Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                dir={language === "ar" ? "rtl" : "ltr"}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                  },
+                }}
+                className="partners-swiper !opacity-100"
+                style={{ opacity: 1 }}
+              >
+                {partners.map((partner, index) => (
+                  <SwiperSlide key={index} style={{ opacity: 1 }}>
+                    <div className="p-6 h-32 flex items-center justify-center">
+                      <div className="relative h-full w-full">
+                        <div className="relative h-full w-full flex items-center justify-center">
+                          <div className="relative h-20 w-full bg-white rounded-md p-3 border border-gray-100 shadow-sm">
+                            <Image
+                              src={partner.logo || "/placeholder.svg"}
+                              alt={partner.name}
+                              fill
+                              className="object-contain"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
+          </div>
+        </Container>
       </section>
 
       {/* Partnership Types Section */}

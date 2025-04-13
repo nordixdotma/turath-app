@@ -307,7 +307,7 @@ export default function VolunteerPage() {
                 </div>
                 <div className="relative hidden md:block">
                   <Image
-                    src="https://images.unsplash.com/photo-1606819852165-126177dea9d9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="/PHOTOS-JDP/DSC06214.jpg"
                     alt="Volunteers working together"
                     fill
                     className="object-cover"

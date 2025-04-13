@@ -360,6 +360,8 @@ export const translations = {
       "Join us in our mission to preserve and promote the rich cultural heritage of Marrakech for future generations.",
     contact_partnerships: "Contact our Partnerships Team",
     branch: "Branch",
+    current_partners_description:
+      "We are proud to collaborate with these esteemed organizations who share our commitment to preserving Marrakech's cultural heritage.",
 
     banking_details: "Support Our Mission",
     banking_details_description:
@@ -956,7 +958,6 @@ export const translations = {
       "Rejoignez-nous dans notre mission de préservation et de promotion du riche patrimoine culturel de Marrakech pour les générations futures.",
     contact_partnerships: "Contactez notre Équipe de Partenariats",
     branch: "Agence",
-
     // Add banking information translations in French
     banking_details: "Soutenir Notre Mission",
     banking_details_description:
@@ -1147,6 +1148,8 @@ export const translations = {
     participants_to_date: "Participants à ce jour",
     participants_across_activities: "participants à travers diverse",
     hidden_treasures_title: "Dévoiler les Trésors Cachés",
+    current_partners_description:
+      "Nous sommes fiers de collaborer avec ces organisations estimées qui partagent notre engagement à préserver le patrimoine culturel de Marrakech.",
   },
   ar: {
     // Header
@@ -1448,7 +1451,7 @@ export const translations = {
     project_sponsor_description:
       "قم بتمويل مشاريع محددة للحفاظ على التراث أو توثيقه والتي تتماشى مع قيم مؤسستك واهتماماتها.",
     in_kind_partner: "شريك عيني",
-    in_kind_partner_description: "قدم سلعًا أو خدمات أو خبرات ��دعم مهمتنا وعملياتنا.",
+    in_kind_partner_description: "قدم سلعًا أو خدمات أو خبرات لدعم مهمتنا وعملياتنا.",
     partnership_benefits: "مزايا الشراكة",
     partnership_benefits_description:
       "يحصل شركاؤنا على التقدير والظهور والرضا عن تقديم مساهمة ذات مغزى في الحفاظ على الثقافة",
@@ -1492,7 +1495,6 @@ export const translations = {
     become_partner_description: "انضم إلينا في مهمتنا للحفاظ على التراث الثقافي الغني لمراكش وتعزيزه للأجيال القادمة.",
     contact_partnerships: "اتصل بفريق الشراكات لدينا",
     branch: "فرع",
-
     // Add banking information translations in French
     banking_details: "دعم مهمتنا",
     banking_details_description: "لتقديم تبرع ودعم جهودنا للحفاظ على التراث، يرجى استخدام المعلومات المصرفية التالية:",
@@ -1593,7 +1595,7 @@ export const translations = {
     earthquake_project_title: "إعادة الإعمار بعد الزلزال",
     earthquake_project_short_desc: "مبادرة حاسمة لدعم جهود إعادة الإعمار في أعقاب زلزال الحوز المدمر في سبتمبر 2023.",
     earthquake_project_desc_p1:
-      "في أعقاب زلزال الحوز المدمر في 8 سبتمبر 2023، والذي بلغت قوته 6.8 درجة على مقياس ريختر وأثر على العديد من المواقع التاريخية في منطقة جبال الأطلس، تحركت جمعية تراث على الفور لدعم جهود إعادة الإعمار. يعمل فريقنا من المهندسين المعماريين والمهندسين والمتخصصين في التراث عن كثب مع المجتمعات المحلية والسلطات لتقييم الأضرار وتوثيق الهياكل المتضررة ووضع خطط إعادة إعمار مستدامة تحترم تقنيات البناء التقليدية مع تحسين المرونة الهيكلية.",
+      "في أ��قاب زلزال الحوز المدمر في 8 سبتمبر 2023، والذي بلغت قوته 6.8 درجة على مقياس ريختر وأثر على العديد من المواقع التاريخية في منطقة جبال الأطلس، تحركت جمعية تراث على الفور لدعم جهود إعادة الإعمار. يعمل فريقنا من المهندسين المعماريين والمهندسين والمتخصصين في التراث عن كثب مع المجتمعات المحلية والسلطات لتقييم الأضرار وتوثيق الهياكل المتضررة ووضع خطط إعادة إعمار مستدامة تحترم تقنيات البناء التقليدية مع تحسين المرونة الهيكلية.",
     earthquake_project_desc_p2:
       "يركز هذا المشروع بشكل خاص على الحفاظ على التراث المعماري في القرى المتضررة في الأطلس الكبير، حيث أن العمارة الترابية التي يعود تاريخها إلى قرون والمعرفة التقليدية بالبناء معرضة لخطر الضياع في عملية إعادة الإعمار. لقد أنشأنا منصة تربط الخبراء الدوليين مع كبار البنائين المحليين لضمان أن جهود إعادة الإعمار تكرم الأساليب التقليدية مع دمج تقنيات التعزيز الزلزالي المناسبة.",
     key_activities: "الأنشطة الرئيسية",
@@ -1607,7 +1609,7 @@ export const translations = {
     tinmel_mosque_restoration: "ترميم مسجد تنمل",
     tinmel_mosque_desc:
       "تعرض مسجد تنمل التاريخي، وهو تحفة من العمارة الموحدية يعود تاريخها إلى عام 1156 وأحد مسجدين فقط في المغرب مفتوحين لغير المسلمين، لأضرار جسيمة خلال الزلزال. تشمل جهودنا المحددة لترميم هذا الموقع المرشح للتراث العالمي لليونسكو ما يلي:",
-    tinmel_activity_1: "استعادة وفهرسة العناصر الم��مارية الأصلية، بما في ذلك الجص المنحوت والعناصر الخشبية",
+    tinmel_activity_1: "استعادة وفهرسة العناصر المعمارية الأصلية، بما في ذلك الجص المنحوت والعناصر الخشبية",
     tinmel_activity_2: "وضع خطة ترميم شاملة تستند إلى الوثائق التاريخية والأدلة الأثرية",
     tinmel_activity_3: "تدريب الحرفيين المحليين على التحضير التقليدي لملاط الجير والبناء الترابي والتقنيات الزخرفية",
     tinmel_activity_4: "إنشاء مركز تفسير للزوار يشرح الأهمية التاريخية للمسجد وعملية الترميم",
@@ -1616,16 +1618,16 @@ export const translations = {
       "تستند جهود إعادة الإعمار لدينا إلى نهج تعاوني يجمع مختلف أصحاب المصلحة، بما في ذلك وزارة الثقافة المغربية واليونسكو والإيكوموس والسلطات المحلية والمؤسسات الأكاديمية والأهم من ذلك المجتمعات المتضررة نفسها.",
     collaborative_approach_p2:
       "تضمن هذه الاستراتيجية الشاملة أن إعادة الإعمار لا تحافظ فقط على الهياكل المادية ولكنها تحترم أيضًا الأهمية الثقافية والقيم المجتمعية المرتبطة بهذه المواقع التراثية. نحن نوثق تقنيات البناء التقليدية وندرب الحرفيين المحليين وننشئ موارد تعليمية لضمان استمرار نقل هذه المعرفة إلى الأجيال القادمة.",
-      key_initiatives: "المبادرات الرئيسية",
-      treasures_initiative_1: "جولات التراث الخفي: استكشافات موجهة للمواقع التاريخية الأقل شهرة",
-      treasures_initiative_2: "لقاءات الحرفيين: تفاعلات مباشرة مع كبار الحرفيين في ورش العمل الخاصة بهم",
-      treasures_initiative_3: "جلسات سرد قصص التراث: جمع ومشاركة التقاليد والقصص الشفوية",
-      treasures_initiative_4: "ورش عمل مهارات التراث: تعلم عملي للتقنيات التقليدية",
-      treasures_initiative_5: "أرشيف التراث الرقمي: إنشاء مستودع رقمي لعناصر التراث المهددة بالانقراض",
-      impact: "التأثير",
-      treasures_impact:
-        "زادت هذه المبادرة بشكل كبير من الوعي بشأن أصول التراث الأقل شهرة في مراكش، وخلقت فرصًا اقتصادية للحرفيين التقليديين، وساهمت في توثيق قيم للممارسات والمواقع الثقافية المهددة بالانقراض.",
-      earthquake_project_date: "سبتمبر 2023 - جاري التنفيذ",
+    key_initiatives: "المبادرات الرئيسية",
+    treasures_initiative_1: "جولات التراث الخفي: استكشافات موجهة للمواقع التاريخية الأقل شهرة",
+    treasures_initiative_2: "لقاءات الحرفيين: تفاعلات مباشرة مع كبار الحرفيين في ورش العمل الخاصة بهم",
+    treasures_initiative_3: "جلسات سرد قصص التراث: جمع ومشاركة التقاليد والقصص الشفوية",
+    treasures_initiative_4: "ورش عمل مهارات التراث: تعلم عملي للتقنيات التقليدية",
+    treasures_initiative_5: "أرشيف التراث الرقمي: إنشاء مستودع رقمي لعناصر التراث المهددة بالانقراض",
+    impact: "التأثير",
+    treasures_impact:
+      "زادت هذه المبادرة بشكل كبير من الوعي بشأن أصول التراث الأقل شهرة في مراكش، وخلقت فرصًا اقتصادية للحرفيين التقليديين، وساهمت في توثيق قيم للممارسات والمواقع الثقافية المهددة بالانقراض.",
+    earthquake_project_date: "سبتمبر 2023 - جاري التنفيذ",
     earthquake_project_location: "إقليم الحوز، جبال الأطلس الكبير، المغرب",
     earthquake_project_contributors: "أكثر من 85 متخصصًا ومتطوعًا",
     earthquake_goal_1: "توثيق وحفظ تقنيات البناء الترابي الفريدة لمنطقة الأطلس الكبير",
@@ -1668,5 +1670,7 @@ export const translations = {
     participants_to_date: "المشاركون حتى الآن",
     participants_across_activities: "المشاركون في مختلف",
     hidden_treasures_title: "الكشف عن كنوز مراكش الخفية",
+    current_partners_description:
+      "نحن فخورون بالتعاون مع هذه المنظمات المحترمة التي تشاركنا التزامنا بالحفاظ على التراث الثقافي لمراكش.",
   },
 }

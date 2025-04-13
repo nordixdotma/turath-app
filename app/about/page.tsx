@@ -59,7 +59,7 @@ export default function AboutPage() {
         className="relative bg-transparent"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1529143503127-c95bdeee219a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('/PHOTOS-JDP/DSC06295.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -102,7 +102,7 @@ export default function AboutPage() {
               {/* Image */}
               <div className="relative h-[400px] rounded-md overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/flagged/photo-1553617569-8ef7a8da3146?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/aboutimage.png"
                   alt="Marrakech Heritage"
                   fill
                   className="object-cover"
